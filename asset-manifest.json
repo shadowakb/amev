@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vietnam-travel-itinerary/static/css/main.6a16fdd8.css",
-    "main.js": "/vietnam-travel-itinerary/static/js/main.bcb2f9a8.js",
+    "main.css": "/vietnam-travel-itinerary/static/css/main.c59f72aa.css",
+    "main.js": "/vietnam-travel-itinerary/static/js/main.90826d01.js",
     "index.html": "/vietnam-travel-itinerary/index.html",
-    "main.6a16fdd8.css.map": "/vietnam-travel-itinerary/static/css/main.6a16fdd8.css.map",
-    "main.bcb2f9a8.js.map": "/vietnam-travel-itinerary/static/js/main.bcb2f9a8.js.map"
+    "main.c59f72aa.css.map": "/vietnam-travel-itinerary/static/css/main.c59f72aa.css.map",
+    "main.90826d01.js.map": "/vietnam-travel-itinerary/static/js/main.90826d01.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a16fdd8.css",
-    "static/js/main.bcb2f9a8.js"
+    "static/css/main.c59f72aa.css",
+    "static/js/main.90826d01.js"
   ]
 }
