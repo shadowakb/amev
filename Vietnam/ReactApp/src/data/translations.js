@@ -2,45 +2,45 @@
 export const translations = {
   en: {
     // Header and navigation
-    headerTitle: 'Our Grand Vietnam Adventure',
-    headerSubtitle: 'August 7th - August 16th, 2025',
-    headerDescription: 'This interactive itinerary provides all the details for our trip, including daily activities, travel information, accommodation, and embedded maps for key locations. We can share this document with our travel companions!',
+    headerTitle: 'Our Vietnam Adventure 🇻🇳',
+    headerSubtitle: 'August 7-16, 2025 • A Journey to Remember ✈️',
+    headerDescription: 'Our complete travel guide with all the wonderful places we\'ll visit, where we\'ll stay, and beautiful maps of our destinations. Perfect for sharing with family and friends! 🗺️✨',
     
     // Navigation
-    overview: 'Overview',
+    overview: 'Our Itinerary',
     dayLabel: 'Day',
     
     // Footer
-    footerCopyright: '© 2025 Our Travel Itinerary. All rights reserved.',
-    footerCreatedBy: 'Created with React.',
+    footerCopyright: '© 2025 Made with love for our Vietnam journey',
+    footerCreatedBy: 'Created with care and excitement!',
     
     // Common labels
-    accommodationLabel: 'Accommodation:',
-    notesLabel: 'Notes / Bookings / Links (Our Update Area)',
-    morningLabel: 'Morning',
-    afternoonLabel: 'Afternoon',
-    eveningLabel: 'Evening',
-    keyLocationsLabel: 'Key Locations for the Day',
-    highlightsLabel: 'Highlights & Tips for Our Trip:',
+    accommodationLabel: 'Where we\'re staying:',
+    notesLabel: 'Our Notes & Important Details 📝',
+    morningLabel: 'Morning Activities ☀️',
+    afternoonLabel: 'Afternoon Plans 🌅',
+    eveningLabel: 'Evening Experiences 🌙',
+    keyLocationsLabel: 'Special Places We\'ll Visit Today',
+    highlightsLabel: 'Highlights & Helpful Tips:',
     
     // Interactive elements
-    restaurantSuggestionsButton: 'Get Restaurant Suggestions ✨',
-    fetchingSuggestions: 'Fetching suggestions...',
-    errorLabel: 'Error:',
-    noSuggestionsFound: 'No suggestions found.',
-    viewOnGoogleMaps: 'View on Google Maps',
-    signatureDish: 'Signature Dish:',
-    modalTitle: 'Restaurant Suggestions ✨',
+    restaurantSuggestionsButton: 'Find Great Restaurants 🍜✨',
+    fetchingSuggestions: 'Looking for wonderful places...',
+    errorLabel: 'Oops:',
+    noSuggestionsFound: 'No suggestions found - we\'ll explore locally!',
+    viewOnGoogleMaps: 'View on Maps 🗺️',
+    signatureDish: 'Must-try dish:',
+    modalTitle: 'Restaurant Recommendations 🍜✨',
     
     // Image carousel
-    prevImage: 'Previous',
-    nextImage: 'Next',
+    prevImage: 'Previous photo',
+    nextImage: 'Next photo',
     
     // Location types
     hotelLabel: 'Hotel',
     airportLabel: 'Airport',
-    travelHubLabel: 'Travel Hub',
-    landmarkLabel: 'Landmark',
+    travelHubLabel: 'Transport Hub',
+    landmarkLabel: 'Must-See Place',
     
     // Language toggle
     languageToggle: 'English',
@@ -51,61 +51,61 @@ export const translations = {
     evening: 'Evening',
     
     // Actions
-    showDetails: 'Show Details',
-    hideDetails: 'Hide Details',
-    openMap: 'Open Map',
+    showDetails: 'Show more details',
+    hideDetails: 'Hide details',
+    openMap: 'Open map',
     closeModal: 'Close',
     
     // Status messages
     loading: 'Loading...',
-    noDataAvailable: 'No data available',
+    noDataAvailable: 'Nothing here yet',
     
     // Accommodation info
-    overnight: 'Overnight',
+    overnight: 'Staying at',
     hotel: 'Hotel'
   },
   
   hi: {
     // Header and navigation
-    headerTitle: 'हमारी शानदार वियतनाम यात्रा',
-    headerSubtitle: '7 अगस्त - 16 अगस्त, 2025',
-    headerDescription: 'यह इंटरैक्टिव यात्रा कार्यक्रम हमारी यात्रा के सभी विवरण प्रदान करता है, जिसमें दैनिक गतिविधियाँ, यात्रा जानकारी, आवास और प्रमुख स्थानों के लिए एम्बेडेड मानचित्र शामिल हैं। हम इस दस्तावेज़ को अपने यात्रा साथियों के साथ साझा कर सकते हैं!',
+    headerTitle: 'हमारी वियतनाम यात्रा 🇻🇳',
+    headerSubtitle: '7-16 अगस्त, 2025 • यादगार सफर ✈️',
+    headerDescription: 'हमारी पूरी यात्रा गाइड जिसमें सभी सुंदर जगहें हैं जहाँ हम जाएंगे, हम कहाँ रुकेंगे, और हमारे destinations के खूबसूरत maps हैं। परिवार और दोस्तों के साथ share करने के लिए perfect! 🗺️✨',
     
     // Navigation
-    overview: 'अवलोकन',
+    overview: 'हमारा कार्यक्रम',
     dayLabel: 'दिन',
     
     // Footer
-    footerCopyright: '© 2025 हमारी यात्रा कार्यक्रम। सर्वाधिकार सुरक्षित।',
-    footerCreatedBy: 'React के साथ निर्मित।',
+    footerCopyright: '© 2025 हमारी वियतनाम यात्रा के लिए प्यार से बनाया गया',
+    footerCreatedBy: 'देखभाल और उत्साह के साथ बनाया गया!',
     
     // Common labels
-    accommodationLabel: 'आवास:',
-    notesLabel: 'नोट्स / बुकिंग / लिंक (हमारा अपडेट क्षेत्र)',
-    morningLabel: 'सुबह',
-    afternoonLabel: 'दोपहर',
-    eveningLabel: 'शाम',
-    keyLocationsLabel: 'दिन के मुख्य स्थान',
-    highlightsLabel: 'हमारी यात्रा के लिए मुख्य बातें और सुझाव:',
+    accommodationLabel: 'हम कहाँ रुकेंगे:',
+    notesLabel: 'हमारे नोट्स और जरूरी बातें 📝',
+    morningLabel: 'सुबह की गतिविधियाँ ☀️',
+    afternoonLabel: 'दोपहर की योजनाएं 🌅',
+    eveningLabel: 'शाम के अनुभव 🌙',
+    keyLocationsLabel: 'आज की खास जगहें',
+    highlightsLabel: 'मुख्य बातें और उपयोगी सुझाव:',
     
     // Interactive elements
-    restaurantSuggestionsButton: 'रेस्तरां सुझाव प्राप्त करें ✨',
-    fetchingSuggestions: 'सुझाव प्राप्त कर रहा है...',
-    errorLabel: 'त्रुटि:',
-    noSuggestionsFound: 'कोई सुझाव नहीं मिला।',
-    viewOnGoogleMaps: 'गूगल मैप्स पर देखें',
-    signatureDish: 'विशेष व्यंजन:',
-    modalTitle: 'रेस्तरां सुझाव ✨',
+    restaurantSuggestionsButton: 'बेहतरीन रेस्तराँ खोजें 🍜✨',
+    fetchingSuggestions: 'अच्छी जगह ढूंढ रहे हैं...',
+    errorLabel: 'अरे:',
+    noSuggestionsFound: 'कोई सुझाव नहीं मिला - हम locally explore करेंगे!',
+    viewOnGoogleMaps: 'Maps पर देखें 🗺️',
+    signatureDish: 'जरूर try करें:',
+    modalTitle: 'रेस्तराँ सिफारिशें 🍜✨',
     
     // Image carousel
-    prevImage: 'पिछला',
-    nextImage: 'अगला',
+    prevImage: 'पिछली तस्वीर',
+    nextImage: 'अगली तस्वीर',
     
     // Location types
     hotelLabel: 'होटल',
     airportLabel: 'हवाई अड्डा',
-    travelHubLabel: 'यात्रा केंद्र',
-    landmarkLabel: 'लैंडमार्क',
+    travelHubLabel: 'परिवहन केंद्र',
+    landmarkLabel: 'जरूर देखने वाली जगह',
     
     // Language toggle
     languageToggle: 'हिंदी',
@@ -116,17 +116,17 @@ export const translations = {
     evening: 'शाम',
     
     // Actions
-    showDetails: 'विवरण दिखाएं',
+    showDetails: 'और विवरण दिखाएं',
     hideDetails: 'विवरण छुपाएं',
-    openMap: 'मानचित्र खोलें',
+    openMap: 'मैप खोलें',
     closeModal: 'बंद करें',
     
     // Status messages
     loading: 'लोड हो रहा है...',
-    noDataAvailable: 'कोई डेटा उपलब्ध नहीं',
+    noDataAvailable: 'अभी तक कुछ नहीं',
     
     // Accommodation info
-    overnight: 'रात्रि विश्राम',
+    overnight: 'यहाँ रुकेंगे',
     hotel: 'होटल'
   }
 };

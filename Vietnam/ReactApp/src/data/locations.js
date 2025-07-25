@@ -4,32 +4,40 @@ export const locationData = {
     name: 'Hoan Kiem Lake, Hanoi',
     query: 'Hoan Kiem Lake, Hanoi, Vietnam',
     type: 'landmark',
-    description: 'The central lake of Hanoi, steeped in legend and surrounded by historical sites.',
-    description_hi: 'हनोई की केंद्रीय झील, किंवदंती में डूबी हुई और ऐतिहासिक स्थलों से घिरी हुई है।',
+    description: 'The beautiful heart of Hanoi! This legendary lake is perfect for peaceful walks and wonderful photos 📸',
+    description_hi: 'हनोई का सुंदर दिल! यह किंवदंती की झील शांत सैर और बेहतरीन तस्वीरों के लिए perfect है 📸',
     highlights_en: [
-      'In August, expect warm temperatures (around 26-32°C).',
-      'Enjoy leisurely walks around the lake, especially in the cooler mornings or evenings.',
-      'Visit Ngoc Son Temple via Huc Bridge.',
-      'The lake is beautifully lit up at night, perfect for an evening stroll.'
+      'August weather is warm and humid (26-32°C) - bring sunscreen and stay hydrated ☀️',
+      'Early morning or evening walks are the most pleasant - cooler and peaceful 🌅',
+      'Don\'t miss the beautiful Ngoc Son Temple via the charming red Huc Bridge 🌉',
+      'The lake is beautifully illuminated at night - absolutely magical ✨',
+      'Wonderful street food vendors nearby - perfect for trying local flavors! 🍜'
     ],
     highlights_hi: [
-      'अगस्त में, गर्म तापमान (लगभग 26-32°C) की अपेक्षा करें।',
-      'झील के चारों ओर इत्मीनान से टहलने का आनंद लें, खासकर ठंडी सुबह या शाम को।',
-      'हुक ब्रिज के माध्यम से न्गोक सोन मंदिर का दौरा करें।',
-      'झील रात में खूबसूरती से जगमगाती है, शाम की सैर के लिए एकदम सही है।'
+      'अगस्त में गर्म और नम मौसम (26-32°C) - सनस्क्रीन लाएं और पानी पिएं ☀️',
+      'सुबह जल्दी या शाम की सैर सबसे अच्छी होती है - ठंडक और शांति 🌅',
+      'सुंदर लाल Huc Bridge के जरिए Ngoc Son Temple जरूर देखें 🌉',
+      'रात में झील बहुत खूबसूरती से रोशन होती है - बिल्कुल जादुई ✨',
+      'पास में बेहतरीन street food vendors - local स्वाद try करने के लिए perfect! 🍜'
     ],
     images: [
       { 
-        src_en: 'https://placehold.co/400x250/E0F2F7/000?text=Hoan+Kiem+Lake+1', 
-        alt_en: 'Hoan Kiem Lake with Turtle Tower', 
-        src_hi: 'https://placehold.co/400x250/E0F2F7/000?text=होन+कीम+झील+1', 
-        alt_hi: 'कछुआ टॉवर के साथ होन कीम झील' 
+        src_en: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&h=250&fit=crop', 
+        alt_en: 'Beautiful Hoan Kiem Lake with the iconic Turtle Tower at sunset', 
+        src_hi: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&h=250&fit=crop', 
+        alt_hi: 'सूर्यास्त के समय प्रतिष्ठित कछुआ टॉवर के साथ सुंदर होन कीम झील' 
       },
       { 
-        src_en: 'https://placehold.co/400x250/D1E8E4/000?text=Hoan+Kiem+Lake+2', 
-        alt_en: 'Huc Bridge leading to Ngoc Son Temple', 
-        src_hi: 'https://placehold.co/400x250/D1E8E4/000?text=होन+कीम+झील+2', 
-        alt_hi: 'न्गोक सोन मंदिर की ओर जाने वाला हुक ब्रिज' 
+        src_en: 'https://images.unsplash.com/photo-1559592413-7cec4d0d2c60?w=400&h=250&fit=crop', 
+        alt_en: 'The famous red Huc Bridge leading to Ngoc Son Temple', 
+        src_hi: 'https://images.unsplash.com/photo-1559592413-7cec4d0d2c60?w=400&h=250&fit=crop', 
+        alt_hi: 'प्रसिद्ध लाल Huc Bridge जो Ngoc Son Temple की ओर जाता है' 
+      },
+      { 
+        src_en: 'https://images.unsplash.com/photo-1540629678110-62a8420f1cd8?w=400&h=250&fit=crop', 
+        alt_en: 'Hanoi Old Quarter bustling streets near the lake', 
+        src_hi: 'https://images.unsplash.com/photo-1540629678110-62a8420f1cd8?w=400&h=250&fit=crop', 
+        alt_hi: 'झील के पास हनोई Old Quarter की हलचल भरी सड़कें' 
       }
     ]
   },
@@ -38,32 +46,34 @@ export const locationData = {
     name: 'Thang Long Water Puppet Theatre, Hanoi',
     query: 'Thang Long Water Puppet Theatre, Hanoi, Vietnam',
     type: 'landmark',
-    description: 'The premier venue for traditional Vietnamese water puppet shows.',
-    description_hi: 'पारंपरिक वियतनामी जल कठपुतली शो के लिए प्रमुख स्थान।',
+    description: 'A fascinating cultural experience - traditional Vietnamese water puppets perform on water! Truly unique and beautiful 🎭',
+    description_hi: 'एक मनमोहक सांस्कृतिक अनुभव - traditional Vietnamese water puppets पानी पर प्रदर्शन करती हैं! वास्तव में अनोखा और सुंदर 🎭',
     highlights_en: [
-      'A unique Vietnamese folk art experience that we must see.',
-      'Shows typically depict rural life, historical events, and ancient legends.',
-      'Performances are about one hour long.',
-      'Best to attend in the evening for a cultural experience.'
+      'An absolute must-see - this ancient art form is over 1000 years old! 🤯',
+      'Shows run about 1 hour with beautiful live traditional music 🎶',
+      'Wonderful stories about rural life, legends, and Vietnamese history',
+      'Evening performances have a lovely atmosphere - perfect after dinner 🌙',
+      'Best to book tickets in advance as it\'s quite popular!'
     ],
     highlights_hi: [
-      'एक अद्वितीय वियतनामी लोक कला का अनुभव जिसे हमें अवश्य देखना चाहिए।',
-      'शो आमतौर पर ग्रामीण जीवन, ऐतिहासिक घटनाओं और प्राचीन किंवदंतियों को दर्शाते हैं।',
-      'प्रदर्शन लगभग एक घंटे लंबे होते हैं।',
-      'सांस्कृतिक अनुभव के लिए शाम को भाग लेना सबसे अच्छा है।'
+      'जरूर देखना चाहिए - यह प्राचीन कला 1000+ साल पुरानी है! 🤯',
+      'शो लगभग 1 घंटे के हैं सुंदर live traditional music के साथ 🎶',
+      'ग्रामीण जीवन, किंवदंतियों, और Vietnamese इतिहास की अद्भुत कहानियां',
+      'शाम के प्रदर्शन का माहौल बहुत प्यारा होता है - dinner के बाद perfect 🌙',
+      'Tickets पहले से book करना बेहतर है क्योंकि यह बहुत popular है!'
     ],
     images: [
       { 
-        src_en: 'https://placehold.co/400x250/F0F8FF/000?text=Water+Puppet+Show+1', 
-        alt_en: 'Water Puppet Show Stage', 
-        src_hi: 'https://placehold.co/400x250/F0F8FF/000?text=जल+कठपुतली+शो+1', 
-        alt_hi: 'जल कठपुतली शो मंच' 
+        src_en: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop', 
+        alt_en: 'Colorful water puppets performing on stage', 
+        src_hi: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop', 
+        alt_hi: 'मंच पर प्रदर्शन करती रंगीन water puppets' 
       },
       { 
-        src_en: 'https://placehold.co/400x250/FFF0F5/000?text=Water+Puppet+Show+2', 
-        alt_en: 'Vietnamese Water Puppets', 
-        src_hi: 'https://placehold.co/400x250/FFF0F5/000?text=जल+कठपुतली+शो+2', 
-        alt_hi: 'वियतनामी जल कठपुतलियाँ' 
+        src_en: 'https://images.unsplash.com/photo-1559592413-7cec4d0d2c60?w=400&h=250&fit=crop', 
+        alt_en: 'Traditional Vietnamese water puppet show setup', 
+        src_hi: 'https://images.unsplash.com/photo-1559592413-7cec4d0d2c60?w=400&h=250&fit=crop', 
+        alt_hi: 'पारंपरिक Vietnamese water puppet show का setup' 
       }
     ]
   },

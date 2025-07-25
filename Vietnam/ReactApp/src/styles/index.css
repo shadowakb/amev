@@ -26,28 +26,34 @@ body {
 
 /* CSS Custom Properties */
 :root {
-  /* Colors */
-  --color-primary: #218085;
-  --color-primary-hover: #1d7479;
-  --color-primary-light: rgba(33, 128, 133, 0.1);
-  --color-secondary: #f4a261;
-  --color-accent: #e76f51;
+  /* Colors - More vibrant and fun! */
+  --color-primary: #FF6B6B;
+  --color-primary-hover: #FF5252;
+  --color-primary-light: rgba(255, 107, 107, 0.1);
+  --color-secondary: #4ECDC4;
+  --color-accent: #45B7D1;
+  --color-tertiary: #FFA726;
+  --color-success: #66BB6A;
   
-  --color-background: #fcfcf9;
+  --color-background: #FAFBFC;
   --color-surface: #ffffff;
-  --color-surface-secondary: #f8f9fa;
+  --color-surface-secondary: #F8F9FA;
   
-  --color-text: #2d3748;
-  --color-text-secondary: #718096;
-  --color-text-muted: #a0aec0;
+  --color-text: #2C3E50;
+  --color-text-secondary: #546E7A;
+  --color-text-muted: #90A4AE;
   
-  --color-border: #e2e8f0;
-  --color-border-light: #f7fafc;
+  --color-border: #E1E8ED;
+  --color-border-light: #F5F8FA;
   
-  --color-success: #48bb78;
-  --color-warning: #ed8936;
-  --color-error: #f56565;
-  --color-info: #4299e1;
+  --color-warning: #FFA726;
+  --color-error: #EF5350;
+  --color-info: #42A5F5;
+  
+  /* Fun gradients */
+  --gradient-primary: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  --gradient-secondary: linear-gradient(135deg, #45B7D1 0%, #FFA726 100%);
+  --gradient-accent: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   
   /* Spacing */
   --space-1: 0.25rem;
@@ -77,25 +83,27 @@ body {
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  /* Shadows - More dramatic */
+  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  --shadow-base: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-fun: 0 20px 40px -14px rgba(255, 107, 107, 0.4);
   
   /* Border radius */
-  --radius-sm: 0.25rem;
-  --radius-base: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
+  --radius-sm: 0.375rem;
+  --radius-base: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
   --radius-full: 9999px;
   
   /* Transitions */
-  --transition-fast: 150ms ease-in-out;
-  --transition-base: 250ms ease-in-out;
-  --transition-slow: 350ms ease-in-out;
+  --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   
   /* Z-index */
   --z-dropdown: 1000;
@@ -107,9 +115,9 @@ body {
   --z-tooltip: 1070;
   
   /* Layout */
-  --sidebar-width: 280px;
-  --header-height: 160px;
-  --footer-height: 80px;
+  --sidebar-width: 300px;
+  --header-height: 180px;
+  --footer-height: 100px;
 }
 
 /* Utility Classes */
