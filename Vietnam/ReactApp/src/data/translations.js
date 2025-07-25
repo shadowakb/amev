@@ -20,7 +20,7 @@ export const translations = {
     morningLabel: 'Morning Activities ☀️',
     afternoonLabel: 'Afternoon Plans 🌅',
     eveningLabel: 'Evening Experiences 🌙',
-    keyLocationsLabel: 'Special Places We\'ll Visit Today',
+    keyLocationsLabel: 'Key Locations',
     highlightsLabel: 'Highlights & Helpful Tips:',
     
     // Interactive elements
@@ -115,7 +115,7 @@ export const translations = {
     morningLabel: 'सुबह की गतिविधियाँ ☀️',
     afternoonLabel: 'दोपहर की योजनाएं 🌅',
     eveningLabel: 'शाम के अनुभव 🌙',
-    keyLocationsLabel: 'आज की खास जगहें',
+    keyLocationsLabel: 'मुख्य स्थान',
     highlightsLabel: 'मुख्य बातें और उपयोगी सुझाव:',
     
     // Interactive elements

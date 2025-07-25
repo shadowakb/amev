@@ -649,24 +649,24 @@
 }
 
 .activity-time.morning {
-  background: linear-gradient(135deg, #FFF8E1 0%, #FFE082 100%);
-  color: #F57F17;
-  border: 2px solid #FFB300;
-  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.2);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.2) 100%);
+  color: var(--color-accent-dark);
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 4px 8px rgba(245, 158, 11, 0.15);
 }
 
 .activity-time.afternoon {
-  background: linear-gradient(135deg, #E8F4FD 0%, #81D4FA 100%);
-  color: #01579B;
-  border: 2px solid #0288D1;
-  box-shadow: 0 4px 8px rgba(3, 169, 244, 0.2);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.2) 100%);
+  color: var(--color-secondary-hover);
+  border: 2px solid var(--color-secondary);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.15);
 }
 
 .activity-time.evening {
-  background: linear-gradient(135deg, #FCE4EC 0%, #F48FB1 100%);
-  color: #880E4F;
-  border: 2px solid #C2185B;
-  box-shadow: 0 4px 8px rgba(233, 30, 99, 0.2);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(236, 72, 153, 0.2) 100%);
+  color: var(--color-tertiary);
+  border: 2px solid var(--color-tertiary);
+  box-shadow: 0 4px 8px rgba(236, 72, 153, 0.15);
 }
 
 .activity-time:hover {
@@ -727,7 +727,7 @@
 }
 
 .skeleton {
-  background: linear-gradient(90deg, #f0f0f0 25%, transparent 37%, #f0f0f0 63%);
+  background: linear-gradient(90deg, var(--color-border-light) 25%, transparent 37%, var(--color-border-light) 63%);
   background-size: 400px 100%;
   animation: shimmer 1.5s ease-in-out infinite;
 }
@@ -1735,12 +1735,12 @@
   }
 }
 
-/* High Contrast Mode Support */
+/* High Contrast Mode Support - Light Mode Only */
 @media (prefers-contrast: high) {
   :root {
-    --color-border: #000000;
-    --color-text-secondary: #000000;
-    --color-text-muted: #333333;
+    --color-border: var(--color-text-primary);
+    --color-text-secondary: var(--color-text-primary);
+    --color-text-muted: var(--color-text);
   }
 }
 
@@ -1959,7 +1959,7 @@
 
 .specialty-card--vegetarian {
   border-left: 4px solid var(--color-success);
-  background: linear-gradient(135deg, var(--color-surface) 0%, rgba(0, 166, 153, 0.05) 100%);
+  background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-secondary-light) 100%);
 }
 
 .specialty-card:hover {
@@ -2069,8 +2069,8 @@
 }
 
 .restaurant-card--indian {
-  border-left: 4px solid #FF6B35;
-  background: linear-gradient(135deg, var(--color-surface) 0%, rgba(255, 107, 53, 0.05) 100%);
+  border-left: 4px solid var(--color-accent);
+  background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-accent-light) 100%);
 }
 
 .restaurant-card:hover {
@@ -2103,7 +2103,7 @@
 }
 
 .rating-stars {
-  color: #FFC72C;
+  color: var(--color-accent);
 }
 
 .rating-text {
@@ -2177,7 +2177,7 @@
 }
 
 .weather-widget-compact {
-  background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+  background: var(--gradient-secondary);
   color: white;
   border-radius: var(--radius-lg);
   padding: var(--space-4);
@@ -2283,7 +2283,7 @@
 }
 
 .rain-indicator {
-  color: #4FC3F7;
+  color: var(--color-info);
   font-weight: var(--font-weight-medium);
 }
 
@@ -2692,19 +2692,7 @@
   left: 0;
 }
 
-/* Dark Mode Support (Future Enhancement) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #1a202c;
-    --color-surface: #2d3748;
-    --color-surface-secondary: #4a5568;
-    --color-text: #f7fafc;
-    --color-text-secondary: #e2e8f0;
-    --color-text-muted: #a0aec0;
-    --color-border: #4a5568;
-    --color-border-light: #2d3748;
-  }
-}
+/* Light Mode Enforced - Modern & Clean Design Always Active */
 
 /* Mobile Responsive Styles for Overview */
 @media (max-width: 767px) {

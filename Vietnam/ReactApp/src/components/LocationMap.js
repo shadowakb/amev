@@ -28,7 +28,7 @@ const LocationMap = ({ location }) => {
           src={placeholderMapSrc}
           width="100%"
           height="300"
-          style={{ border: 0 }}
+          style={{ border: 0, borderRadius: 'var(--radius-lg)' }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
