@@ -1,7 +1,7 @@
 // Weather Service using OpenWeatherMap API
 // For production, you would need to add your API key to environment variables
 
-const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY || 'demo_key';
+const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY || "089ba98617e965537426e90ceac6797b";
 const WEATHER_BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 // City coordinates for Vietnam locations
@@ -56,9 +56,9 @@ export const getCurrentWeather = async (cityName) => {
       throw new Error(`Coordinates not found for ${cityName}`);
     }
 
-    // If no API key is provided, use fallback data
-    if (WEATHER_API_KEY === 'demo_key') {
-      console.log(`Using fallback weather data for ${cityName}`);
+    // If no valid API key is provided, use fallback data
+    if (!WEATHER_API_KEY) {
+      console.log(`No weather API key found, using fallback weather data for ${cityName}`);
       return {
         success: true,
         data: FALLBACK_WEATHER_DATA[cityName],
@@ -111,7 +111,7 @@ export const getCurrentWeather = async (cityName) => {
 export const getUVIndex = async (cityName) => {
   try {
     const coordinates = CITY_COORDINATES[cityName];
-    if (!coordinates || WEATHER_API_KEY === 'demo_key') {
+    if (!coordinates || !WEATHER_API_KEY) {
       // Return fallback UV data
       const fallbackUV = { 'Hanoi': 8, 'Hoi An': 9, 'Da Nang': 10 };
       return { success: true, uv_index: fallbackUV[cityName] || 8, source: 'fallback' };
