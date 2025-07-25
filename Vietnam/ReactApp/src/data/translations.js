@@ -71,7 +71,7 @@ export const translations = {
     // New comprehensive translations
     ourJourney: 'Our Journey',
     itineraryOverview: 'Itinerary Overview',
-    beautifulJourney: 'Join us on this beautiful 10-day journey through Vietnam, from Hanoi\'s historic streets to Ha Long Bay\'s magnificent views, the enchanting lanterns of Hoi An, and the vibrant energy of Ho Chi Minh City. This will be truly unforgettable!',
+    beautifulJourney: 'The beautiful 10-day journey through Vietnam, from Hanoi\'s historic streets to Ha Long Bay\'s magnificent views, the ancient beauty of Ninh Binh, and the enchanting lanterns of Hoi An to Da Nang\'s coastal charm. This will be truly unforgettable!',
     viewDayPlans: 'View our day\'s plans',
     activities: 'activities',
     things: 'things',
@@ -82,8 +82,8 @@ export const translations = {
     breathtakingMoments: 'More breathtaking moments at Ha Long Bay',
     charmingHoiAn: 'Flying south to the charming town of Hoi An',
     magicalLanterns: 'Magical lanterns and riverside charm in Hoi An',
-    vibrantHoChiMinh: 'From Hoi An to vibrant Ho Chi Minh City',
-    bustlingEnergy: 'Exploring the bustling energy of Saigon',
+    vibrantDaNang: 'From Hoi An to vibrant Da Nang',
+    bustlingEnergy: 'Exploring Da Nang\'s beaches and Ba Na Hills',
     finalDay: 'Our final day - cherishing every moment',
     wonderfulDay: 'Another wonderful day awaits us!'
   },
@@ -159,7 +159,7 @@ export const translations = {
     // New comprehensive translations
     ourJourney: 'हमारी यात्रा',
     itineraryOverview: 'यात्रा कार्यक्रम',
-    beautifulJourney: 'हमारे साथ जुड़िए इस खूबसूरत 10-दिन की Vietnam यात्रा में, Hanoi की ऐतिहासिक सड़कों से Ha Long Bay के शानदार नज़ारों तक, Hoi An के मनमोहक लालटेन और Ho Chi Minh City की जीवंत ऊर्जा तक। यह वास्तव में अविस्मरणीय होगा!',
+    beautifulJourney: 'इस खूबसूरत 10-दिन की Vietnam यात्रा में, Hanoi की ऐतिहासिक सड़कों से Ha Long Bay के शानदार नज़ारों तक, Ninh Binh की प्राचीन सुंदरता, और Hoi An के मनमोहक लालटेन से Da Nang के तटीय आकर्षण तक। यह वास्तव में अविस्मरणीय होगा!',
     viewDayPlans: 'हमारे दिन की योजना देखें',
     activities: 'गतिविधियाँ',
     things: 'चीजें',
@@ -170,8 +170,8 @@ export const translations = {
     breathtakingMoments: 'Ha Long Bay में और भी दिलकश पल',
     charmingHoiAn: 'दक्षिण में सुंदर शहर Hoi An के लिए उड़ान',
     magicalLanterns: 'Hoi An में जादुई लालटेन और नदी किनारे का आकर्षण',
-    vibrantHoChiMinh: 'Hoi An से जीवंत Ho Chi Minh City तक',
-    bustlingEnergy: 'Saigon की हलचल भरी ऊर्जा की खोज',
+    vibrantDaNang: 'Hoi An से जीवंत Da Nang तक',
+    bustlingEnergy: 'Da Nang के समुद्र तट और Ba Na Hills की खोज',
     finalDay: 'हमारा अंतिम दिन - हर पल को संजोते हुए',
     wonderfulDay: 'एक और सुंदर दिन हमारा इंतज़ार कर रहा है!'
   }

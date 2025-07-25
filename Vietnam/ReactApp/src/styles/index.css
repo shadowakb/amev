@@ -16,44 +16,66 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
   color: var(--color-text);
   background-color: var(--color-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  text-rendering: optimizeLegibility;
 }
 
-/* CSS Custom Properties */
+/* Modern Travel App Design System */
 :root {
-  /* Colors - More vibrant and fun! */
-  --color-primary: #FF6B6B;
-  --color-primary-hover: #FF5252;
-  --color-primary-light: rgba(255, 107, 107, 0.1);
-  --color-secondary: #4ECDC4;
-  --color-accent: #45B7D1;
-  --color-tertiary: #FFA726;
-  --color-success: #66BB6A;
+  /* Contemporary Color Palette - Inspired by Airbnb & Modern Travel Platforms */
+  --color-primary: #FF385C;
+  --color-primary-hover: #E31C5F;
+  --color-primary-light: rgba(255, 56, 92, 0.08);
+  --color-primary-dark: #C13584;
+
+  --color-secondary: #00A699;
+  --color-secondary-hover: #008A80;
+  --color-secondary-light: rgba(0, 166, 153, 0.08);
+
+  --color-accent: #FFC72C;
+  --color-accent-hover: #E6B800;
+  --color-accent-light: rgba(255, 199, 44, 0.08);
+
+  --color-tertiary: #0070F3;
+  --color-success: #00A699;
+  --color-warning: #FFC72C;
+  --color-error: #FF385C;
+  --color-info: #0070F3;
+
+  /* Sophisticated Background System */
+  --color-background: #FFFFFF;
+  --color-background-secondary: #F7F7F7;
+  --color-background-tertiary: #F0F0F0;
+  --color-surface: #FFFFFF;
+  --color-surface-secondary: #FAFAFA;
+  --color-surface-elevated: #FFFFFF;
+
+  /* Professional Text Hierarchy */
+  --color-text: #222222;
+  --color-text-primary: #000000;
+  --color-text-secondary: #717171;
+  --color-text-muted: #B0B0B0;
+  --color-text-inverse: #FFFFFF;
+
+  /* Refined Border System */
+  --color-border: #DDDDDD;
+  --color-border-light: #EBEBEB;
+  --color-border-dark: #B0B0B0;
+  --color-border-focus: #FF385C;
   
-  --color-background: #FAFBFC;
-  --color-surface: #ffffff;
-  --color-surface-secondary: #F8F9FA;
-  
-  --color-text: #2C3E50;
-  --color-text-secondary: #546E7A;
-  --color-text-muted: #90A4AE;
-  
-  --color-border: #E1E8ED;
-  --color-border-light: #F5F8FA;
-  
-  --color-warning: #FFA726;
-  --color-error: #EF5350;
-  --color-info: #42A5F5;
-  
-  /* Fun gradients */
-  --gradient-primary: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
-  --gradient-secondary: linear-gradient(135deg, #45B7D1 0%, #FFA726 100%);
-  --gradient-accent: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* Modern Gradient System */
+  --gradient-primary: linear-gradient(135deg, #FF385C 0%, #C13584 100%);
+  --gradient-secondary: linear-gradient(135deg, #00A699 0%, #0070F3 100%);
+  --gradient-accent: linear-gradient(135deg, #FFC72C 0%, #FF385C 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(255, 56, 92, 0.9) 0%, rgba(193, 53, 132, 0.9) 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%);
   
   /* Spacing */
   --space-1: 0.25rem;
@@ -68,7 +90,10 @@ body {
   --space-16: 4rem;
   --space-20: 5rem;
   
-  /* Typography */
+  /* Modern Typography System */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --font-family-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -77,19 +102,27 @@ body {
   --font-size-2xl: 1.5rem;
   --font-size-3xl: 1.875rem;
   --font-size-4xl: 2.25rem;
-  
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+
+  --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
   
-  /* Shadows - More dramatic */
-  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-  --shadow-base: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  --shadow-fun: 0 20px 40px -14px rgba(255, 107, 107, 0.4);
+  /* Professional Shadow System */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --shadow-floating: 0 12px 24px rgba(0, 0, 0, 0.15);
+  --shadow-primary: 0 4px 14px 0 rgba(255, 56, 92, 0.39);
   
   /* Border radius */
   --radius-sm: 0.375rem;
@@ -100,10 +133,12 @@ body {
   --radius-2xl: 2rem;
   --radius-full: 9999px;
   
-  /* Transitions */
-  --transition-fast: 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Smooth Transition System */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 350ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-smooth: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   
   /* Z-index */
   --z-dropdown: 1000;
@@ -118,6 +153,22 @@ body {
   --sidebar-width: 300px;
   --header-height: 180px;
   --footer-height: 100px;
+}
+
+/* Modern Typography Utilities */
+.font-serif {
+  font-family: var(--font-family-serif);
+}
+
+.font-sans {
+  font-family: var(--font-family-sans);
+}
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Utility Classes */
@@ -150,13 +201,26 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
-/* Smooth Animations */
+/* Modern Micro-Interactions */
 * {
-  transition: color var(--transition-fast), 
-              background-color var(--transition-fast), 
-              border-color var(--transition-fast), 
+  transition: color var(--transition-fast),
+              background-color var(--transition-fast),
+              border-color var(--transition-fast),
               transform var(--transition-fast),
-              opacity var(--transition-fast);
+              opacity var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Modern Focus States */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 
 /* Links */

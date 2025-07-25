@@ -15,10 +15,12 @@ const Overview = () => {
     if (location.includes('Flight') || location.includes('In Flight')) return '✈️';
     if (location.includes('Hanoi')) return '🏮';
     if (location.includes('Ha Long')) return '🏝️';
+    if (location.includes('Ninh Binh')) return '⛰️';
     if (location.includes('Hoi An')) return '🏮';
-    if (location.includes('Ho Chi Minh') || location.includes('Saigon')) return '🏙️';
-    if (location.includes('Mekong')) return '🚤';
+    if (location.includes('Da Nang')) return '🏖️';
+    if (location.includes('Ba Na Hills')) return '🌉';
     if (location.includes('Delhi')) return '🇮🇳';
+    if (location.includes('Una')) return '🚂';
     return '📍';
   };
 
@@ -31,7 +33,7 @@ const Overview = () => {
       5: t('breathtakingMoments'),
       6: t('charmingHoiAn'),
       7: t('magicalLanterns'),
-      8: t('vibrantHoChiMinh'),
+      8: t('vibrantDaNang'),
       9: t('bustlingEnergy'),
       10: t('finalDay')
     };
