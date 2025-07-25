@@ -1,13 +1,11 @@
 {
   "files": {
-    "main.css": "/amev/static/css/main.f543a333.css",
-    "main.js": "/amev/static/js/main.a3ad6703.js",
-    "index.html": "/amev/index.html",
-    "main.f543a333.css.map": "/amev/static/css/main.f543a333.css.map",
-    "main.a3ad6703.js.map": "/amev/static/js/main.a3ad6703.js.map"
+    "main.css": "/amev/static/css/main.58bb2b75.css",
+    "main.js": "/amev/static/js/main.a2bed848.js",
+    "index.html": "/amev/index.html"
   },
   "entrypoints": [
-    "static/css/main.f543a333.css",
-    "static/js/main.a3ad6703.js"
+    "static/css/main.58bb2b75.css",
+    "static/js/main.a2bed848.js"
   ]
 }
