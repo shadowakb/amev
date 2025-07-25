@@ -14,9 +14,36 @@ const DayView = () => {
   const dayData = itineraryData.find(day => day.day === parseInt(dayNumber));
   
   useEffect(() => {
-    // Set initial location for map
+    // Set initial location for map with smart prioritization
     if (dayData && dayData.keyLocations && dayData.keyLocations.length > 0) {
-      setSelectedLocation(dayData.keyLocations[0]);
+      let prioritizedLocation = null;
+      
+      // For days in Hanoi (2, 3), prioritize Hanoi locations
+      if ([2, 3].includes(dayData.day)) {
+        prioritizedLocation = dayData.keyLocations.find(loc => 
+          loc.name.includes('Hanoi') || loc.name.includes('Old Quarter') || loc.name.includes('Water Puppet')
+        );
+      }
+      
+      // For Day 4 (Ninh Binh tour), prioritize Ninh Binh locations
+      if (dayData.day === 4) {
+        prioritizedLocation = dayData.keyLocations.find(loc => 
+          loc.name.includes('Ninh Binh') || loc.name.includes('Hoa Lu') || loc.name.includes('Trang An') || loc.name.includes('Mua Cave')
+        );
+      }
+      
+      // For hotel check-in days (1, 2, 5, 7, 9), prioritize hotels if no other priority set
+      if (!prioritizedLocation && [1, 2, 5, 7, 9].includes(dayData.day)) {
+        prioritizedLocation = dayData.keyLocations.find(loc => loc.type === 'hotel');
+      }
+      
+      // For touring days (6, 8), prioritize landmarks/attractions
+      if (!prioritizedLocation && [6, 8].includes(dayData.day)) {
+        prioritizedLocation = dayData.keyLocations.find(loc => loc.type === 'landmark');
+      }
+      
+      // Fallback to first location
+      setSelectedLocation(prioritizedLocation || dayData.keyLocations[0]);
     }
   }, [dayData]);
 

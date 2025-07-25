@@ -22,22 +22,52 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&h=250&fit=crop', 
-        alt_en: 'Beautiful Hoan Kiem Lake with the iconic Turtle Tower at sunset', 
-        src_hi: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=400&h=250&fit=crop', 
-        alt_hi: 'सूर्यास्त के समय प्रतिष्ठित कछुआ टॉवर के साथ सुंदर होन कीम झील' 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Hoan+Kiem+Lake+Sunset', 
+        alt_en: 'Hoan Kiem Lake at sunset with Turtle Tower reflection', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Hoan+Kiem+Lake+Sunset', 
+        alt_hi: 'सूर्यास्त के समय Turtle Tower के reflection के साथ Hoan Kiem Lake' 
       },
       { 
-        src_en: 'https://images.unsplash.com/photo-1559592413-7cec4d0d2c60?w=400&h=250&fit=crop', 
-        alt_en: 'The famous red Huc Bridge leading to Ngoc Son Temple', 
-        src_hi: 'https://images.unsplash.com/photo-1559592413-7cec4d0d2c60?w=400&h=250&fit=crop', 
-        alt_hi: 'प्रसिद्ध लाल Huc Bridge जो Ngoc Son Temple की ओर जाता है' 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Huc+Bridge+Red', 
+        alt_en: 'The iconic red Huc Bridge leading to Ngoc Son Temple', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Huc+Bridge+Red', 
+        alt_hi: 'Ngoc Son Temple की ओर जाने वाला प्रतिष्ठित लाल Huc Bridge' 
       },
       { 
-        src_en: 'https://images.unsplash.com/photo-1540629678110-62a8420f1cd8?w=400&h=250&fit=crop', 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Old+Quarter+Streets', 
         alt_en: 'Hanoi Old Quarter bustling streets near the lake', 
-        src_hi: 'https://images.unsplash.com/photo-1540629678110-62a8420f1cd8?w=400&h=250&fit=crop', 
-        alt_hi: 'झील के पास हनोई Old Quarter की हलचल भरी सड़कें' 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Old+Quarter+Streets', 
+        alt_hi: 'झील के पास Hanoi Old Quarter की हलचल भरी सड़कें' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Ngoc+Son+Temple', 
+        alt_en: 'Ngoc Son Temple pagoda architecture on the lake', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Ngoc+Son+Temple', 
+        alt_hi: 'झील पर Ngoc Son Temple का pagoda architecture' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/9B59B6/FFFFFF?text=Street+Vendors', 
+        alt_en: 'Local vendors and street life around Hoan Kiem Lake', 
+        src_hi: 'https://placehold.co/400x250/9B59B6/FFFFFF?text=Street+Vendors', 
+        alt_hi: 'Hoan Kiem Lake के आसपास local vendors और street life' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Morning+Tai+Chi', 
+        alt_en: 'Early morning tai chi exercises by the lake', 
+        src_hi: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Morning+Tai+Chi', 
+        alt_hi: 'झील के किनारे सुबह की tai chi exercises' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/34495E/FFFFFF?text=Night+Illumination', 
+        alt_en: 'Night illumination of Hoan Kiem Lake with city lights', 
+        src_hi: 'https://placehold.co/400x250/34495E/FFFFFF?text=Night+Illumination', 
+        alt_hi: 'शहर की रोशनी के साथ Hoan Kiem Lake की रात्रि प्रकाश व्यवस्था' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Traditional+Architecture', 
+        alt_en: 'Traditional Vietnamese architecture surrounding the lake', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Traditional+Architecture', 
+        alt_hi: 'झील के आसपास traditional Vietnamese architecture' 
       }
     ]
   },
@@ -64,16 +94,52 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop', 
-        alt_en: 'Colorful water puppets performing on stage', 
-        src_hi: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop', 
-        alt_hi: 'मंच पर प्रदर्शन करती रंगीन water puppets' 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Water+Puppets+Show', 
+        alt_en: 'Colorful water puppets performing traditional stories', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Water+Puppets+Show', 
+        alt_hi: 'पारंपरिक कहानियों का प्रदर्शन करती रंगीन water puppets' 
       },
       { 
-        src_en: 'https://images.unsplash.com/photo-1559592413-7cec4d0d2c60?w=400&h=250&fit=crop', 
-        alt_en: 'Traditional Vietnamese water puppet show setup', 
-        src_hi: 'https://images.unsplash.com/photo-1559592413-7cec4d0d2c60?w=400&h=250&fit=crop', 
-        alt_hi: 'पारंपरिक Vietnamese water puppet show का setup' 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Theatre+Stage', 
+        alt_en: 'Traditional Vietnamese water puppet show stage setup', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Theatre+Stage', 
+        alt_hi: 'पारंपरिक Vietnamese water puppet show का stage setup' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Puppeteers+Behind', 
+        alt_en: 'Puppeteers controlling water puppets behind bamboo screen', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Puppeteers+Behind', 
+        alt_hi: 'बांस की screen के पीछे water puppets को control करते puppeteers' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Traditional+Music', 
+        alt_en: 'Traditional musical instruments used in water puppet shows', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Traditional+Music', 
+        alt_hi: 'Water puppet shows में इस्तेमाल होने वाले traditional musical instruments' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/3498DB/FFFFFF?text=Theatre+Exterior', 
+        alt_en: 'Thang Long Theatre exterior and entrance', 
+        src_hi: 'https://placehold.co/400x250/3498DB/FFFFFF?text=Theatre+Exterior', 
+        alt_hi: 'Thang Long Theatre का exterior और entrance' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Audience+Enjoying', 
+        alt_en: 'Audience enjoying the traditional water puppet performance', 
+        src_hi: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Audience+Enjoying', 
+        alt_hi: 'पारंपरिक water puppet performance का आनंद लेते audience' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E67E22/FFFFFF?text=Dragon+Puppet', 
+        alt_en: 'Dragon puppet dancing on water with splashes', 
+        src_hi: 'https://placehold.co/400x250/E67E22/FFFFFF?text=Dragon+Puppet', 
+        alt_hi: 'पानी के छींटों के साथ पानी पर नाचती dragon puppet' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/9B59B6/FFFFFF?text=Traditional+Costumes', 
+        alt_en: 'Traditional Vietnamese costumes and cultural elements', 
+        src_hi: 'https://placehold.co/400x250/9B59B6/FFFFFF?text=Traditional+Costumes', 
+        alt_hi: 'पारंपरिक Vietnamese costumes और cultural elements' 
       }
     ]
   },
@@ -82,28 +148,70 @@ export const locationData = {
     name: 'Sung Sot Cave, Ha Long Bay',
     query: 'Sung Sot Cave, Ha Long Bay, Vietnam',
     type: 'landmark',
-    description: 'One of the most famous and largest caves in Ha Long Bay, known for its impressive stalactites and stalagmites.',
-    description_hi: 'हा लॉन्ग खाड़ी की सबसे प्रसिद्ध और सबसे बड़ी गुफाओं में से एक, जो अपनी प्रभावशाली स्टैलेक्टाइट्स और स्टैलेग्माइट्स के लिए जानी जाती है।',
+    description: 'One of the most spectacular caves in Ha Long Bay! Marvel at incredible stalactites and stalagmites in this natural wonder 🏞️',
+    description_hi: 'Ha Long Bay की सबसे शानदार गुफाओं में से एक! इस प्राकृतिक आश्चर्य में अविश्वसनीय stalactites और stalagmites को देखें 🏞️',
     highlights_en: [
-      'We can visit year-round. August offers relatively dry weather and low humidity.',
-      'Explore impressive stalagmites and stalactites on a guided tour.'
+      'August is perfect for visiting - relatively dry weather and comfortable temperatures',
+      'Guided tours reveal the fascinating geological formations and local legends',
+      'The cave has two main chambers, each more spectacular than the last!',
+      'Perfect for photography - the natural lighting is magical ✨',
+      'Accessible by boat from your Ha Long Bay cruise'
     ],
     highlights_hi: [
-      'हम पूरे साल दौरा कर सकते हैं। अगस्त अपेक्षाकृत शुष्क मौसम और कम आर्द्रता प्रदान करता है।',
-      'एक निर्देशित दौरे पर प्रभावशाली स्टैलेग्माइट्स और स्टैलेक्टाइट्स का अन्वेषण करें।'
+      'अगस्त visit के लिए perfect है - अपेक्षाकृत सूखा मौसम और comfortable temperatures',
+      'Guided tours से fascinating geological formations और local legends पता चलती हैं',
+      'गुफा में दो मुख्य chambers हैं, हर एक पिछले से ज्यादा spectacular!',
+      'Photography के लिए perfect - natural lighting जादुई है ✨',
+      'आपकी Ha Long Bay cruise से boat द्वारा accessible'
     ],
     images: [
       { 
-        src_en: 'https://placehold.co/400x250/C8E6C9/000?text=Sung+Sot+Cave+1', 
-        alt_en: 'Inside Sung Sot Cave', 
-        src_hi: 'https://placehold.co/400x250/C8E6C9/000?text=सुंग+सोट+गुफा+1', 
-        alt_hi: 'सुंग सोट गुफा के अंदर' 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Stalactites+Inside', 
+        alt_en: 'Magnificent stalactites inside Sung Sot Cave', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Stalactites+Inside', 
+        alt_hi: 'Sung Sot Cave के अंदर शानदार stalactites' 
       },
       { 
-        src_en: 'https://placehold.co/400x250/BBDEFB/000?text=Sung+Sot+Cave+2', 
-        alt_en: 'Entrance to Sung Sot Cave', 
-        src_hi: 'https://placehold.co/400x250/BBDEFB/000?text=सुंग+सोट+गुफा+2', 
-        alt_hi: 'सुंग सोट गुफा का प्रवेश द्वार' 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Entrance+Limestone', 
+        alt_en: 'Entrance to Sung Sot Cave with limestone formations', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Entrance+Limestone', 
+        alt_hi: 'Limestone formations के साथ Sung Sot Cave का entrance' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Illuminated+Cave', 
+        alt_en: 'Illuminated cave chambers with dramatic rock formations', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Illuminated+Cave', 
+        alt_hi: 'Dramatic rock formations के साथ illuminated cave chambers' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Tourists+Exploring', 
+        alt_en: 'Tourists exploring the massive cave interior', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Tourists+Exploring', 
+        alt_hi: 'Massive cave interior की खोज करते tourists' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Natural+Limestone', 
+        alt_en: 'Natural limestone pillars and underground formations', 
+        src_hi: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Natural+Limestone', 
+        alt_hi: 'Natural limestone pillars और underground formations' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Colorful+Lighting', 
+        alt_en: 'Colorful lighting highlighting cave\'s natural beauty', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Colorful+Lighting', 
+        alt_hi: 'Cave की natural beauty को highlight करती colorful lighting' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Ancient+Stalactites', 
+        alt_en: 'Ancient stalactites creating cathedral-like spaces', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Ancient+Stalactites', 
+        alt_hi: 'Cathedral-like spaces बनाती ancient stalactites' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Boat+Approach', 
+        alt_en: 'Boat approach to Sung Sot Cave through Ha Long Bay', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Boat+Approach', 
+        alt_hi: 'Ha Long Bay के through Sung Sot Cave तक boat approach' 
       }
     ]
   },
@@ -112,30 +220,70 @@ export const locationData = {
     name: 'Ti Top Island, Ha Long Bay',
     query: 'Ti Top Island, Ha Long Bay, Vietnam',
     type: 'landmark',
-    description: 'A popular island in Ha Long Bay with a beautiful beach and a viewpoint offering panoramic bay vistas.',
-    description_hi: 'हा लॉन्ग खाड़ी में एक लोकप्रिय द्वीप, जिसमें एक सुंदर समुद्र तट और मनोरम खाड़ी दृश्यों की पेशकश करने वाला एक दृष्टिकोण है।',
+    description: 'A stunning island paradise with a beautiful beach and the best panoramic views of Ha Long Bay! Perfect for photos 📸',
+    description_hi: 'सुंदर beach और Ha Long Bay के बेहतरीन panoramic views के साथ एक शानदार island paradise! Photos के लिए perfect 📸',
     highlights_en: [
-      'Offers a lovely sandy beach for swimming.',
-      'Climb to the peak for breathtaking panoramic views of the bay (great for photos!).',
-      'In August, expect more domestic and Asian tourists as it\'s a popular time for them.'
+      'Gorgeous white sandy beach perfect for swimming and relaxation 🏖️',
+      'Climb to the viewpoint for breathtaking 360° views of Ha Long Bay',
+      'August is great weather for beach activities and hiking',
+      'Less crowded in early morning or late afternoon - perfect timing!',
+      'Bring your camera - this is the most Instagrammable spot in Ha Long Bay!'
     ],
     highlights_hi: [
-      'तैराकी के लिए एक सुंदर रेतीला समुद्र तट प्रदान करता है।',
-      'खाड़ी के लुभावने मनोरम दृश्यों के लिए चोटी पर चढ़ें (फोटो के लिए शानदार!)।',
-      'अगस्त में, अधिक घरेलू और एशियाई पर्यटकों की अपेक्षा करें क्योंकि यह उनके लिए एक लोकप्रिय समय है।'
+      'Swimming और relaxation के लिए perfect gorgeous white sandy beach 🏖️',
+      'Ha Long Bay के breathtaking 360° views के लिए viewpoint तक climb करें',
+      'अगस्त beach activities और hiking के लिए great weather है',
+      'सुबह जल्दी या दोपहर देर में कम crowded - perfect timing!',
+      'अपना camera साथ लाएं - यह Ha Long Bay का सबसे Instagrammable spot है!'
     ],
     images: [
       { 
-        src_en: 'https://placehold.co/400x250/F8BBd8/000?text=Ti+Top+Island+1', 
-        alt_en: 'Ti Top Island Beach', 
-        src_hi: 'https://placehold.co/400x250/F8BBd8/000?text=टी+टॉप+द्वीप+1', 
-        alt_hi: 'टी टॉप द्वीप समुद्र तट' 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Ti+Top+Beach', 
+        alt_en: 'Ti Top Island pristine white sand beach', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Ti+Top+Beach', 
+        alt_hi: 'Ti Top Island की pristine white sand beach' 
       },
       { 
-        src_en: 'https://placehold.co/400x250/E1BEE7/000?text=Ti+Top+Island+View', 
-        alt_en: 'Panoramic view from Ti Top Island', 
-        src_hi: 'https://placehold.co/400x250/E1BEE7/000?text=टी+टॉप+द्वीप+दृश्य', 
-        alt_hi: 'टी टॉप द्वीप से मनोरम दृश्य' 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Ti+Top+Summit', 
+        alt_en: 'Panoramic view of Ha Long Bay from Ti Top summit', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Ti+Top+Summit', 
+        alt_hi: 'Ti Top summit से Ha Long Bay का panoramic view' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Limestone+Karsts', 
+        alt_en: 'Limestone karsts surrounding Ti Top Island', 
+        src_hi: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Limestone+Karsts', 
+        alt_hi: 'Ti Top Island के आसपास limestone karsts' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Crystal+Clear+Waters', 
+        alt_en: 'Crystal clear turquoise waters around the island', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Crystal+Clear+Waters', 
+        alt_hi: 'Island के आसपास crystal clear turquoise waters' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Hiking+Trail', 
+        alt_en: 'Hiking trail to Ti Top Island viewpoint', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Hiking+Trail', 
+        alt_hi: 'Ti Top Island viewpoint का hiking trail' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Beach+Activities', 
+        alt_en: 'Tourists enjoying beach activities on Ti Top', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Beach+Activities', 
+        alt_hi: 'Ti Top पर beach activities का आनंद लेते tourists' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Sunset+View', 
+        alt_en: 'Sunset view from Ti Top Island overlooking Ha Long Bay', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Sunset+View', 
+        alt_hi: 'Ha Long Bay को देखते हुए Ti Top Island से sunset view' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Traditional+Boats', 
+        alt_en: 'Traditional Vietnamese boats anchored near Ti Top', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Traditional+Boats', 
+        alt_hi: 'Ti Top के पास anchored traditional Vietnamese boats' 
       }
     ]
   },
@@ -234,6 +382,700 @@ export const locationData = {
         alt_en: 'French Village at Ba Na Hills',
         src_hi: 'https://placehold.co/400x250/E8F5E8/000?text=बा+ना+हिल्स+फ्रेंच+विलेज',
         alt_hi: 'बा ना हिल्स में फ्रेंच विलेज'
+      }
+    ]
+  },
+
+  'Hoi An Ancient Town': {
+    name: 'Hoi An Ancient Town',
+    query: 'Hoi An Ancient Town, Hoi An, Vietnam',
+    type: 'landmark',
+    description: 'A magical UNESCO World Heritage Site with enchanting lanterns, ancient architecture, and riverside charm! The perfect place for evening strolls ✨',
+    description_hi: 'मनमोहक लालटेन, प्राचीन architecture, और नदी किनारे के आकर्षण के साथ एक जादुई UNESCO World Heritage Site! शाम की सैर के लिए perfect जगह ✨',
+    highlights_en: [
+      'August evenings are magical - perfect weather for lantern-lit walks along Thu Bon River 🏮',
+      'Famous Japanese Covered Bridge - over 400 years old and absolutely gorgeous!',
+      'Amazing traditional architecture with Chinese, Japanese, and Vietnamese influences',
+      'Best time to visit is evening when thousands of colorful lanterns light up the town',
+      'Perfect for photos - every corner is Instagram-worthy! 📸',
+      'Try the famous Cao Lau noodles and White Rose dumplings - only made here!',
+      'Shop for custom-tailored clothes - Hoi An\'s tailors are world-renowned',
+      'Take a lantern boat ride on Thu Bon River for the most romantic experience'
+    ],
+    highlights_hi: [
+      'अगस्त की शाम जादुई होती हैं - Thu Bon River के किनारे lantern-lit walks के लिए perfect मौसम 🏮',
+      'प्रसिद्ध Japanese Covered Bridge - 400+ साल पुराना और बिल्कुल gorgeous!',
+      'Chinese, Japanese, और Vietnamese influences के साथ अद्भुत traditional architecture',
+      'शाम में visit करना सबसे बेहतर है जब हजारों colorful lanterns पूरे शहर को रोशन करती हैं',
+      'Photos के लिए perfect - हर कोना Instagram-worthy है! 📸',
+      'प्रसिद्ध Cao Lau noodles और White Rose dumplings try करें - सिर्फ यहीं बनते हैं!',
+      'Custom-tailored कपड़ों की shopping करें - Hoi An के tailors world-renowned हैं',
+      'सबसे romantic experience के लिए Thu Bon River पर lantern boat ride लें'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Hoi+An+Lanterns', 
+        alt_en: 'Hoi An Ancient Town illuminated with colorful lanterns at night', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Hoi+An+Lanterns', 
+        alt_hi: 'रात में colorful lanterns से जगमगाता Hoi An Ancient Town' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Japanese+Covered+Bridge', 
+        alt_en: 'Famous Japanese Covered Bridge in Hoi An', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Japanese+Covered+Bridge', 
+        alt_hi: 'Hoi An का प्रसिद्ध Japanese Covered Bridge' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Traditional+Yellow+Buildings', 
+        alt_en: 'Traditional yellow buildings with red lanterns in Hoi An', 
+        src_hi: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Traditional+Yellow+Buildings', 
+        alt_hi: 'Hoi An में लाल लालटेन के साथ traditional पीली buildings' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Thu+Bon+River', 
+        alt_en: 'Thu Bon River with traditional boats and lantern reflections', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Thu+Bon+River', 
+        alt_hi: 'Traditional boats और lantern reflections के साथ Thu Bon River' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Ancient+Merchant+Houses', 
+        alt_en: 'Ancient merchant houses with traditional architecture', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Ancient+Merchant+Houses', 
+        alt_hi: 'Traditional architecture के साथ ancient merchant houses' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Bustling+Market', 
+        alt_en: 'Bustling market streets in Hoi An Ancient Town', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Bustling+Market', 
+        alt_hi: 'Hoi An Ancient Town की हलचल भरी market streets' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Lantern+Boat', 
+        alt_en: 'Lantern boat ride on Thu Bon River at sunset', 
+        src_hi: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Lantern+Boat', 
+        alt_hi: 'Sunset के समय Thu Bon River पर lantern boat ride' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Traditional+Woman', 
+        alt_en: 'Traditional Vietnamese woman selling lanterns in Hoi An', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Traditional+Woman', 
+        alt_hi: 'Hoi An में lanterns बेचती traditional Vietnamese महिला' 
+      }
+    ]
+  },
+
+  'Tra Que Vegetable Village, Hoi An': {
+    name: 'Tra Que Vegetable Village, Hoi An',
+    query: 'Tra Que Vegetable Village, Hoi An, Vietnam',
+    type: 'landmark',
+    description: 'A charming organic farming village where traditional Vietnamese agricultural methods are still practiced. Perfect for cycling tours and cooking classes! 🚴‍♀️',
+    description_hi: 'एक मनमोहक organic farming village जहाँ अभी भी traditional Vietnamese agricultural methods का प्रयोग होता है। Cycling tours और cooking classes के लिए perfect! 🚴‍♀️',
+    highlights_en: [
+      'Experience authentic Vietnamese village life and organic farming practices',
+      'Perfect for cycling tours through lush green rice paddies and vegetable fields 🌾',
+      'Learn traditional farming techniques that have been used for centuries',
+      'Great for cooking classes - harvest fresh vegetables and learn Vietnamese recipes!',
+      'August is harvest season - see the fields at their most beautiful',
+      'Meet friendly local farmers and learn about sustainable agriculture',
+      'Peaceful escape from the bustling Ancient Town - very relaxing',
+      'Amazing photography opportunities with rural landscapes'
+    ],
+    highlights_hi: [
+      'Authentic Vietnamese village life और organic farming practices का अनुभव करें',
+      'हरे-भरे rice paddies और vegetable fields के through cycling tours के लिए perfect 🌾',
+      'सदियों से इस्तेमाल होने वाली traditional farming techniques सीखें',
+      'Cooking classes के लिए बेहतरीन - fresh vegetables harvest करें और Vietnamese recipes सीखें!',
+      'अगस्त harvest season है - fields को उनके सबसे सुंदर रूप में देखें',
+      'दोस्ताना local farmers से मिलें और sustainable agriculture के बारे में जानें',
+      'Bustling Ancient Town से peaceful escape - बहुत आराम मिलता है',
+      'Rural landscapes के साथ photography के लिए amazing opportunities'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Lush+Vegetable+Fields', 
+        alt_en: 'Lush green vegetable fields in Tra Que Village', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Lush+Vegetable+Fields', 
+        alt_hi: 'Tra Que Village में हरे-भरे vegetable fields' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Local+Farmers', 
+        alt_en: 'Local farmers working in traditional vegetable gardens', 
+        src_hi: 'https://placehold.co/400x250/1ABC9C/FFFFFF?text=Local+Farmers', 
+        alt_hi: 'Traditional vegetable gardens में काम करते local farmers' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Cycling+Through+Paddies', 
+        alt_en: 'Cycling through rice paddies near Tra Que Village', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Cycling+Through+Paddies', 
+        alt_hi: 'Tra Que Village के पास rice paddies के through cycling' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Fresh+Herbs+Vegetables', 
+        alt_en: 'Fresh organic herbs and vegetables from Tra Que', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Fresh+Herbs+Vegetables', 
+        alt_hi: 'Tra Que से fresh organic herbs और vegetables' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Farming+Tools', 
+        alt_en: 'Traditional Vietnamese farming tools and methods', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Farming+Tools', 
+        alt_hi: 'Traditional Vietnamese farming tools और methods' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Cooking+Class', 
+        alt_en: 'Cooking class with fresh vegetables from Tra Que', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Cooking+Class', 
+        alt_hi: 'Tra Que की fresh vegetables के साथ cooking class' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Peaceful+Rural+Landscape', 
+        alt_en: 'Peaceful rural landscape around Tra Que Village', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Peaceful+Rural+Landscape', 
+        alt_hi: 'Tra Que Village के आसपास शांतिपूर्ण rural landscape' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Water+Buffalo', 
+        alt_en: 'Water buffalo in rice fields near Tra Que', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Water+Buffalo', 
+        alt_hi: 'Tra Que के पास rice fields में water buffalo' 
+      }
+    ]
+  },
+
+  'Oriental Suites Hotel & Spa, Hanoi': {
+    name: 'Oriental Suites Hotel & Spa, Hanoi',
+    query: 'Oriental Suites Hotel & Spa, Hanoi, Vietnam',
+    type: 'hotel',
+    description: 'Our comfortable hotel located in the heart of Hanoi\'s Old Quarter, offering easy access to attractions.',
+    description_hi: 'हनोई के ओल्ड क्वार्टर के केंद्र में स्थित हमारा आरामदायक होटल, आकर्षणों तक आसान पहुँच प्रदान करता है।',
+    highlights_en: [
+      'Located in the heart of Hanoi\'s Old Quarter',
+      'Easy walking access to Hoan Kiem Lake and major attractions',
+      'Traditional Vietnamese hospitality with modern amenities'
+    ],
+    highlights_hi: [
+      'हनोई के ओल्ड क्वार्टर के केंद्र में स्थित',
+      'Hoan Kiem Lake और प्रमुख आकर्षणों तक आसान पैदल पहुंच',
+      'आधुनिक सुविधाओं के साथ पारंपरिक वियतनामी आतिथ्य'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Hotel+Exterior', 
+        alt_en: 'Oriental Suites Hotel exterior in Hanoi Old Quarter', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Hotel+Exterior', 
+        alt_hi: 'Hanoi Old Quarter में Oriental Suites Hotel का exterior' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Hotel+Lobby', 
+        alt_en: 'Elegant hotel lobby with Vietnamese decor', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Hotel+Lobby', 
+        alt_hi: 'Vietnamese decor के साथ elegant hotel lobby' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Guest+Room', 
+        alt_en: 'Comfortable guest room with modern amenities', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Guest+Room', 
+        alt_hi: 'आधुनिक सुविधाओं के साथ आरामदायक guest room' 
+      }
+    ]
+  },
+
+  'Noi Bai International Airport (HAN)': {
+    name: 'Noi Bai International Airport (HAN)',
+    query: 'Noi Bai International Airport, Hanoi, Vietnam',
+    type: 'airport',
+    description: 'Hanoi\'s main international airport, located about 45 minutes from the city center.',
+    description_hi: 'हनोई का मुख्य अंतर्राष्ट्रीय हवाई अड्डा, शहर के केंद्र से लगभग 45 मिनट की दूरी पर स्थित है।',
+    highlights_en: [
+      'Modern international airport serving northern Vietnam',
+      'Multiple transportation options to city center',
+      'Duty-free shopping and dining facilities available'
+    ],
+    highlights_hi: [
+      'उत्तरी वियतनाम की सेवा करने वाला आधुनिक अंतर्राष्ट्रीय हवाई अड्डा',
+      'शहर के केंद्र तक कई परिवहन विकल्प',
+      'ड्यूटी-फ्री शॉपिंग और भोजन की सुविधाएं उपलब्ध'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Airport+Terminal', 
+        alt_en: 'Noi Bai Airport modern terminal building', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Airport+Terminal', 
+        alt_hi: 'Noi Bai Airport की आधुनिक terminal building' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Arrival+Hall', 
+        alt_en: 'International arrivals hall', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Arrival+Hall', 
+        alt_hi: 'अंतर्राष्ट्रीय arrivals hall' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Airport+Transport', 
+        alt_en: 'Transportation options from airport to city', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Airport+Transport', 
+        alt_hi: 'Airport से शहर तक के transportation options' 
+      }
+    ]
+  },
+
+  'Hanoi Old Quarter': {
+    name: 'Hanoi Old Quarter',
+    query: 'Hanoi Old Quarter, Hanoi, Vietnam',
+    type: 'landmark',
+    description: 'The historic commercial center of Hanoi with narrow streets, traditional architecture, and vibrant street life.',
+    description_hi: 'हनोई का ऐतिहासिक व्यावसायिक केंद्र जिसमें संकरी गलियां, पारंपरिक वास्तुकला और जीवंत सड़क जीवन है।',
+    highlights_en: [
+      'Explore the famous 36 Streets, each traditionally specializing in different crafts',
+      'Experience authentic Vietnamese street food and local markets',
+      'See traditional tube houses and French colonial architecture',
+      'Perfect for walking tours and cultural immersion',
+      'Vibrant nightlife and weekend night markets'
+    ],
+    highlights_hi: [
+      'प्रसिद्ध 36 Streets का अन्वेषण करें, हर एक पारंपरिक रूप से अलग-अलग शिल्प में विशेषज्ञ',
+      'प्रामाणिक Vietnamese street food और local markets का अनुभव करें',
+      'पारंपरिक tube houses और French colonial architecture देखें',
+      'Walking tours और cultural immersion के लिए perfect',
+      'जीवंत nightlife और weekend night markets'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Old+Quarter+Streets', 
+        alt_en: 'Narrow bustling streets of Hanoi Old Quarter', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Old+Quarter+Streets', 
+        alt_hi: 'Hanoi Old Quarter की संकरी हलचल भरी सड़कें' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Street+Food', 
+        alt_en: 'Vietnamese street food vendors in Old Quarter', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Street+Food', 
+        alt_hi: 'Old Quarter में Vietnamese street food vendors' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Traditional+Architecture', 
+        alt_en: 'Traditional tube houses and colonial buildings', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Traditional+Architecture', 
+        alt_hi: 'पारंपरिक tube houses और colonial buildings' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Local+Markets', 
+        alt_en: 'Bustling local markets with vendors and goods', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Local+Markets', 
+        alt_hi: 'Vendors और goods के साथ हलचल भरे local markets' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Night+Market', 
+        alt_en: 'Weekend night market atmosphere in Old Quarter', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Night+Market', 
+        alt_hi: 'Old Quarter में weekend night market का माहौल' 
+      }
+    ]
+  },
+
+  'New Delhi Railway Station': {
+    name: 'New Delhi Railway Station',
+    query: 'New Delhi Railway Station, India',
+    type: 'travelHub',
+    description: 'One of the busiest railway stations in India, serving as a major transportation hub.',
+    description_hi: 'भारत के सबसे व्यस्त रेलवे स्टेशनों में से एक, जो एक प्रमुख परिवहन केंद्र के रूप में कार्य करता है।',
+    highlights_en: [
+      'Major railway junction connecting northern India',
+      'Gateway to Delhi for travelers from across India',
+      'Multiple transportation options to airport'
+    ],
+    highlights_hi: [
+      'उत्तरी भारत को जोड़ने वाला प्रमुख रेलवे जंक्शन',
+      'भारत भर के यात्रियों के लिए दिल्ली का प्रवेश द्वार',
+      'एयरपोर्ट तक कई परिवहन विकल्प'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Railway+Station', 
+        alt_en: 'New Delhi Railway Station exterior', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Railway+Station', 
+        alt_hi: 'New Delhi Railway Station का exterior' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Platform+View', 
+        alt_en: 'Busy railway platforms with trains', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Platform+View', 
+        alt_hi: 'ट्रेनों के साथ व्यस्त railway platforms' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Departure+Board', 
+        alt_en: 'Train departure information board', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Departure+Board', 
+        alt_hi: 'ट्रेन departure information board' 
+      }
+    ]
+  },
+
+  'Indira Gandhi International Airport (DEL)': {
+    name: 'Indira Gandhi International Airport (DEL)',
+    query: 'Indira Gandhi International Airport, New Delhi, India',
+    type: 'airport',
+    description: 'India\'s largest airport, serving as the primary international gateway to the country.',
+    description_hi: 'भारत का सबसे बड़ा हवाई अड्डा, जो देश के लिए प्राथमिक अंतर्राष्ट्रीय प्रवेश द्वार के रूप में कार्य करता है।',
+    highlights_en: [
+      'Major international hub for flights to Southeast Asia',
+      'Modern facilities with shopping and dining options',
+      'Terminal 3 is one of the world\'s largest airport terminals'
+    ],
+    highlights_hi: [
+      'दक्षिण-पूर्व एशिया की उड़ानों के लिए प्रमुख अंतर्राष्ट्रीय hub',
+      'शॉपिंग और dining options के साथ आधुनिक सुविधाएं',
+      'Terminal 3 दुनिया के सबसे बड़े airport terminals में से एक है'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Airport+Exterior', 
+        alt_en: 'Indira Gandhi International Airport exterior', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Airport+Exterior', 
+        alt_hi: 'Indira Gandhi International Airport का exterior' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Terminal+Interior', 
+        alt_en: 'Modern terminal interior with shops and restaurants', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Terminal+Interior', 
+        alt_hi: 'दुकानों और रेस्तरां के साथ आधुनिक terminal interior' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Departure+Gate', 
+        alt_en: 'International departure gates and boarding area', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Departure+Gate', 
+        alt_hi: 'अंतर्राष्ट्रीय departure gates और boarding area' 
+      }
+    ]
+  },
+
+  'Royal Riverside Hoi An Hotel & Spa': {
+    name: 'Royal Riverside Hoi An Hotel & Spa',
+    query: 'Royal Riverside Hoi An Hotel & Spa, Hoi An, Vietnam',
+    type: 'hotel',
+    description: 'Our riverside hotel in Hoi An, offering beautiful river views and easy access to the Ancient Town.',
+    description_hi: 'होई एन में हमारा नदी किनारे का होटल, जो सुंदर नदी के दृश्य और प्राचीन शहर तक आसान पहुंच प्रदान करता है।',
+    highlights_en: [
+      'Stunning riverside location with river views from rooms',
+      'Walking distance to Hoi An Ancient Town UNESCO site',
+      'Full-service spa and wellness facilities',
+      'Beautiful swimming pool overlooking the river',
+      'Authentic Vietnamese hospitality with modern comfort'
+    ],
+    highlights_hi: [
+      'Rooms से river views के साथ शानदार riverside location',
+      'Hoi An Ancient Town UNESCO site तक walking distance',
+      'Full-service spa और wellness facilities',
+      'नदी को देखते हुए सुंदर swimming pool',
+      'आधुनिक आराम के साथ प्रामाणिक Vietnamese आतिथ्य'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Riverside+Hotel+Exterior', 
+        alt_en: 'Royal Riverside Hotel exterior with river views', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Riverside+Hotel+Exterior', 
+        alt_hi: 'River views के साथ Royal Riverside Hotel का exterior' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=River+View+Room', 
+        alt_en: 'Hotel room with beautiful river views', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=River+View+Room', 
+        alt_hi: 'सुंदर river views के साथ hotel room' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Riverside+Pool', 
+        alt_en: 'Swimming pool overlooking the river', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Riverside+Pool', 
+        alt_hi: 'नदी को देखते हुए swimming pool' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Hotel+Spa', 
+        alt_en: 'Relaxing spa facilities at the hotel', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Hotel+Spa', 
+        alt_hi: 'Hotel में आरामदायक spa facilities' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Hotel+Restaurant', 
+        alt_en: 'Riverside restaurant with Vietnamese cuisine', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Hotel+Restaurant', 
+        alt_hi: 'Vietnamese cuisine के साथ riverside restaurant' 
+      }
+    ]
+  },
+
+  'Hoa Lu Ancient Capital, Ninh Binh': {
+    name: 'Hoa Lu Ancient Capital, Ninh Binh',
+    query: 'Hoa Lu Ancient Capital, Ninh Binh, Vietnam',
+    type: 'landmark',
+    description: 'The historic capital of Vietnam in the 10th and 11th centuries, featuring ancient temples.',
+    description_hi: '10वीं और 11वीं शताब्दी में वियतनाम की ऐतिहासिक राजधानी, जिसमें प्राचीन मंदिर हैं।',
+    highlights_en: [
+      'Ancient capital of Vietnam (968-1010 AD)',
+      'Beautiful temples dedicated to Emperor Dinh and Le dynasties',
+      'Stunning karst landscape surroundings',
+      'Rich Vietnamese history and culture',
+      'Perfect for exploring ancient architecture'
+    ],
+    highlights_hi: [
+      'वियतनाम की प्राचीन राजधानी (968-1010 AD)',
+      'सम्राट दिन्ह और ले राजवंशों को समर्पित सुंदर मंदिर',
+      'शानदार karst landscape का परिवेश',
+      'समृद्ध Vietnamese इतिहास और संस्कृति',
+      'प्राचीन वास्तुकला की खोज के लिए perfect'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Ancient+Temple', 
+        alt_en: 'Ancient temple at Hoa Lu with traditional architecture', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Ancient+Temple', 
+        alt_hi: 'पारंपरिक वास्तुकला के साथ Hoa Lu का प्राचीन मंदिर' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Temple+Courtyard', 
+        alt_en: 'Temple courtyard with ancient stone structures', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Temple+Courtyard', 
+        alt_hi: 'प्राचीन पत्थर की संरचनाओं के साथ मंदिर का आंगन' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Karst+Mountains', 
+        alt_en: 'Dramatic karst mountains surrounding Hoa Lu', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Karst+Mountains', 
+        alt_hi: 'Hoa Lu के चारों ओर नाटकीय karst पहाड़' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Historic+Statues', 
+        alt_en: 'Historic statues and artifacts in the temples', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Historic+Statues', 
+        alt_hi: 'मंदिरों में ऐतिहासिक मूर्तियां और artifacts' 
+      }
+    ]
+  },
+
+  'Trang An Scenic Landscape, Ninh Binh': {
+    name: 'Trang An Scenic Landscape, Ninh Binh',
+    query: 'Trang An Scenic Landscape, Ninh Binh, Vietnam',
+    type: 'landmark',
+    description: 'A UNESCO World Heritage site known for its spectacular boat tours through caves and karst landscapes.',
+    description_hi: 'एक यूनेस्को विश्व धरोहर स्थल जो गुफाओं और karst landscapes के माध्यम से शानदार नाव यात्राओं के लिए जाना जाता है।',
+    highlights_en: [
+      'UNESCO World Heritage site (mixed cultural and natural)',
+      'Boat tour through stunning limestone caves',
+      'Spectacular karst landscape views',
+      'Peaceful river journey through rice paddies',
+      'Often called "Ha Long Bay on land"'
+    ],
+    highlights_hi: [
+      'यूनेस्को विश्व धरोहर स्थल (मिश्रित सांस्कृतिक और प्राकृतिक)',
+      'शानदार limestone caves के माध्यम से नाव यात्रा',
+      'अद्भुत karst landscape के दृश्य',
+      'धान के खेतों के माध्यम से शांतिपूर्ण नदी यात्रा',
+      'अक्सर "जमीन पर Ha Long Bay" कहा जाता है'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Boat+Tour+Cave', 
+        alt_en: 'Boat tour through limestone caves at Trang An', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Boat+Tour+Cave', 
+        alt_hi: 'Trang An में limestone caves के माध्यम से नाव यात्रा' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Karst+River', 
+        alt_en: 'Serene river winding through karst mountains', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Karst+River', 
+        alt_hi: 'Karst पहाड़ों के बीच से बहती शांत नदी' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Rice+Paddies', 
+        alt_en: 'Green rice paddies with limestone backdrop', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Rice+Paddies', 
+        alt_hi: 'Limestone की पृष्ठभूमि के साथ हरे धान के खेत' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Cave+Interior', 
+        alt_en: 'Beautiful cave interior with stalactites', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Cave+Interior', 
+        alt_hi: 'Stalactites के साथ सुंदर गुफा का interior' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Panoramic+View', 
+        alt_en: 'Panoramic view of Trang An landscape', 
+        src_hi: 'https://placehold.co/400x250/8E44AD/FFFFFF?text=Panoramic+View', 
+        alt_hi: 'Trang An landscape का panoramic view' 
+      }
+    ]
+  },
+
+  'Mua Cave, Ninh Binh': {
+    name: 'Mua Cave, Ninh Binh',
+    query: 'Mua Cave, Ninh Binh, Vietnam',
+    type: 'landmark',
+    description: 'Famous for its challenging climb to the peak offering breathtaking panoramic views of Ninh Binh.',
+    description_hi: 'अपनी चुनौतीपूर्ण चढ़ाई के लिए प्रसिद्ध जो Ninh Binh के लुभावने panoramic views प्रदान करती है।',
+    highlights_en: [
+      '500 steps climb to the summit viewpoint',
+      'Breathtaking panoramic views of Tam Coc area',
+      'Perfect for photography and Instagram shots',
+      'Beautiful karst landscape from above',
+      'Best visited during sunset for golden hour views'
+    ],
+    highlights_hi: [
+      'Summit viewpoint तक 500 steps की चढ़ाई',
+      'Tam Coc area के लुभावने panoramic views',
+      'Photography और Instagram shots के लिए perfect',
+      'ऊपर से सुंदर karst landscape',
+      'Golden hour views के लिए sunset के दौरान visit करना best'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Summit+View', 
+        alt_en: 'Breathtaking summit view from Mua Cave peak', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Summit+View', 
+        alt_hi: 'Mua Cave peak से लुभावना summit view' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Stone+Steps', 
+        alt_en: 'Stone steps leading to the summit', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Stone+Steps', 
+        alt_hi: 'Summit तक जाने वाली पत्थर की सीढ़ियां' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Dragon+Statue', 
+        alt_en: 'Dragon statue at Mua Cave entrance', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Dragon+Statue', 
+        alt_hi: 'Mua Cave के प्रवेश द्वार पर dragon statue' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Valley+View', 
+        alt_en: 'Spectacular valley view with winding river', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Valley+View', 
+        alt_hi: 'बहती नदी के साथ शानदार valley view' 
+      }
+    ]
+  },
+
+  'Da Nang International Airport (DAD)': {
+    name: 'Da Nang International Airport (DAD)',
+    query: 'Da Nang International Airport, Da Nang, Vietnam',
+    type: 'airport',
+    description: 'Our departure airport from Central Vietnam.',
+    description_hi: 'मध्य वियतनाम से हमारा प्रस्थान हवाई अड्डा।',
+    highlights_en: [
+      'Modern international airport serving Central Vietnam',
+      'Gateway to Da Nang, Hoi An, and Hue',
+      'Efficient departure procedures for international flights',
+      'Good shopping and dining options before departure'
+    ],
+    highlights_hi: [
+      'मध्य वियतनाम की सेवा करने वाला आधुनिक अंतर्राष्ट्रीय हवाई अड्डा',
+      'Da Nang, Hoi An, और Hue का प्रवेश द्वार',
+      'अंतर्राष्ट्रीय flights के लिए efficient departure procedures',
+      'Departure से पहले अच्छी shopping और dining options'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Airport+Terminal', 
+        alt_en: 'Da Nang Airport modern terminal building', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Airport+Terminal', 
+        alt_hi: 'Da Nang Airport की आधुनिक terminal building' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Departure+Hall', 
+        alt_en: 'International departure hall with check-in counters', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Departure+Hall', 
+        alt_hi: 'Check-in counters के साथ अंतर्राष्ट्रीय departure hall' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Gate+Area', 
+        alt_en: 'Airport gate area with seating and shops', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Gate+Area', 
+        alt_hi: 'Seating और shops के साथ airport gate area' 
+      }
+    ]
+  },
+
+  'Una Railway Station': {
+    name: 'Una Railway Station',
+    query: 'Una Railway Station, Una, India',
+    type: 'travel',
+    description: 'Our final destination, marking the end of our Vietnam adventure.',
+    description_hi: 'हमारी अंतिम मंजिल, हमारे वियतनाम रोमांच के अंत का प्रतीक।',
+    highlights_en: [
+      'Our home railway station in Una, Himachal Pradesh',
+      'Final stop of our incredible Vietnam journey',
+      'Gateway back to familiar surroundings',
+      'End of an amazing international adventure'
+    ],
+    highlights_hi: [
+      'Una, Himachal Pradesh में हमारा home railway station',
+      'हमारी अविश्वसनीय Vietnam journey का final stop',
+      'परिचित माहौल वापस जाने का प्रवेश द्वार',
+      'एक अद्भुत अंतर्राष्ट्रीय adventure का अंत'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Una+Station', 
+        alt_en: 'Una Railway Station exterior view', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Una+Station', 
+        alt_hi: 'Una Railway Station का exterior view' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Station+Platform', 
+        alt_en: 'Railway platform at Una station', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Station+Platform', 
+        alt_hi: 'Una station पर railway platform' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Welcome+Home', 
+        alt_en: 'Welcome home sign at Una', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Welcome+Home', 
+        alt_hi: 'Una में welcome home sign' 
+      }
+    ]
+  },
+
+  'The Nalod Da Nang': {
+    name: 'The Nalod Da Nang',
+    query: 'The Nalod Da Nang, Da Nang, Vietnam',
+    type: 'hotel',
+    description: 'Our modern hotel in Da Nang, offering comfortable stays and city access.',
+    description_hi: 'दा नांग में हमारा आधुनिक होटल, जो आरामदायक ठहरने और शहर तक पहुँच प्रदान करता है।',
+    highlights_en: [
+      'Modern hotel in the heart of Da Nang city',
+      'Easy access to beaches, mountains, and attractions',
+      'Comfortable rooms with modern amenities',
+      'Perfect base for exploring Central Vietnam',
+      'Close to My Khe Beach and Marble Mountains'
+    ],
+    highlights_hi: [
+      'Da Nang city के केंद्र में आधुनिक hotel',
+      'Beaches, mountains, और attractions तक आसान पहुंच',
+      'आधुनिक सुविधाओं के साथ आरामदायक rooms',
+      'मध्य वियतनाम की खोज के लिए perfect base',
+      'My Khe Beach और Marble Mountains के पास'
+    ],
+    images: [
+      { 
+        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Hotel+Exterior', 
+        alt_en: 'The Nalod Da Nang hotel exterior', 
+        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Hotel+Exterior', 
+        alt_hi: 'The Nalod Da Nang hotel का exterior' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Hotel+Room', 
+        alt_en: 'Modern hotel room with city views', 
+        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Hotel+Room', 
+        alt_hi: 'City views के साथ आधुनिक hotel room' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Hotel+Lobby', 
+        alt_en: 'Contemporary hotel lobby and reception', 
+        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Hotel+Lobby', 
+        alt_hi: 'समकालीन hotel lobby और reception' 
+      },
+      { 
+        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=City+Location', 
+        alt_en: 'Hotel location in Da Nang city center', 
+        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=City+Location', 
+        alt_hi: 'Da Nang city center में hotel की location' 
       }
     ]
   }

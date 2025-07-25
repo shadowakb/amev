@@ -24,29 +24,26 @@ const Overview = () => {
 
   const getDayDescription = (day) => {
     const descriptions = {
-      1: "Our journey begins - so excited for this adventure! ✈️",
-      2: "Welcome to Vietnam! Exploring beautiful Hanoi 🏮",
-      3: "Discovering Hanoi's culture and delicious cuisine 🍜",
-      4: "The stunning Ha Long Bay awaits us! 📸",
-      5: "More breathtaking moments at Ha Long Bay ⛵",
-      6: "Flying south to the charming town of Hoi An 🏮",
-      7: "Magical lanterns and riverside charm in Hoi An 🎋",
-      8: "From Hoi An to vibrant Ho Chi Minh City 🏙️",
-      9: "Exploring the bustling energy of Saigon 🛵",
-      10: "Our final day - cherishing every moment 😢✈️"
+      1: t('journeyBegins'),
+      2: t('welcomeVietnam'),
+      3: t('discoveringCulture'),
+      4: t('stunningHaLong'),
+      5: t('breathtakingMoments'),
+      6: t('charmingHoiAn'),
+      7: t('magicalLanterns'),
+      8: t('vibrantHoChiMinh'),
+      9: t('bustlingEnergy'),
+      10: t('finalDay')
     };
-    return descriptions[day.day] || "Another wonderful day awaits us! 🌟";
+    return descriptions[day.day] || t('wonderfulDay');
   };
 
   return (
     <div className="overview">
       <div className="overview-header">
-        <h1 className="overview-title">Our Vietnam Adventure {t('overview')} 🇻🇳</h1>
+        <h1 className="overview-title">{t('ourJourney')} {t('overview')} 🇻🇳</h1>
         <p className="overview-description">
-          Join us on this beautiful 10-day journey through Vietnam, from Hanoi's historic streets 
-          to Ha Long Bay's magnificent views, the enchanting lanterns of Hoi An, 
-          and the vibrant energy of Ho Chi Minh City. 
-          This will be truly unforgettable! 🌟✨
+          {t('beautifulJourney')} 🌟✨
         </p>
       </div>
       
@@ -84,26 +81,26 @@ const Overview = () => {
                 {day.morning && day.morning.length > 0 && (
                   <div className="activity-time morning">
                     <span className="time-label">☀️ {t('morning')}</span>
-                    <span className="activity-count">{day.morning.length} things</span>
+                    <span className="activity-count">{day.morning.length} {t('things')}</span>
                   </div>
                 )}
                 {day.afternoon && day.afternoon.length > 0 && (
                   <div className="activity-time afternoon">
-                    <span className="time-label">🏖️ {t('afternoon')}</span>
-                    <span className="activity-count">{day.afternoon.length} things</span>
+                    <span className="time-label">🌅 {t('afternoon')}</span>
+                    <span className="activity-count">{day.afternoon.length} {t('things')}</span>
                   </div>
                 )}
                 {day.evening && day.evening.length > 0 && (
                   <div className="activity-time evening">
-                    <span className="time-label">🌅 {t('evening')}</span>
-                    <span className="activity-count">{day.evening.length} things</span>
+                    <span className="time-label">🌙 {t('evening')}</span>
+                    <span className="activity-count">{day.evening.length} {t('things')}</span>
                   </div>
                 )}
               </div>
             </div>
             
             <div className="day-card-footer">
-              <span className="view-details">View our day's plans →</span>
+              <span className="view-details">{t('viewDayPlans')} →</span>
             </div>
           </Link>
         ))}

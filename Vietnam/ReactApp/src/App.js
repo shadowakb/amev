@@ -12,60 +12,67 @@ import './styles/App.css';
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
-
+  
   // Scroll to top on route changes
   useScrollToTop();
 
-  // Handle responsive sidebar
+  // Handle responsive sidebar behavior
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
+        // On desktop, always keep sidebar open
+        setSidebarOpen(true);
+      } else {
+        // On mobile, close by default
         setSidebarOpen(false);
       }
     };
+
+    // Set initial state based on screen size
+    handleResize();
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Close sidebar when route changes on mobile
+  // Close sidebar on route change (mobile only)
   useEffect(() => {
-    setSidebarOpen(false);
+    if (window.innerWidth < 768) {
+      setSidebarOpen(false);
+    }
   }, [location.pathname]);
 
   const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
+    // Only allow toggle on mobile
+    if (window.innerWidth < 768) {
+      setSidebarOpen(!sidebarOpen);
+    }
+  };
+
+  const closeSidebar = () => {
+    // Only allow close on mobile
+    if (window.innerWidth < 768) {
+      setSidebarOpen(false);
+    }
   };
 
   return (
     <LanguageProvider>
       <div className="app">
         <Header onMenuClick={toggleSidebar} />
+        <Sidebar 
+          isOpen={sidebarOpen} 
+          onClose={closeSidebar}
+        />
         
-        <div className="app-body">
-          <Sidebar 
-            isOpen={sidebarOpen} 
-            onClose={() => setSidebarOpen(false)}
-          />
-          
-          <main className="main-content">
-            <Routes>
-              <Route path="/" element={<Overview />} />
-              <Route path="/day/:dayNumber" element={<DayView />} />
-              <Route path="*" element={<Overview />} />
-            </Routes>
-          </main>
-        </div>
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Overview />} />
+            <Route path="/day/:dayNumber" element={<DayView />} />
+          </Routes>
+        </main>
         
         <Footer />
-        
-        {/* Mobile sidebar overlay */}
-        {sidebarOpen && (
-          <div 
-            className="sidebar-overlay"
-            onClick={() => setSidebarOpen(false)}
-          />
-        )}
       </div>
     </LanguageProvider>
   );

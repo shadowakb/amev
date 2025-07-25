@@ -52,7 +52,7 @@ export const itineraryData = [
       { 
         name: 'New Delhi Railway Station', 
         query: 'New Delhi Railway Station, India', 
-        type: 'travel', 
+        type: 'travelHub', 
         description: 'One of the busiest railway stations in India, serving as a major transportation hub.',
         description_hi: 'भारत के सबसे व्यस्त रेलवे स्टेशनों में से एक, जो एक प्रमुख परिवहन केंद्र के रूप में कार्य करता है।'
       },
@@ -115,11 +115,32 @@ export const itineraryData = [
     notes: 'Hotel: Oriental Suites Hotel & Spa\nFlight: HAN Arrival 05:40\nWater Puppet Show: [Add Booking Link/Time Here]',
     keyLocations: [
       { 
+        name: 'Noi Bai International Airport (HAN)', 
+        query: 'Noi Bai International Airport, Hanoi, Vietnam', 
+        type: 'airport', 
+        description: 'Hanoi\'s main international airport, located about 45 minutes from the city center.',
+        description_hi: 'हनोई का मुख्य अंतर्राष्ट्रीय हवाई अड्डा, शहर के केंद्र से लगभग 45 मिनट की दूरी पर स्थित है।'
+      },
+      { 
         name: 'Oriental Suites Hotel & Spa, Hanoi', 
         query: 'Oriental Suites Hotel & Spa, Hanoi, Vietnam', 
         type: 'hotel', 
         description: 'Our comfortable hotel located in the heart of Hanoi\'s Old Quarter, offering easy access to attractions.',
         description_hi: 'हनोई के ओल्ड क्वार्टर के केंद्र में स्थित हमारा आरामदायक होटल, आकर्षणों तक आसान पहुँच प्रदान करता है।'
+      },
+      { 
+        name: 'Hanoi Old Quarter', 
+        query: 'Hanoi Old Quarter, Hanoi, Vietnam', 
+        type: 'landmark', 
+        description: 'The historic commercial center of Hanoi with narrow streets, traditional architecture, and vibrant street life.',
+        description_hi: 'हनोई का ऐतिहासिक व्यावसायिक केंद्र जिसमें संकरी गलियां, पारंपरिक वास्तुकला और जीवंत सड़क जीवन है।'
+      },
+      { 
+        name: 'Thang Long Water Puppet Theatre, Hanoi', 
+        query: 'Thang Long Water Puppet Theatre, Hanoi, Vietnam', 
+        type: 'landmark', 
+        description: 'A fascinating cultural experience - traditional Vietnamese water puppets perform on water! Truly unique and beautiful 🎭',
+        description_hi: 'एक मनमोहक सांस्कृतिक अनुभव - traditional Vietnamese water puppets पानी पर प्रदर्शन करती हैं! वास्तव में अनोखा और सुंदर 🎭'
       }
     ]
   },
@@ -202,11 +223,32 @@ export const itineraryData = [
     notes: 'Tour: Hoa Lu-Trang An-Mua Cave Tour\nPick-up: Approx. 07:30-08:00 AM',
     keyLocations: [
       {
+        name: 'Oriental Suites Hotel & Spa, Hanoi',
+        query: 'Oriental Suites Hotel & Spa, Hanoi, Vietnam',
+        type: 'hotel',
+        description: 'Our comfortable hotel located in the heart of Hanoi\'s Old Quarter, offering easy access to attractions.',
+        description_hi: 'हनोई के ओल्ड क्वार्टर के केंद्र में स्थित हमारा आरामदायक होटल, आकर्षणों तक आसान पहुँच प्रदान करता है।'
+      },
+      {
         name: 'Hoa Lu Ancient Capital, Ninh Binh',
         query: 'Hoa Lu Ancient Capital, Ninh Binh, Vietnam',
         type: 'landmark',
         description: 'The historic capital of Vietnam in the 10th and 11th centuries, featuring ancient temples.',
         description_hi: '10वीं और 11वीं शताब्दी में वियतनाम की ऐतिहासिक राजधानी, जिसमें प्राचीन मंदिर हैं।'
+      },
+      {
+        name: 'Trang An Scenic Landscape, Ninh Binh',
+        query: 'Trang An Scenic Landscape, Ninh Binh, Vietnam',
+        type: 'landmark',
+        description: 'A UNESCO World Heritage site known for its spectacular boat tours through caves and karst landscapes.',
+        description_hi: 'एक यूनेस्को विश्व धरोहर स्थल जो गुफाओं और karst landscapes के माध्यम से शानदार नाव यात्राओं के लिए जाना जाता है।'
+      },
+      {
+        name: 'Mua Cave, Ninh Binh',
+        query: 'Mua Cave, Ninh Binh, Vietnam',
+        type: 'landmark',
+        description: 'Famous for its challenging climb to the peak offering breathtaking panoramic views of Ninh Binh.',
+        description_hi: 'अपनी चुनौतीपूर्ण चढ़ाई के लिए प्रसिद्ध जो Ninh Binh के लुभावने panoramic views प्रदान करती है।'
       }
     ]
   },
@@ -242,11 +284,32 @@ export const itineraryData = [
     notes: 'Flight: VJ-545 HAN-DAD (07:20-08:40)\nHotel: Royal Riverside Hoi An Hotel & Spa',
     keyLocations: [
       {
+        name: 'Royal Riverside Hoi An Hotel & Spa',
+        query: 'Royal Riverside Hoi An Hotel & Spa, Hoi An, Vietnam',
+        type: 'hotel',
+        description: 'Our riverside hotel in Hoi An, offering beautiful river views and easy access to the Ancient Town.',
+        description_hi: 'होई एन में हमारा नदी किनारे का होटल, जो सुंदर नदी के दृश्य और प्राचीन शहर तक आसान पहुंच प्रदान करता है।'
+      },
+      {
         name: 'Hoi An Ancient Town',
         query: 'Hoi An Ancient Town, Hoi An, Vietnam',
         type: 'landmark',
         description: 'A UNESCO World Heritage Site famous for its well-preserved ancient architecture and vibrant cultural atmosphere.',
         description_hi: 'एक यूनेस्को विश्व धरोहर स्थल जो अपनी अच्छी तरह से संरक्षित प्राचीन वास्तुकला और जीवंत सांस्कृतिक वातावरण के लिए प्रसिद्ध है।'
+      },
+      {
+        name: 'Noi Bai International Airport (HAN)',
+        query: 'Noi Bai International Airport, Hanoi, Vietnam',
+        type: 'airport',
+        description: 'Hanoi\'s main international airport, located about 45 minutes from the city center.',
+        description_hi: 'हनोई का मुख्य अंतर्राष्ट्रीय हवाई अड्डा, शहर के केंद्र से लगभग 45 मिनट की दूरी पर स्थित है।'
+      },
+      {
+        name: 'Da Nang International Airport (DAD)',
+        query: 'Da Nang International Airport, Da Nang, Vietnam',
+        type: 'airport',
+        description: 'Our departure airport from Central Vietnam.',
+        description_hi: 'मध्य वियतनाम से हमारा प्रस्थान हवाई अड्डा।'
       }
     ]
   },
@@ -306,11 +369,25 @@ export const itineraryData = [
     notes: 'Hoi An Activities: [Add Cooking Class/Cycling Tour/Spa details/Booking Links Here]\nHotel: Royal Riverside Hoi An Hotel & Spa (Check-out 13/Aug)',
     keyLocations: [
       {
+        name: 'Royal Riverside Hoi An Hotel & Spa',
+        query: 'Royal Riverside Hoi An Hotel & Spa, Hoi An, Vietnam',
+        type: 'hotel',
+        description: 'Our riverside hotel in Hoi An, offering beautiful river views and easy access to the Ancient Town.',
+        description_hi: 'होई एन में हमारा नदी किनारे का होटल, जो सुंदर नदी के दृश्य और प्राचीन शहर तक आसान पहुंच प्रदान करता है।'
+      },
+      {
+        name: 'Hoi An Ancient Town',
+        query: 'Hoi An Ancient Town, Hoi An, Vietnam',
+        type: 'landmark',
+        description: 'A UNESCO World Heritage Site famous for its well-preserved ancient architecture and vibrant cultural atmosphere.',
+        description_hi: 'एक यूनेस्को विश्व धरोहर स्थल जो अपनी अच्छी तरह से संरक्षित प्राचीन वास्तुकला और जीवंत सांस्कृतिक वातावरण के लिए प्रसिद्ध है।'
+      },
+      {
         name: 'Tra Que Vegetable Village, Hoi An',
         query: 'Tra Que Vegetable Village, Hoi An, Vietnam',
         type: 'landmark',
-        description: 'A peaceful village known for its organic vegetable farms, offering insights into local farming life.',
-        description_hi: 'अपने जैविक सब्जी फार्मों के लिए जाना जाने वाला एक शांतिपूर्ण गांव, जो स्थानीय खेती जीवन में अंतर्दृष्टि प्रदान करता है।'
+        description: 'A charming organic farming village where traditional Vietnamese agricultural methods are still practiced. Perfect for cycling tours and cooking classes!',
+        description_hi: 'एक मनमोहक organic farming village जहाँ अभी भी traditional Vietnamese agricultural methods का प्रयोग होता है। Cycling tours और cooking classes के लिए perfect!'
       }
     ]
   },
@@ -447,6 +524,13 @@ export const itineraryData = [
     notes: 'Marble Mountains: [Add Entry Fee Info Here]\nMy Khe Beach: [Location]\nLady Buddha: [Location]',
     keyLocations: [
       {
+        name: 'The Nalod Da Nang',
+        query: 'The Nalod Da Nang, Da Nang, Vietnam',
+        type: 'hotel',
+        description: 'Our modern hotel in Da Nang, offering comfortable stays and city access.',
+        description_hi: 'दा नांग में हमारा आधुनिक होटल, जो आरामदायक ठहरने और शहर तक पहुँच प्रदान करता है।'
+      },
+      {
         name: 'Marble Mountains, Da Nang',
         query: 'Marble Mountains, Da Nang, Vietnam',
         type: 'landmark',
@@ -543,6 +627,13 @@ export const itineraryData = [
     notes: 'Flight 1: VN-7198 DAD-HAN (15:25-16:50)\nFlight 2: VN-981 HAN-DEL (19:05-22:05)\nTrain: New Delhi-Una (BOOKING PENDING)',
     keyLocations: [
       {
+        name: 'The Nalod Da Nang',
+        query: 'The Nalod Da Nang, Da Nang, Vietnam',
+        type: 'hotel',
+        description: 'Our modern hotel in Da Nang, offering comfortable stays and city access.',
+        description_hi: 'दा नांग में हमारा आधुनिक होटल, जो आरामदायक ठहरने और शहर तक पहुँच प्रदान करता है।'
+      },
+      {
         name: 'Da Nang International Airport (DAD)',
         query: 'Da Nang International Airport, Da Nang, Vietnam',
         type: 'airport',
@@ -555,6 +646,13 @@ export const itineraryData = [
         type: 'airport',
         description: 'Our transit airport in Hanoi, with domestic (T1) and international (T2) terminals.',
         description_hi: 'हनोई में हमारा ट्रांजिट हवाई अड्डा, जिसमें घरेलू (T1) और अंतर्राष्ट्रीय (T2) टर्मिनल हैं।'
+      },
+      {
+        name: 'Indira Gandhi International Airport (DEL)',
+        query: 'Indira Gandhi International Airport, New Delhi, India',
+        type: 'airport',
+        description: 'India\'s largest airport, serving as the primary international gateway to the country.',
+        description_hi: 'भारत का सबसे बड़ा हवाई अड्डा, जो देश के लिए प्राथमिक अंतर्राष्ट्रीय प्रवेश द्वार के रूप में कार्य करता है।'
       }
     ]
   },

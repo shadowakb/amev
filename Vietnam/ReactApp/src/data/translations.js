@@ -55,6 +55,8 @@ export const translations = {
     hideDetails: 'Hide details',
     openMap: 'Open map',
     closeModal: 'Close',
+    showMore: 'Show more tips',
+    showLess: 'Show less',
     
     // Status messages
     loading: 'Loading...',
@@ -62,12 +64,31 @@ export const translations = {
     
     // Accommodation info
     overnight: 'Staying at',
-    hotel: 'Hotel'
+    hotel: 'Hotel',
+    
+    // New comprehensive translations
+    ourJourney: 'Our Journey',
+    itineraryOverview: 'Itinerary Overview',
+    beautifulJourney: 'Join us on this beautiful 10-day journey through Vietnam, from Hanoi\'s historic streets to Ha Long Bay\'s magnificent views, the enchanting lanterns of Hoi An, and the vibrant energy of Ho Chi Minh City. This will be truly unforgettable!',
+    viewDayPlans: 'View our day\'s plans',
+    activities: 'activities',
+    things: 'things',
+    journeyBegins: 'Our journey begins - so excited for this adventure!',
+    welcomeVietnam: 'Welcome to Vietnam! Exploring beautiful Hanoi',
+    discoveringCulture: 'Discovering Hanoi\'s culture and delicious cuisine',
+    stunningHaLong: 'The stunning Ha Long Bay awaits us!',
+    breathtakingMoments: 'More breathtaking moments at Ha Long Bay',
+    charmingHoiAn: 'Flying south to the charming town of Hoi An',
+    magicalLanterns: 'Magical lanterns and riverside charm in Hoi An',
+    vibrantHoChiMinh: 'From Hoi An to vibrant Ho Chi Minh City',
+    bustlingEnergy: 'Exploring the bustling energy of Saigon',
+    finalDay: 'Our final day - cherishing every moment',
+    wonderfulDay: 'Another wonderful day awaits us!'
   },
   
   hi: {
     // Header and navigation
-    headerTitle: 'हमारी वियतनाम यात्रा 🇻🇳',
+    headerTitle: 'हमारी Vietnam यात्रा 🇻🇳',
     headerSubtitle: '7-16 अगस्त, 2025 • यादगार सफर ✈️',
     headerDescription: 'हमारी पूरी यात्रा गाइड जिसमें सभी सुंदर जगहें हैं जहाँ हम जाएंगे, हम कहाँ रुकेंगे, और हमारे destinations के खूबसूरत maps हैं। परिवार और दोस्तों के साथ share करने के लिए perfect! 🗺️✨',
     
@@ -76,7 +97,7 @@ export const translations = {
     dayLabel: 'दिन',
     
     // Footer
-    footerCopyright: '© 2025 हमारी वियतनाम यात्रा के लिए प्यार से बनाया गया',
+    footerCopyright: '© 2025 हमारी Vietnam यात्रा के लिए प्यार से बनाया गया',
     footerCreatedBy: 'देखभाल और उत्साह के साथ बनाया गया!',
     
     // Common labels
@@ -120,6 +141,8 @@ export const translations = {
     hideDetails: 'विवरण छुपाएं',
     openMap: 'मैप खोलें',
     closeModal: 'बंद करें',
+    showMore: 'और जानें',
+    showLess: 'कम देखें',
     
     // Status messages
     loading: 'लोड हो रहा है...',
@@ -127,6 +150,25 @@ export const translations = {
     
     // Accommodation info
     overnight: 'यहाँ रुकेंगे',
-    hotel: 'होटल'
+    hotel: 'होटल',
+    
+    // New comprehensive translations
+    ourJourney: 'हमारी यात्रा',
+    itineraryOverview: 'यात्रा कार्यक्रम',
+    beautifulJourney: 'हमारे साथ जुड़िए इस खूबसूरत 10-दिन की Vietnam यात्रा में, Hanoi की ऐतिहासिक सड़कों से Ha Long Bay के शानदार नज़ारों तक, Hoi An के मनमोहक लालटेन और Ho Chi Minh City की जीवंत ऊर्जा तक। यह वास्तव में अविस्मरणीय होगा!',
+    viewDayPlans: 'हमारे दिन की योजना देखें',
+    activities: 'गतिविधियाँ',
+    things: 'चीजें',
+    journeyBegins: 'हमारी यात्रा शुरू - इस रोमांच के लिए बहुत उत्साहित!',
+    welcomeVietnam: 'Vietnam में आपका स्वागत! सुंदर Hanoi की खोज',
+    discoveringCulture: 'Hanoi की संस्कृति और स्वादिष्ट व्यंजनों की खोज',
+    stunningHaLong: 'शानदार Ha Long Bay हमारा इंतज़ार कर रही है!',
+    breathtakingMoments: 'Ha Long Bay में और भी दिलकश पल',
+    charmingHoiAn: 'दक्षिण में सुंदर शहर Hoi An के लिए उड़ान',
+    magicalLanterns: 'Hoi An में जादुई लालटेन और नदी किनारे का आकर्षण',
+    vibrantHoChiMinh: 'Hoi An से जीवंत Ho Chi Minh City तक',
+    bustlingEnergy: 'Saigon की हलचल भरी ऊर्जा की खोज',
+    finalDay: 'हमारा अंतिम दिन - हर पल को संजोते हुए',
+    wonderfulDay: 'एक और सुंदर दिन हमारा इंतज़ार कर रहा है!'
   }
 };
