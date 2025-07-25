@@ -97,11 +97,11 @@ export const itineraryData = [
       }
     ],
     afternoon: [
-      { 
-        text: 'Old Quarter Walking Tour 🚶‍♀️', 
-        description: 'Exploring the famous 36 Streets on foot. Each street traditionally specializes in different crafts and trades. We can take our time and stop for photos along the way.',
-        text_hi: 'ओल्ड क्वार्टर पैदल यात्रा 🚶‍♀️',
-        description_hi: 'प्रसिद्ध 36 Streets को पैदल explore करना। हर गली traditionally अलग-अलग crafts और trades में specialize करती है।'
+      {
+        text: 'Old Quarter Walking Tour & Hoan Kiem Lake 🚶‍♀️',
+        description: 'Exploring the famous 36 Streets on foot, then visiting iconic Hoan Kiem Lake with Ngoc Son Temple and the red Huc Bridge. Each street traditionally specializes in different crafts and trades. Perfect for photos and cultural immersion.',
+        text_hi: 'ओल्ड क्वार्टर पैदल यात्रा और होआन किएम झील 🚶‍♀️',
+        description_hi: 'प्रसिद्ध 36 Streets को पैदल explore करना, फिर प्रतिष्ठित Hoan Kiem Lake, Ngoc Son Temple और लाल Huc Bridge देखना। Photos और cultural immersion के लिए perfect।'
       }
     ],
     evening: [
@@ -128,12 +128,19 @@ export const itineraryData = [
         description: 'Our home base in the heart of Old Quarter! Walking distance to everything important. Perfect location for family exploration.',
         description_hi: 'Old Quarter के दिल में हमारा home base! सभी important चीजों तक walking distance। Family exploration के लिए perfect location।'
       },
-      { 
-        name: 'Hanoi Old Quarter', 
-        query: 'Hanoi Old Quarter, Hanoi, Vietnam', 
-        type: 'landmark', 
+      {
+        name: 'Hanoi Old Quarter',
+        query: 'Hanoi Old Quarter, Hanoi, Vietnam',
+        type: 'landmark',
         description: 'Historic center of Hanoi with traditional streets, local food vendors, and traditional architecture representing Vietnamese culture.',
         description_hi: 'हनोई का ऐतिहासिक केंद्र जहां traditional streets, local food vendors, और traditional architecture हैं जो Vietnamese संस्कृति का प्रतिनिधित्व करती है।'
+      },
+      {
+        name: 'Hoan Kiem Lake, Hanoi',
+        query: 'Hoan Kiem Lake, Hanoi, Vietnam',
+        type: 'landmark',
+        description: 'Iconic central lake in Hanoi with Ngoc Son Temple and the famous red Huc Bridge. Perfect for peaceful walks and photography.',
+        description_hi: 'हनोई की प्रतिष्ठित केंद्रीय झील जिसमें Ngoc Son Temple और प्रसिद्ध लाल Huc Bridge है। शांत सैर और photography के लिए perfect।'
       },
       { 
         name: 'Thang Long Water Puppet Theatre, Hanoi', 
