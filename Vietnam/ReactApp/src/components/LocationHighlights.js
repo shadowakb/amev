@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { useParams } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
 import { locationData } from '../data/locations';
+import { itineraryData } from '../data/itinerary';
 
-const LocationHighlights = ({ location }) => {
+const LocationHighlights = ({ location, onCurrentLocationChange }) => {
+  const { dayNumber } = useParams();
   const { t, isHindi } = useLanguage();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -10,10 +13,66 @@ const LocationHighlights = ({ location }) => {
   const [touchEnd, setTouchEnd] = useState(0);
   const [showAllHighlights, setShowAllHighlights] = useState(false);
 
-  const locationDetails = locationData[location?.name] || location;
-  const highlights = isHindi ? locationDetails?.highlights_hi : locationDetails?.highlights_en;
-  const images = locationDetails?.images || [];
-  const description = isHindi ? locationDetails?.description_hi : locationDetails?.description;
+  // Use refs to track state without causing re-renders
+  const lastSelectedLocationRef = useRef(null);
+  const isLocationSelectionRef = useRef(false);
+  const currentLocationFromCarouselRef = useRef(null);
+
+  // Get current day data
+  const dayData = itineraryData.find(day => day.day === parseInt(dayNumber));
+
+  // Get all images from all locations for this day
+  const allDayImages = useMemo(() => {
+    if (!dayData || !dayData.keyLocations) return [];
+
+    const allImages = [];
+    dayData.keyLocations.forEach(loc => {
+      const locData = locationData[loc.name];
+      if (locData && locData.images) {
+        // Add location name to each image for context
+        locData.images.forEach(img => {
+          allImages.push({
+            ...img,
+            locationName: loc.name,
+            locationType: loc.type
+          });
+        });
+      }
+    });
+    return allImages;
+  }, [dayData]);
+
+  // Use all day images if available, otherwise fall back to current location images
+  const images = useMemo(() => {
+    return allDayImages.length > 0 ? allDayImages : (locationData[location?.name]?.images || []);
+  }, [allDayImages, location?.name]);
+
+  // console.log('Images array:', images.length, 'Current index:', currentImageIndex);
+
+  // Get current image's location data for dynamic content
+  const getCurrentLocationData = () => {
+    if (allDayImages.length > 0 && images[currentImageIndex]) {
+      const currentImage = images[currentImageIndex];
+      if (currentImage.locationName) {
+        return locationData[currentImage.locationName];
+      }
+    }
+    // Fallback to selected location or default
+    return locationData[location?.name] || location;
+  };
+
+  const currentLocationData = getCurrentLocationData();
+  const highlights = isHindi ? currentLocationData?.highlights_hi : currentLocationData?.highlights_en;
+  const description = isHindi ? currentLocationData?.description_hi : currentLocationData?.description;
+  const locationName = isHindi ? currentLocationData?.name_hi : currentLocationData?.name_en;
+
+  // Reset currentImageIndex when images array changes
+  useEffect(() => {
+    if (images.length > 0 && currentImageIndex >= images.length) {
+      console.log('Resetting image index from', currentImageIndex, 'to 0');
+      setCurrentImageIndex(0);
+    }
+  }, [images.length, currentImageIndex]);
 
   // Show only first 3 highlights initially
   const visibleHighlights = showAllHighlights ? highlights : highlights?.slice(0, 3);
@@ -24,27 +83,80 @@ const LocationHighlights = ({ location }) => {
     if (images.length <= 1 || !isAutoPlaying) return;
 
     const interval = setInterval(() => {
+      // Auto-play should not trigger parent updates
+      isLocationSelectionRef.current = true;
       setCurrentImageIndex((prev) => (prev + 1) % images.length);
+      // Reset flag after a short delay
+      setTimeout(() => {
+        isLocationSelectionRef.current = false;
+      }, 100);
     }, 4000);
 
     return () => clearInterval(interval);
   }, [images.length, isAutoPlaying]);
 
+  // Handle location selection from sidebar (ONLY updates carousel, no parent notification)
+  useEffect(() => {
+    if (allDayImages.length > 0 && location?.name && location.name !== lastSelectedLocationRef.current) {
+      const locationImageIndex = allDayImages.findIndex(img => img.locationName === location.name);
+      if (locationImageIndex !== -1) {
+        // Mark this as a location selection to prevent circular updates
+        isLocationSelectionRef.current = true;
+        lastSelectedLocationRef.current = location.name;
+
+        setCurrentImageIndex(locationImageIndex);
+        setIsAutoPlaying(false);
+        setTimeout(() => {
+          setIsAutoPlaying(true);
+          // Reset the flag after a delay to allow for manual navigation
+          setTimeout(() => {
+            isLocationSelectionRef.current = false;
+          }, 1000);
+        }, 8000);
+      }
+    }
+  }, [location?.name, allDayImages]);
+
+  // Handle carousel navigation (updates parent components when user manually navigates)
+  useEffect(() => {
+    // Only notify parent if this is NOT a location selection and we have images
+    if (allDayImages.length > 0 && onCurrentLocationChange && !isLocationSelectionRef.current) {
+      const currentImage = images[currentImageIndex];
+      if (currentImage && currentImage.locationName) {
+        // Only update if the location actually changed
+        if (currentLocationFromCarouselRef.current !== currentImage.locationName) {
+          currentLocationFromCarouselRef.current = currentImage.locationName;
+
+          const dayLocation = dayData?.keyLocations?.find(loc => loc.name === currentImage.locationName);
+          if (dayLocation) {
+            onCurrentLocationChange(dayLocation);
+          }
+        }
+      }
+    }
+  }, [currentImageIndex, allDayImages, onCurrentLocationChange, dayData, images]);
+
   if (!location) return null;
 
   const nextImage = () => {
+    // Mark as user navigation (not location selection)
+    isLocationSelectionRef.current = false;
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 8000);
   };
 
   const prevImage = () => {
+    // Mark as user navigation (not location selection)
+    isLocationSelectionRef.current = false;
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 8000);
   };
 
   const goToImage = (index) => {
+    // Mark as user navigation (not location selection)
+    isLocationSelectionRef.current = false;
     setCurrentImageIndex(index);
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 8000);
@@ -74,14 +186,32 @@ const LocationHighlights = ({ location }) => {
 
   return (
     <div className="location-highlights">
-      <h3 className="highlights-title">{t('highlightsLabel')}</h3>
-      
+      <h3 className="highlights-title">
+        {allDayImages.length > 0
+          ? `${t('dayLabel')} ${dayNumber} ${t('photosLabel') || 'Photos'}`
+          : t('highlightsLabel')
+        }
+      </h3>
+
+      {allDayImages.length > 0 && locationName && (
+        <div className="current-location-indicator">
+          <h4 className="current-location-name">
+            📍 {locationName}
+          </h4>
+        </div>
+      )}
+
       {description && (
         <p className="location-description">{description}</p>
       )}
 
       {images.length > 0 && (
         <div className="image-carousel">
+          {allDayImages.length > 0 && (
+            <p className="carousel-subtitle">
+              {t('allLocationsPhotos') || `All photos from today's locations (${images.length} images)`}
+            </p>
+          )}
           <div 
             className="carousel-container"
             onTouchStart={handleTouchStart}
@@ -98,12 +228,20 @@ const LocationHighlights = ({ location }) => {
             
             <div className="carousel-images-wrapper">
               {images.map((image, index) => (
-                <img
-                  key={index}
-                  src={isHindi ? image.src_hi : image.src_en}
-                  alt={isHindi ? image.alt_hi : image.alt_en}
-                  className={`carousel-image ${index === currentImageIndex ? 'active' : ''}`}
-                />
+                <div key={index} className={`carousel-slide ${index === currentImageIndex ? 'active' : ''}`}>
+                  <img
+                    src={isHindi ? image.src_hi : image.src_en}
+                    alt={isHindi ? image.alt_hi : image.alt_en}
+                    className="carousel-image"
+                  />
+                  {allDayImages.length > 0 && image.locationName && (
+                    <div className="image-location-overlay">
+                      <span className="location-badge">
+                        {t(`${image.locationType}Label`)} • {image.locationName}
+                      </span>
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
 

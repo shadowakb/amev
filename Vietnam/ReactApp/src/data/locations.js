@@ -22,27 +22,27 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Hoan+Kiem+Lake+Sunset', 
+        src_en: 'https://images.pexels.com/photos/19504816/pexels-photo-19504816.jpeg', 
         alt_en: 'Hoan Kiem Lake at sunset with Turtle Tower reflection', 
-        src_hi: 'https://placehold.co/400x250/4A90E2/FFFFFF?text=Hoan+Kiem+Lake+Sunset', 
+        src_hi: 'https://images.pexels.com/photos/19504816/pexels-photo-19504816.jpeg', 
         alt_hi: 'सूर्यास्त के समय Turtle Tower के reflection के साथ Hoan Kiem Lake' 
       },
       { 
-        src_en: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Huc+Bridge+Red', 
+        src_en: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/0a/9b/ea/hanoi-hoan-kiem-see-c.jpg', 
         alt_en: 'The iconic red Huc Bridge leading to Ngoc Son Temple', 
-        src_hi: 'https://placehold.co/400x250/E74C3C/FFFFFF?text=Huc+Bridge+Red', 
+        src_hi: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/0a/9b/ea/hanoi-hoan-kiem-see-c.jpg', 
         alt_hi: 'Ngoc Son Temple की ओर जाने वाला प्रतिष्ठित लाल Huc Bridge' 
       },
       { 
-        src_en: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Old+Quarter+Streets', 
+        src_en: 'https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/01/22105911/architectural-features-filled-with-nostalgia-are-easily-spotted-in-hanoi.jpg', 
         alt_en: 'Hanoi Old Quarter bustling streets near the lake', 
-        src_hi: 'https://placehold.co/400x250/F39C12/FFFFFF?text=Old+Quarter+Streets', 
+        src_hi: 'https://cdn.hoabinhevents.com/hbt/wp-content/uploads/2025/01/22105911/architectural-features-filled-with-nostalgia-are-easily-spotted-in-hanoi.jpg', 
         alt_hi: 'झील के पास Hanoi Old Quarter की हलचल भरी सड़कें' 
       },
       { 
-        src_en: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Ngoc+Son+Temple', 
+        src_en: 'https://www.vietnamairlines.com/~/media/SEO-images/2025%20SEO/Traffic%20TA/MB/Ngoc%20Son%20Temple/ngoc-son-temple-thumb.jpg', 
         alt_en: 'Ngoc Son Temple pagoda architecture on the lake', 
-        src_hi: 'https://placehold.co/400x250/27AE60/FFFFFF?text=Ngoc+Son+Temple', 
+        src_hi: 'https://www.vietnamairlines.com/~/media/SEO-images/2025%20SEO/Traffic%20TA/MB/Ngoc%20Son%20Temple/ngoc-son-temple-thumb.jpg', 
         alt_hi: 'झील पर Ngoc Son Temple का pagoda architecture' 
       },
       { 

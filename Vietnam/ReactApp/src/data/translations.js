@@ -35,6 +35,8 @@ export const translations = {
     // Image carousel
     prevImage: 'Previous photo',
     nextImage: 'Next photo',
+    photosLabel: 'Photos',
+    allLocationsPhotos: 'All photos from today\'s locations',
     
     // Location types
     hotelLabel: 'Hotel',
@@ -121,6 +123,8 @@ export const translations = {
     // Image carousel
     prevImage: 'पिछली तस्वीर',
     nextImage: 'अगली तस्वीर',
+    photosLabel: 'तस्वीरें',
+    allLocationsPhotos: 'आज की सभी जगहों की तस्वीरें',
     
     // Location types
     hotelLabel: 'होटल',

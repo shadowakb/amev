@@ -62,6 +62,11 @@ const DayView = () => {
     setSelectedLocation(location);
   };
 
+  const handleCurrentLocationChange = (location) => {
+    // Update selected location when carousel image changes
+    setSelectedLocation(location);
+  };
+
   const nextDay = itineraryData.find(day => day.day === dayData.day + 1);
   const prevDay = itineraryData.find(day => day.day === dayData.day - 1);
 
@@ -120,7 +125,10 @@ const DayView = () => {
           {selectedLocation && (
             <>
               <LocationMap location={selectedLocation} />
-              <LocationHighlights location={selectedLocation} />
+              <LocationHighlights
+                location={selectedLocation}
+                onCurrentLocationChange={handleCurrentLocationChange}
+              />
             </>
           )}
           
