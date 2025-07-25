@@ -5,6 +5,7 @@ import { itineraryData } from '../data/itinerary';
 import Timeline from './Timeline';
 import LocationMap from './LocationMap';
 import LocationHighlights from './LocationHighlights';
+import RestaurantSuggestions from './RestaurantSuggestions';
 
 const DayView = () => {
   const { dayNumber } = useParams();
@@ -131,7 +132,12 @@ const DayView = () => {
               />
             </>
           )}
-          
+
+          <RestaurantSuggestions
+            location={dayData?.location}
+            dayData={dayData}
+          />
+
           {dayData.keyLocations && dayData.keyLocations.length > 0 && (
             <div className="key-locations">
               <h3>{t('keyLocationsLabel')}</h3>

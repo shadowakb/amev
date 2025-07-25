@@ -31,6 +31,13 @@ export const translations = {
     viewOnGoogleMaps: 'View on Maps 🗺️',
     signatureDish: 'Must-try dish:',
     modalTitle: 'Restaurant Recommendations 🍜✨',
+    dietaryInfo: 'Dietary Info',
+    bestTime: 'Best Time',
+    priceRange: 'Price Range',
+    localDishes: 'Local Dishes',
+    restaurants: 'Restaurants',
+    vegetarianFriendly: 'Vegetarian Friendly',
+    indianCuisine: 'Indian Cuisine Available',
     
     // Image carousel
     prevImage: 'Previous photo',
@@ -119,6 +126,13 @@ export const translations = {
     viewOnGoogleMaps: 'Maps पर देखें 🗺️',
     signatureDish: 'जरूर try करें:',
     modalTitle: 'रेस्तराँ सिफारिशें 🍜✨',
+    dietaryInfo: 'आहार की जानकारी',
+    bestTime: 'सबसे अच्छा समय',
+    priceRange: 'मूल्य सीमा',
+    localDishes: 'स्थानीय व्यंजन',
+    restaurants: 'रेस्तराँ',
+    vegetarianFriendly: 'शाकाहारी अनुकूल',
+    indianCuisine: 'भारतीय व्यंजन उपलब्ध',
     
     // Image carousel
     prevImage: 'पिछली तस्वीर',
