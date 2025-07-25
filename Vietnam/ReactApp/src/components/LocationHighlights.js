@@ -3,6 +3,55 @@ import { useParams } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
 import { locationData } from '../data/locations';
 import { itineraryData } from '../data/itinerary';
+import { useLocalImages } from '../hooks/useLocalImages';
+import { getFallbackImagePath } from '../utils/imageUtils';
+
+// Component for handling individual images with fallback
+const ImageWithFallback = ({ src, alt, className, locationName, imageIndex, onError }) => {
+  const [imageSrc, setImageSrc] = useState(src);
+  const [hasError, setHasError] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setImageSrc(src);
+    setHasError(false);
+    setIsLoading(true);
+  }, [src]);
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+
+  const handleImageError = () => {
+    if (!hasError) {
+      setHasError(true);
+      setIsLoading(false);
+      const fallbackSrc = getFallbackImagePath(locationName, imageIndex);
+      setImageSrc(fallbackSrc);
+      if (onError) {
+        onError(imageIndex, fallbackSrc);
+      }
+    }
+  };
+
+  return (
+    <div className={`image-container ${className || ''}`}>
+      {isLoading && (
+        <div className="image-loading-placeholder">
+          <div className="loading-spinner"></div>
+        </div>
+      )}
+      <img
+        src={imageSrc}
+        alt={alt}
+        className={`carousel-image ${isLoading ? 'loading' : ''} ${hasError ? 'fallback' : ''}`}
+        onLoad={handleImageLoad}
+        onError={handleImageError}
+        style={{ display: isLoading ? 'none' : 'block' }}
+      />
+    </div>
+  );
+};
 
 const LocationHighlights = ({ location, onCurrentLocationChange }) => {
   const { dayNumber } = useParams();
@@ -224,12 +273,15 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
             <div className="carousel-images-wrapper">
               {images.map((image, index) => (
                 <div key={index} className={`carousel-slide ${index === currentImageIndex ? 'active' : ''}`}>
-                  <img
+                  <ImageWithFallback
                     src={isHindi ? image.src_hi : image.src_en}
                     alt={isHindi ? image.alt_hi : image.alt_en}
-                    className="carousel-image"
+                    locationName={image.locationName || location?.name}
+                    imageIndex={index}
+                    onError={(imageIndex, fallbackSrc) => {
+                      console.log(`Image ${imageIndex} failed to load, using fallback: ${fallbackSrc}`);
+                    }}
                   />
-
                 </div>
               ))}
             </div>

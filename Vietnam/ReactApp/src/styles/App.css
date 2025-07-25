@@ -3177,3 +3177,42 @@ html {
     overflow-y: visible;
   }
 }
+
+/* Image loading and fallback styles */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-loading-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e9ecef;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.carousel-image.loading {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-image.fallback {
+  border: 2px dashed #dee2e6;
+  opacity: 0.8;
+}

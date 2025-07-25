@@ -22,51 +22,51 @@ export const locationData = {
     ],
     images: [
       {
-        src_en: '/amev/images/hoan-kiem-lake-hanoi/1.jpg',
+        src_en: '/images/hoan-kiem-lake-hanoi/1.jpg',
         alt_en: 'Hoan Kiem Lake at sunset with Turtle Tower reflection',
-        src_hi: '/amev/images/hoan-kiem-lake-hanoi/1.jpg',
+        src_hi: '/images/hoan-kiem-lake-hanoi/1.jpg',
         alt_hi: 'सूर्यास्त के समय Turtle Tower के reflection के साथ Hoan Kiem Lake'
       },
       {
-        src_en: '/amev/images/hoan-kiem-lake-hanoi/2.jpg',
+        src_en: '/images/hoan-kiem-lake-hanoi/2.jpg',
         alt_en: 'The iconic red Huc Bridge leading to Ngoc Son Temple',
-        src_hi: '/amev/images/hoan-kiem-lake-hanoi/2.jpg',
+        src_hi: '/images/hoan-kiem-lake-hanoi/2.jpg',
         alt_hi: 'Ngoc Son Temple की ओर जाने वाला प्रतिष्ठित लाल Huc Bridge'
       },
       { 
-        src_en: '/amev/images/hoan-kiem-lake-hanoi/3.jpg',
+        src_en: '/images/hoan-kiem-lake-hanoi/3.jpg',
         alt_en: 'Hanoi Old Quarter bustling streets near the lake',
-        src_hi: '/amev/images/hoan-kiem-lake-hanoi/3.jpg',
+        src_hi: '/images/hoan-kiem-lake-hanoi/3.jpg',
         alt_hi: 'झील के पास Hanoi Old Quarter की हलचल भरी सड़कें' 
       },
       { 
-        src_en: '/amev/images/hoan-kiem-lake-hanoi/4.jpg',
+        src_en: '/images/hoan-kiem-lake-hanoi/4.jpg',
         alt_en: 'Ngoc Son Temple pagoda architecture on the lake',
-        src_hi: '/amev/images/hoan-kiem-lake-hanoi/4.jpg',
+        src_hi: '/images/hoan-kiem-lake-hanoi/4.jpg',
         alt_hi: 'झील पर Ngoc Son Temple का pagoda architecture' 
       },
       { 
-        src_en: '/amev/images/hoan-kiem-lake-hanoi/5.jpg',
+        src_en: '/images/hoan-kiem-lake-hanoi/5.jpg',
         alt_en: 'Hoan Kiem Lake embodies Hanoi\'s history, culture, and the Returned Sword legend.',
-        src_hi: '/amev/images/hoan-kiem-lake-hanoi/5.jpg',
+        src_hi: '/images/hoan-kiem-lake-hanoi/5.jpg',
         alt_hi: 'Hoan Kiem Lake के आसपास local vendors और street life' 
       },
       { 
-        src_en: '/amev/images/hoan-kiem-lake-hanoi/6.jpg',
+        src_en: '/images/hoan-kiem-lake-hanoi/6.jpg',
         alt_en: 'Visit Ngoc Son Temple, a cultural gem on Hoan Kiem Lake.',
-        src_hi: '/amev/images/hoan-kiem-lake-hanoi/6.jpg',
+        src_hi: '/images/hoan-kiem-lake-hanoi/6.jpg',
         alt_hi: 'झील के किनारे सुबह की tai chi exercises' 
       },
       { 
-        src_en: '/amev/images/hoan-kiem-lake-hanoi/7.jpg',
+        src_en: '/images/hoan-kiem-lake-hanoi/7.jpg',
         alt_en: 'Capture Turtle Tower’s reflection shimmering in Hoan Kiem Lake at sunset.',
-        src_hi: '/amev/images/hoan-kiem-lake-hanoi/7.jpg',
+        src_hi: '/images/hoan-kiem-lake-hanoi/7.jpg',
         alt_hi: 'शहर की रोशनी के साथ Hoan Kiem Lake की रात्रि प्रकाश व्यवस्था' 
       },
       { 
-        src_en: '/amev/images/hoan-kiem-lake-hanoi/8.jpg',
+        src_en: '/images/hoan-kiem-lake-hanoi/8.jpg',
         alt_en: 'The double-decker bus combines convenience and fun for exploring Hanoi’s key landmarks.',
-        src_hi: '/amev/images/hoan-kiem-lake-hanoi/8.jpg',
+        src_hi: '/images/hoan-kiem-lake-hanoi/8.jpg',
         alt_hi: 'झील के आसपास traditional Vietnamese architecture' 
       }
     ]
@@ -94,27 +94,27 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/thang-long-water-puppet-theatre-hanoi/1.jpg', 
+        src_en: '/images/thang-long-water-puppet-theatre-hanoi/1.jpg', 
         alt_en: 'Colorful water puppets performing traditional stories', 
-        src_hi: '/amev/images/thang-long-water-puppet-theatre-hanoi/1.jpg', 
+        src_hi: '/images/thang-long-water-puppet-theatre-hanoi/1.jpg', 
         alt_hi: 'पारंपरिक कहानियों का प्रदर्शन करती रंगीन water puppets' 
       },
       { 
-        src_en: '/amev/images/thang-long-water-puppet-theatre-hanoi/2.jpg', 
+        src_en: '/images/thang-long-water-puppet-theatre-hanoi/2.jpg', 
         alt_en: 'Traditional Vietnamese water puppet show stage setup', 
-        src_hi: '/amev/images/thang-long-water-puppet-theatre-hanoi/2.jpg', 
+        src_hi: '/images/thang-long-water-puppet-theatre-hanoi/2.jpg', 
         alt_hi: 'पारंपरिक Vietnamese water puppet show का stage setup' 
       },
       { 
-        src_en: '/amev/images/thang-long-water-puppet-theatre-hanoi/3.jpg', 
+        src_en: '/images/thang-long-water-puppet-theatre-hanoi/3.jpg', 
         alt_en: 'Puppeteers controlling water puppets behind bamboo screen', 
-        src_hi: '/amev/images/thang-long-water-puppet-theatre-hanoi/3.jpg', 
+        src_hi: '/images/thang-long-water-puppet-theatre-hanoi/3.jpg', 
         alt_hi: 'बांस की screen के पीछे water puppets को control करते puppeteers' 
       },
       { 
-        src_en: '/amev/images/thang-long-water-puppet-theatre-hanoi/4.jpg', 
+        src_en: '/images/thang-long-water-puppet-theatre-hanoi/4.jpg', 
         alt_en: 'Traditional musical instruments used in water puppet shows', 
-        src_hi: '/amev/images/thang-long-water-puppet-theatre-hanoi/4.jpg', 
+        src_hi: '/images/thang-long-water-puppet-theatre-hanoi/4.jpg', 
         alt_hi: 'Water puppet shows में इस्तेमाल होने वाले traditional musical instruments' 
       }
     ]
@@ -142,51 +142,51 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/sung-sot-cave-ha-long-bay/1.jpg', 
+        src_en: '/images/sung-sot-cave-ha-long-bay/1.jpg', 
         alt_en: 'Magnificent stalactites inside Sung Sot Cave', 
-        src_hi: '/amev/images/sung-sot-cave-ha-long-bay/1.jpg', 
+        src_hi: '/images/sung-sot-cave-ha-long-bay/1.jpg', 
         alt_hi: 'Sung Sot Cave के अंदर शानदार stalactites' 
       },
       { 
-        src_en: '/amev/images/sung-sot-cave-ha-long-bay/2.jpg', 
+        src_en: '/images/sung-sot-cave-ha-long-bay/2.jpg', 
         alt_en: 'Entrance to Sung Sot Cave with limestone formations', 
-        src_hi: '/amev/images/sung-sot-cave-ha-long-bay/2.jpg', 
+        src_hi: '/images/sung-sot-cave-ha-long-bay/2.jpg', 
         alt_hi: 'Limestone formations के साथ Sung Sot Cave का entrance' 
       },
       { 
-        src_en: '/amev/images/sung-sot-cave-ha-long-bay/3.jpg', 
+        src_en: '/images/sung-sot-cave-ha-long-bay/3.jpg', 
         alt_en: 'Illuminated cave chambers with dramatic rock formations', 
-        src_hi: '/amev/images/sung-sot-cave-ha-long-bay/3.jpg', 
+        src_hi: '/images/sung-sot-cave-ha-long-bay/3.jpg', 
         alt_hi: 'Dramatic rock formations के साथ illuminated cave chambers' 
       },
       { 
-        src_en: '/amev/images/sung-sot-cave-ha-long-bay/4.jpg', 
+        src_en: '/images/sung-sot-cave-ha-long-bay/4.jpg', 
         alt_en: 'Tourists exploring the massive cave interior', 
-        src_hi: '/amev/images/sung-sot-cave-ha-long-bay/4.jpg', 
+        src_hi: '/images/sung-sot-cave-ha-long-bay/4.jpg', 
         alt_hi: 'Massive cave interior की खोज करते tourists' 
       },
       { 
-        src_en: '/amev/images/sung-sot-cave-ha-long-bay/5.jpg', 
+        src_en: '/images/sung-sot-cave-ha-long-bay/5.jpg', 
         alt_en: 'Natural limestone pillars and underground formations', 
-        src_hi: '/amev/images/sung-sot-cave-ha-long-bay/5.jpg', 
+        src_hi: '/images/sung-sot-cave-ha-long-bay/5.jpg', 
         alt_hi: 'Natural limestone pillars और underground formations' 
       },
       { 
-        src_en: '/amev/images/sung-sot-cave-ha-long-bay/6.jpg', 
+        src_en: '/images/sung-sot-cave-ha-long-bay/6.jpg', 
         alt_en: 'Colorful lighting highlighting cave\'s natural beauty', 
-        src_hi: '/amev/images/sung-sot-cave-ha-long-bay/6.jpg', 
+        src_hi: '/images/sung-sot-cave-ha-long-bay/6.jpg', 
         alt_hi: 'Cave की natural beauty को highlight करती colorful lighting' 
       },
       { 
-        src_en: '/amev/images/sung-sot-cave-ha-long-bay/7.jpg', 
+        src_en: '/images/sung-sot-cave-ha-long-bay/7.jpg', 
         alt_en: 'Ancient stalactites creating cathedral-like spaces', 
-        src_hi: '/amev/images/sung-sot-cave-ha-long-bay/7.jpg', 
+        src_hi: '/images/sung-sot-cave-ha-long-bay/7.jpg', 
         alt_hi: 'Cathedral-like spaces बनाती ancient stalactites' 
       },
       { 
-        src_en: '/amev/images/sung-sot-cave-ha-long-bay/8.jpg', 
+        src_en: '/images/sung-sot-cave-ha-long-bay/8.jpg', 
         alt_en: 'Boat approach to Sung Sot Cave through Ha Long Bay', 
-        src_hi: '/amev/images/sung-sot-cave-ha-long-bay/8.jpg', 
+        src_hi: '/images/sung-sot-cave-ha-long-bay/8.jpg', 
         alt_hi: 'Ha Long Bay के through Sung Sot Cave तक boat approach' 
       }
     ]
@@ -214,51 +214,51 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/ti-top-island-ha-long-bay/1.jpg', 
+        src_en: '/images/ti-top-island-ha-long-bay/1.jpg', 
         alt_en: 'Ti Top Island pristine white sand beach', 
-        src_hi: '/amev/images/ti-top-island-ha-long-bay/1.jpg', 
+        src_hi: '/images/ti-top-island-ha-long-bay/1.jpg', 
         alt_hi: 'Ti Top Island की pristine white sand beach' 
       },
       { 
-        src_en: '/amev/images/ti-top-island-ha-long-bay/2.jpg', 
+        src_en: '/images/ti-top-island-ha-long-bay/2.jpg', 
         alt_en: 'Panoramic view of Ha Long Bay from Ti Top summit', 
-        src_hi: '/amev/images/ti-top-island-ha-long-bay/2.jpg', 
+        src_hi: '/images/ti-top-island-ha-long-bay/2.jpg', 
         alt_hi: 'Ti Top summit से Ha Long Bay का panoramic view' 
       },
       { 
-        src_en: '/amev/images/ti-top-island-ha-long-bay/3.jpg', 
+        src_en: '/images/ti-top-island-ha-long-bay/3.jpg', 
         alt_en: 'Limestone karsts surrounding Ti Top Island', 
-        src_hi: '/amev/images/ti-top-island-ha-long-bay/3.jpg', 
+        src_hi: '/images/ti-top-island-ha-long-bay/3.jpg', 
         alt_hi: 'Ti Top Island के आसपास limestone karsts' 
       },
       { 
-        src_en: '/amev/images/ti-top-island-ha-long-bay/4.jpg', 
+        src_en: '/images/ti-top-island-ha-long-bay/4.jpg', 
         alt_en: 'Crystal clear turquoise waters around the island', 
-        src_hi: '/amev/images/ti-top-island-ha-long-bay/4.jpg', 
+        src_hi: '/images/ti-top-island-ha-long-bay/4.jpg', 
         alt_hi: 'Island के आसपास crystal clear turquoise waters' 
       },
       { 
-        src_en: '/amev/images/ti-top-island-ha-long-bay/5.jpg', 
+        src_en: '/images/ti-top-island-ha-long-bay/5.jpg', 
         alt_en: 'Hiking trail to Ti Top Island viewpoint', 
-        src_hi: '/amev/images/ti-top-island-ha-long-bay/5.jpg', 
+        src_hi: '/images/ti-top-island-ha-long-bay/5.jpg', 
         alt_hi: 'Ti Top Island viewpoint का hiking trail' 
       },
       { 
-        src_en: '/amev/images/ti-top-island-ha-long-bay/6.jpg', 
+        src_en: '/images/ti-top-island-ha-long-bay/6.jpg', 
         alt_en: 'Tourists enjoying beach activities on Ti Top', 
-        src_hi: '/amev/images/ti-top-island-ha-long-bay/6.jpg', 
+        src_hi: '/images/ti-top-island-ha-long-bay/6.jpg', 
         alt_hi: 'Ti Top पर beach activities का आनंद लेते tourists' 
       },
       { 
-        src_en: '/amev/images/ti-top-island-ha-long-bay/7.jpg', 
+        src_en: '/images/ti-top-island-ha-long-bay/7.jpg', 
         alt_en: 'Sunset view from Ti Top Island overlooking Ha Long Bay', 
-        src_hi: '/amev/images/ti-top-island-ha-long-bay/7.jpg', 
+        src_hi: '/images/ti-top-island-ha-long-bay/7.jpg', 
         alt_hi: 'Ha Long Bay को देखते हुए Ti Top Island से sunset view' 
       },
       { 
-        src_en: '/amev/images/ti-top-island-ha-long-bay/8.jpg', 
+        src_en: '/images/ti-top-island-ha-long-bay/8.jpg', 
         alt_en: 'Traditional Vietnamese boats anchored near Ti Top', 
-        src_hi: '/amev/images/ti-top-island-ha-long-bay/8.jpg', 
+        src_hi: '/images/ti-top-island-ha-long-bay/8.jpg', 
         alt_hi: 'Ti Top के पास anchored traditional Vietnamese boats' 
       }
     ]
@@ -282,15 +282,15 @@ export const locationData = {
     ],
     images: [
       {
-        src_en: '/amev/images/marble-mountains-da-nang/1.jpg',
+        src_en: '/images/marble-mountains-da-nang/1.jpg',
         alt_en: 'Marble Mountains caves',
-        src_hi: '/amev/images/marble-mountains-da-nang/1.jpg',
+        src_hi: '/images/marble-mountains-da-nang/1.jpg',
         alt_hi: 'मार्बल माउंटेन गुफाएं'
       },
       {
-        src_en: '/amev/images/marble-mountains-da-nang/2.jpg',
+        src_en: '/images/marble-mountains-da-nang/2.jpg',
         alt_en: 'View from Marble Mountains',
-        src_hi: '/amev/images/marble-mountains-da-nang/2.jpg',
+        src_hi: '/images/marble-mountains-da-nang/2.jpg',
         alt_hi: 'मार्बल माउंटेन से दृश्य'
       }
     ]
@@ -314,15 +314,15 @@ export const locationData = {
     ],
     images: [
       {
-        src_en: '/amev/images/my-khe-beach-da-nang/1.jpg',
+        src_en: '/images/my-khe-beach-da-nang/1.jpg',
         alt_en: 'My Khe Beach with umbrellas',
-        src_hi: '/amev/images/my-khe-beach-da-nang/1.jpg',
+        src_hi: '/images/my-khe-beach-da-nang/1.jpg',
         alt_hi: 'छाते के साथ माई खे समुद्र तट'
       },
       {
-        src_en: '/amev/images/my-khe-beach-da-nang/2.jpg',
+        src_en: '/images/my-khe-beach-da-nang/2.jpg',
         alt_en: 'My Khe Beach coastline',
-        src_hi: '/amev/images/my-khe-beach-da-nang/2.jpg',
+        src_hi: '/images/my-khe-beach-da-nang/2.jpg',
         alt_hi: 'माई खे समुद्र तट तटरेखा'
       }
     ]
@@ -348,15 +348,15 @@ export const locationData = {
     ],
     images: [
       {
-        src_en: '/amev/images/ba-na-hills-da-nang/1.jpg',
+        src_en: '/images/ba-na-hills-da-nang/1.jpg',
         alt_en: 'Golden Bridge at Ba Na Hills',
-        src_hi: '/amev/images/ba-na-hills-da-nang/1.jpg',
+        src_hi: '/images/ba-na-hills-da-nang/1.jpg',
         alt_hi: 'बा ना हिल्स में गोल्डन ब्रिज'
       },
       {
-        src_en: '/amev/images/ba-na-hills-da-nang/2.jpg',
+        src_en: '/images/ba-na-hills-da-nang/2.jpg',
         alt_en: 'French Village at Ba Na Hills',
-        src_hi: '/amev/images/ba-na-hills-da-nang/2.jpg',
+        src_hi: '/images/ba-na-hills-da-nang/2.jpg',
         alt_hi: 'बा ना हिल्स में फ्रेंच विलेज'
       }
     ]
@@ -390,51 +390,51 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/hoi-an-ancient-town/1.jpg', 
+        src_en: '/images/hoi-an-ancient-town/1.jpg', 
         alt_en: 'Hoi An Ancient Town illuminated with colorful lanterns at night', 
-        src_hi: '/amev/images/hoi-an-ancient-town/1.jpg', 
+        src_hi: '/images/hoi-an-ancient-town/1.jpg', 
         alt_hi: 'रात में colorful lanterns से जगमगाता Hoi An Ancient Town' 
       },
       { 
-        src_en: '/amev/images/hoi-an-ancient-town/2.jpg', 
+        src_en: '/images/hoi-an-ancient-town/2.jpg', 
         alt_en: 'Famous Japanese Covered Bridge in Hoi An', 
-        src_hi: '/amev/images/hoi-an-ancient-town/2.jpg', 
+        src_hi: '/images/hoi-an-ancient-town/2.jpg', 
         alt_hi: 'Hoi An का प्रसिद्ध Japanese Covered Bridge' 
       },
       { 
-        src_en: '/amev/images/hoi-an-ancient-town/3.jpg', 
+        src_en: '/images/hoi-an-ancient-town/3.jpg', 
         alt_en: 'Traditional yellow buildings with red lanterns in Hoi An', 
-        src_hi: '/amev/images/hoi-an-ancient-town/3.jpg', 
+        src_hi: '/images/hoi-an-ancient-town/3.jpg', 
         alt_hi: 'Hoi An में लाल लालटेन के साथ traditional पीली buildings' 
       },
       { 
-        src_en: '/amev/images/hoi-an-ancient-town/4.jpg', 
+        src_en: '/images/hoi-an-ancient-town/4.jpg', 
         alt_en: 'Thu Bon River with traditional boats and lantern reflections', 
-        src_hi: '/amev/images/hoi-an-ancient-town/4.jpg', 
+        src_hi: '/images/hoi-an-ancient-town/4.jpg', 
         alt_hi: 'Traditional boats और lantern reflections के साथ Thu Bon River' 
       },
       { 
-        src_en: '/amev/images/hoi-an-ancient-town/5.jpg', 
+        src_en: '/images/hoi-an-ancient-town/5.jpg', 
         alt_en: 'Ancient merchant houses with traditional architecture', 
-        src_hi: '/amev/images/hoi-an-ancient-town/5.jpg', 
+        src_hi: '/images/hoi-an-ancient-town/5.jpg', 
         alt_hi: 'Traditional architecture के साथ ancient merchant houses' 
       },
       { 
-        src_en: '/amev/images/hoi-an-ancient-town/6.jpg', 
+        src_en: '/images/hoi-an-ancient-town/6.jpg', 
         alt_en: 'Bustling market streets in Hoi An Ancient Town', 
-        src_hi: '/amev/images/hoi-an-ancient-town/6.jpg', 
+        src_hi: '/images/hoi-an-ancient-town/6.jpg', 
         alt_hi: 'Hoi An Ancient Town की हलचल भरी market streets' 
       },
       { 
-        src_en: '/amev/images/hoi-an-ancient-town/7.jpg', 
+        src_en: '/images/hoi-an-ancient-town/7.jpg', 
         alt_en: 'Lantern boat ride on Thu Bon River at sunset', 
-        src_hi: '/amev/images/hoi-an-ancient-town/7.jpg', 
+        src_hi: '/images/hoi-an-ancient-town/7.jpg', 
         alt_hi: 'Sunset के समय Thu Bon River पर lantern boat ride' 
       },
       { 
-        src_en: '/amev/images/hoi-an-ancient-town/8.jpg', 
+        src_en: '/images/hoi-an-ancient-town/8.jpg', 
         alt_en: 'Traditional Vietnamese woman selling lanterns in Hoi An', 
-        src_hi: '/amev/images/hoi-an-ancient-town/8.jpg', 
+        src_hi: '/images/hoi-an-ancient-town/8.jpg', 
         alt_hi: 'Hoi An में lanterns बेचती traditional Vietnamese महिला' 
       }
     ]
@@ -468,51 +468,51 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/tra-que-vegetable-village-hoi-an/1.jpg', 
+        src_en: '/images/tra-que-vegetable-village-hoi-an/1.jpg', 
         alt_en: 'Lush green vegetable fields in Tra Que Village', 
-        src_hi: '/amev/images/tra-que-vegetable-village-hoi-an/1.jpg', 
+        src_hi: '/images/tra-que-vegetable-village-hoi-an/1.jpg', 
         alt_hi: 'Tra Que Village में हरे-भरे vegetable fields' 
       },
       { 
-        src_en: '/amev/images/tra-que-vegetable-village-hoi-an/2.jpg', 
+        src_en: '/images/tra-que-vegetable-village-hoi-an/2.jpg', 
         alt_en: 'Local farmers working in traditional vegetable gardens', 
-        src_hi: '/amev/images/tra-que-vegetable-village-hoi-an/2.jpg', 
+        src_hi: '/images/tra-que-vegetable-village-hoi-an/2.jpg', 
         alt_hi: 'Traditional vegetable gardens में काम करते local farmers' 
       },
       { 
-        src_en: '/amev/images/tra-que-vegetable-village-hoi-an/3.jpg', 
+        src_en: '/images/tra-que-vegetable-village-hoi-an/3.jpg', 
         alt_en: 'Cycling through rice paddies near Tra Que Village', 
-        src_hi: '/amev/images/tra-que-vegetable-village-hoi-an/3.jpg', 
+        src_hi: '/images/tra-que-vegetable-village-hoi-an/3.jpg', 
         alt_hi: 'Tra Que Village के पास rice paddies के through cycling' 
       },
       { 
-        src_en: '/amev/images/tra-que-vegetable-village-hoi-an/4.jpg', 
+        src_en: '/images/tra-que-vegetable-village-hoi-an/4.jpg', 
         alt_en: 'Fresh organic herbs and vegetables from Tra Que', 
-        src_hi: '/amev/images/tra-que-vegetable-village-hoi-an/4.jpg', 
+        src_hi: '/images/tra-que-vegetable-village-hoi-an/4.jpg', 
         alt_hi: 'Tra Que से fresh organic herbs और vegetables' 
       },
       { 
-        src_en: '/amev/images/tra-que-vegetable-village-hoi-an/5.jpg', 
+        src_en: '/images/tra-que-vegetable-village-hoi-an/5.jpg', 
         alt_en: 'Traditional Vietnamese farming tools and methods', 
-        src_hi: '/amev/images/tra-que-vegetable-village-hoi-an/5.jpg', 
+        src_hi: '/images/tra-que-vegetable-village-hoi-an/5.jpg', 
         alt_hi: 'Traditional Vietnamese farming tools और methods' 
       },
       { 
-        src_en: '/amev/images/tra-que-vegetable-village-hoi-an/6.jpg', 
+        src_en: '/images/tra-que-vegetable-village-hoi-an/6.jpg', 
         alt_en: 'Cooking class with fresh vegetables from Tra Que', 
-        src_hi: '/amev/images/tra-que-vegetable-village-hoi-an/6.jpg', 
+        src_hi: '/images/tra-que-vegetable-village-hoi-an/6.jpg', 
         alt_hi: 'Tra Que की fresh vegetables के साथ cooking class' 
       },
       { 
-        src_en: '/amev/images/tra-que-vegetable-village-hoi-an/7.jpg', 
+        src_en: '/images/tra-que-vegetable-village-hoi-an/7.jpg', 
         alt_en: 'Peaceful rural landscape around Tra Que Village', 
-        src_hi: '/amev/images/tra-que-vegetable-village-hoi-an/7.jpg', 
+        src_hi: '/images/tra-que-vegetable-village-hoi-an/7.jpg', 
         alt_hi: 'Tra Que Village के आसपास शांतिपूर्ण rural landscape' 
       },
       { 
-        src_en: '/amev/images/tra-que-vegetable-village-hoi-an/8.jpg', 
+        src_en: '/images/tra-que-vegetable-village-hoi-an/8.jpg', 
         alt_en: 'Water buffalo in rice fields near Tra Que', 
-        src_hi: '/amev/images/tra-que-vegetable-village-hoi-an/8.jpg', 
+        src_hi: '/images/tra-que-vegetable-village-hoi-an/8.jpg', 
         alt_hi: 'Tra Que के पास rice fields में water buffalo' 
       }
     ]
@@ -536,21 +536,21 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/oriental-suites-hotel-spa-hanoi/1.jpg', 
+        src_en: '/images/oriental-suites-hotel-spa-hanoi/1.jpg', 
         alt_en: 'Oriental Suites Hotel exterior in Hanoi Old Quarter', 
-        src_hi: '/amev/images/oriental-suites-hotel-spa-hanoi/1.jpg', 
+        src_hi: '/images/oriental-suites-hotel-spa-hanoi/1.jpg', 
         alt_hi: 'Hanoi Old Quarter में Oriental Suites Hotel का exterior' 
       },
       { 
-        src_en: '/amev/images/oriental-suites-hotel-spa-hanoi/2.jpg', 
+        src_en: '/images/oriental-suites-hotel-spa-hanoi/2.jpg', 
         alt_en: 'Elegant hotel lobby with Vietnamese decor', 
-        src_hi: '/amev/images/oriental-suites-hotel-spa-hanoi/2.jpg', 
+        src_hi: '/images/oriental-suites-hotel-spa-hanoi/2.jpg', 
         alt_hi: 'Vietnamese decor के साथ elegant hotel lobby' 
       },
       { 
-        src_en: '/amev/images/oriental-suites-hotel-spa-hanoi/3.jpg', 
+        src_en: '/images/oriental-suites-hotel-spa-hanoi/3.jpg', 
         alt_en: 'Comfortable guest room with modern amenities', 
-        src_hi: '/amev/images/oriental-suites-hotel-spa-hanoi/3.jpg', 
+        src_hi: '/images/oriental-suites-hotel-spa-hanoi/3.jpg', 
         alt_hi: 'आधुनिक सुविधाओं के साथ आरामदायक guest room' 
       }
     ]
@@ -574,21 +574,21 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/noi-bai-international-airport-han/1.jpg', 
+        src_en: '/images/noi-bai-international-airport-han/1.jpg', 
         alt_en: 'Noi Bai Airport modern terminal building', 
-        src_hi: '/amev/images/noi-bai-international-airport-han/1.jpg', 
+        src_hi: '/images/noi-bai-international-airport-han/1.jpg', 
         alt_hi: 'Noi Bai Airport की आधुनिक terminal building' 
       },
       { 
-        src_en: '/amev/images/noi-bai-international-airport-han/2.jpg', 
+        src_en: '/images/noi-bai-international-airport-han/2.jpg', 
         alt_en: 'International arrivals hall', 
-        src_hi: '/amev/images/noi-bai-international-airport-han/2.jpg', 
+        src_hi: '/images/noi-bai-international-airport-han/2.jpg', 
         alt_hi: 'अंतर्राष्ट्रीय arrivals hall' 
       },
       { 
-        src_en: '/amev/images/noi-bai-international-airport-han/3.jpg', 
+        src_en: '/images/noi-bai-international-airport-han/3.jpg', 
         alt_en: 'Transportation options from airport to city', 
-        src_hi: '/amev/images/noi-bai-international-airport-han/3.jpg', 
+        src_hi: '/images/noi-bai-international-airport-han/3.jpg', 
         alt_hi: 'Airport से शहर तक के transportation options' 
       }
     ]
@@ -616,33 +616,33 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/hanoi-old-quarter/1.jpg', 
+        src_en: '/images/hanoi-old-quarter/1.jpg', 
         alt_en: 'Narrow bustling streets of Hanoi Old Quarter', 
-        src_hi: '/amev/images/hanoi-old-quarter/1.jpg', 
+        src_hi: '/images/hanoi-old-quarter/1.jpg', 
         alt_hi: 'Hanoi Old Quarter की संकरी हलचल भरी सड़कें' 
       },
       { 
-        src_en: '/amev/images/hanoi-old-quarter/2.jpg', 
+        src_en: '/images/hanoi-old-quarter/2.jpg', 
         alt_en: 'Vietnamese street food vendors in Old Quarter', 
-        src_hi: '/amev/images/hanoi-old-quarter/2.jpg', 
+        src_hi: '/images/hanoi-old-quarter/2.jpg', 
         alt_hi: 'Old Quarter में Vietnamese street food vendors' 
       },
       { 
-        src_en: '/amev/images/hanoi-old-quarter/3.jpg', 
+        src_en: '/images/hanoi-old-quarter/3.jpg', 
         alt_en: 'Traditional tube houses and colonial buildings', 
-        src_hi: '/amev/images/hanoi-old-quarter/3.jpg', 
+        src_hi: '/images/hanoi-old-quarter/3.jpg', 
         alt_hi: 'पारंपरिक tube houses और colonial buildings' 
       },
       { 
-        src_en: '/amev/images/hanoi-old-quarter/4.jpg', 
+        src_en: '/images/hanoi-old-quarter/4.jpg', 
         alt_en: 'Bustling local markets with vendors and goods', 
-        src_hi: '/amev/images/hanoi-old-quarter/4.jpg', 
+        src_hi: '/images/hanoi-old-quarter/4.jpg', 
         alt_hi: 'Vendors और goods के साथ हलचल भरे local markets' 
       },
       { 
-        src_en: '/amev/images/hanoi-old-quarter/5.jpg', 
+        src_en: '/images/hanoi-old-quarter/5.jpg', 
         alt_en: 'Weekend night market atmosphere in Old Quarter', 
-        src_hi: '/amev/images/hanoi-old-quarter/5.jpg', 
+        src_hi: '/images/hanoi-old-quarter/5.jpg', 
         alt_hi: 'Old Quarter में weekend night market का माहौल' 
       }
     ]
@@ -666,21 +666,21 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/new-delhi-railway-station/1.jpg', 
+        src_en: '/images/new-delhi-railway-station/1.jpg', 
         alt_en: 'New Delhi Railway Station exterior', 
-        src_hi: '/amev/images/new-delhi-railway-station/1.jpg', 
+        src_hi: '/images/new-delhi-railway-station/1.jpg', 
         alt_hi: 'New Delhi Railway Station का exterior' 
       },
       { 
-        src_en: '/amev/images/new-delhi-railway-station/2.jpg', 
+        src_en: '/images/new-delhi-railway-station/2.jpg', 
         alt_en: 'Busy railway platforms with trains', 
-        src_hi: '/amev/images/new-delhi-railway-station/2.jpg', 
+        src_hi: '/images/new-delhi-railway-station/2.jpg', 
         alt_hi: 'ट्रेनों के साथ व्यस्त railway platforms' 
       },
       { 
-        src_en: '/amev/images/new-delhi-railway-station/3.jpg', 
+        src_en: '/images/new-delhi-railway-station/3.jpg', 
         alt_en: 'Train departure information board', 
-        src_hi: '/amev/images/new-delhi-railway-station/3.jpg', 
+        src_hi: '/images/new-delhi-railway-station/3.jpg', 
         alt_hi: 'ट्रेन departure information board' 
       }
     ]
@@ -704,21 +704,21 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/indira-gandhi-international-airport-del/1.jpg', 
+        src_en: '/images/indira-gandhi-international-airport-del/1.jpg', 
         alt_en: 'Indira Gandhi International Airport exterior', 
-        src_hi: '/amev/images/indira-gandhi-international-airport-del/1.jpg', 
+        src_hi: '/images/indira-gandhi-international-airport-del/1.jpg', 
         alt_hi: 'Indira Gandhi International Airport का exterior' 
       },
       { 
-        src_en: '/amev/images/indira-gandhi-international-airport-del/2.jpg', 
+        src_en: '/images/indira-gandhi-international-airport-del/2.jpg', 
         alt_en: 'Modern terminal interior with shops and restaurants', 
-        src_hi: '/amev/images/indira-gandhi-international-airport-del/2.jpg', 
+        src_hi: '/images/indira-gandhi-international-airport-del/2.jpg', 
         alt_hi: 'दुकानों और रेस्तरां के साथ आधुनिक terminal interior' 
       },
       { 
-        src_en: '/amev/images/indira-gandhi-international-airport-del/3.jpg', 
+        src_en: '/images/indira-gandhi-international-airport-del/3.jpg', 
         alt_en: 'International departure gates and boarding area', 
-        src_hi: '/amev/images/indira-gandhi-international-airport-del/3.jpg', 
+        src_hi: '/images/indira-gandhi-international-airport-del/3.jpg', 
         alt_hi: 'अंतर्राष्ट्रीय departure gates और boarding area' 
       }
     ]
@@ -746,33 +746,33 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/royal-riverside-hoi-an-hotel-spa/1.jpg', 
+        src_en: '/images/royal-riverside-hoi-an-hotel-spa/1.jpg', 
         alt_en: 'Royal Riverside Hotel exterior with river views', 
-        src_hi: '/amev/images/royal-riverside-hoi-an-hotel-spa/1.jpg', 
+        src_hi: '/images/royal-riverside-hoi-an-hotel-spa/1.jpg', 
         alt_hi: 'River views के साथ Royal Riverside Hotel का exterior' 
       },
       { 
-        src_en: '/amev/images/royal-riverside-hoi-an-hotel-spa/2.jpg', 
+        src_en: '/images/royal-riverside-hoi-an-hotel-spa/2.jpg', 
         alt_en: 'Hotel room with beautiful river views', 
-        src_hi: '/amev/images/royal-riverside-hoi-an-hotel-spa/2.jpg', 
+        src_hi: '/images/royal-riverside-hoi-an-hotel-spa/2.jpg', 
         alt_hi: 'सुंदर river views के साथ hotel room' 
       },
       { 
-        src_en: '/amev/images/royal-riverside-hoi-an-hotel-spa/3.jpg', 
+        src_en: '/images/royal-riverside-hoi-an-hotel-spa/3.jpg', 
         alt_en: 'Swimming pool overlooking the river', 
-        src_hi: '/amev/images/royal-riverside-hoi-an-hotel-spa/3.jpg', 
+        src_hi: '/images/royal-riverside-hoi-an-hotel-spa/3.jpg', 
         alt_hi: 'नदी को देखते हुए swimming pool' 
       },
       { 
-        src_en: '/amev/images/royal-riverside-hoi-an-hotel-spa/4.jpg', 
+        src_en: '/images/royal-riverside-hoi-an-hotel-spa/4.jpg', 
         alt_en: 'Relaxing spa facilities at the hotel', 
-        src_hi: '/amev/images/royal-riverside-hoi-an-hotel-spa/4.jpg', 
+        src_hi: '/images/royal-riverside-hoi-an-hotel-spa/4.jpg', 
         alt_hi: 'Hotel में आरामदायक spa facilities' 
       },
       { 
-        src_en: '/amev/images/royal-riverside-hoi-an-hotel-spa/5.jpg', 
+        src_en: '/images/royal-riverside-hoi-an-hotel-spa/5.jpg', 
         alt_en: 'Riverside restaurant with Vietnamese cuisine', 
-        src_hi: '/amev/images/royal-riverside-hoi-an-hotel-spa/5.jpg', 
+        src_hi: '/images/royal-riverside-hoi-an-hotel-spa/5.jpg', 
         alt_hi: 'Vietnamese cuisine के साथ riverside restaurant' 
       }
     ]
@@ -800,27 +800,27 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/hoa-lu-ancient-capital-ninh-binh/1.jpg', 
+        src_en: '/images/hoa-lu-ancient-capital-ninh-binh/1.jpg', 
         alt_en: 'Ancient temple at Hoa Lu with traditional architecture', 
-        src_hi: '/amev/images/hoa-lu-ancient-capital-ninh-binh/1.jpg', 
+        src_hi: '/images/hoa-lu-ancient-capital-ninh-binh/1.jpg', 
         alt_hi: 'पारंपरिक वास्तुकला के साथ Hoa Lu का प्राचीन मंदिर' 
       },
       { 
-        src_en: '/amev/images/hoa-lu-ancient-capital-ninh-binh/2.jpg', 
+        src_en: '/images/hoa-lu-ancient-capital-ninh-binh/2.jpg', 
         alt_en: 'Temple courtyard with ancient stone structures', 
-        src_hi: '/amev/images/hoa-lu-ancient-capital-ninh-binh/2.jpg', 
+        src_hi: '/images/hoa-lu-ancient-capital-ninh-binh/2.jpg', 
         alt_hi: 'प्राचीन पत्थर की संरचनाओं के साथ मंदिर का आंगन' 
       },
       { 
-        src_en: '/amev/images/hoa-lu-ancient-capital-ninh-binh/3.jpg', 
+        src_en: '/images/hoa-lu-ancient-capital-ninh-binh/3.jpg', 
         alt_en: 'Dramatic karst mountains surrounding Hoa Lu', 
-        src_hi: '/amev/images/hoa-lu-ancient-capital-ninh-binh/3.jpg', 
+        src_hi: '/images/hoa-lu-ancient-capital-ninh-binh/3.jpg', 
         alt_hi: 'Hoa Lu के चारों ओर नाटकीय karst पहाड़' 
       },
       { 
-        src_en: '/amev/images/hoa-lu-ancient-capital-ninh-binh/4.jpg', 
+        src_en: '/images/hoa-lu-ancient-capital-ninh-binh/4.jpg', 
         alt_en: 'Historic statues and artifacts in the temples', 
-        src_hi: '/amev/images/hoa-lu-ancient-capital-ninh-binh/4.jpg', 
+        src_hi: '/images/hoa-lu-ancient-capital-ninh-binh/4.jpg', 
         alt_hi: 'मंदिरों में ऐतिहासिक मूर्तियां और artifacts' 
       }
     ]
@@ -848,33 +848,33 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/trang-an-scenic-landscape-ninh-binh/1.jpg', 
+        src_en: '/images/trang-an-scenic-landscape-ninh-binh/1.jpg', 
         alt_en: 'Boat tour through limestone caves at Trang An', 
-        src_hi: '/amev/images/trang-an-scenic-landscape-ninh-binh/1.jpg', 
+        src_hi: '/images/trang-an-scenic-landscape-ninh-binh/1.jpg', 
         alt_hi: 'Trang An में limestone caves के माध्यम से नाव यात्रा' 
       },
       { 
-        src_en: '/amev/images/trang-an-scenic-landscape-ninh-binh/2.jpg', 
+        src_en: '/images/trang-an-scenic-landscape-ninh-binh/2.jpg', 
         alt_en: 'Serene river winding through karst mountains', 
-        src_hi: '/amev/images/trang-an-scenic-landscape-ninh-binh/2.jpg', 
+        src_hi: '/images/trang-an-scenic-landscape-ninh-binh/2.jpg', 
         alt_hi: 'Karst पहाड़ों के बीच से बहती शांत नदी' 
       },
       { 
-        src_en: '/amev/images/trang-an-scenic-landscape-ninh-binh/3.jpg', 
+        src_en: '/images/trang-an-scenic-landscape-ninh-binh/3.jpg', 
         alt_en: 'Green rice paddies with limestone backdrop', 
-        src_hi: '/amev/images/trang-an-scenic-landscape-ninh-binh/3.jpg', 
+        src_hi: '/images/trang-an-scenic-landscape-ninh-binh/3.jpg', 
         alt_hi: 'Limestone की पृष्ठभूमि के साथ हरे धान के खेत' 
       },
       { 
-        src_en: '/amev/images/trang-an-scenic-landscape-ninh-binh/4.jpg', 
+        src_en: '/images/trang-an-scenic-landscape-ninh-binh/4.jpg', 
         alt_en: 'Beautiful cave interior with stalactites', 
-        src_hi: '/amev/images/trang-an-scenic-landscape-ninh-binh/4.jpg', 
+        src_hi: '/images/trang-an-scenic-landscape-ninh-binh/4.jpg', 
         alt_hi: 'Stalactites के साथ सुंदर गुफा का interior' 
       },
       { 
-        src_en: '/amev/images/trang-an-scenic-landscape-ninh-binh/5.jpg', 
+        src_en: '/images/trang-an-scenic-landscape-ninh-binh/5.jpg', 
         alt_en: 'Panoramic view of Trang An landscape', 
-        src_hi: '/amev/images/trang-an-scenic-landscape-ninh-binh/5.jpg', 
+        src_hi: '/images/trang-an-scenic-landscape-ninh-binh/5.jpg', 
         alt_hi: 'Trang An landscape का panoramic view' 
       }
     ]
@@ -902,27 +902,27 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/mua-cave-ninh-binh/1.jpg', 
+        src_en: '/images/mua-cave-ninh-binh/1.jpg', 
         alt_en: 'Breathtaking summit view from Mua Cave peak', 
-        src_hi: '/amev/images/mua-cave-ninh-binh/1.jpg', 
+        src_hi: '/images/mua-cave-ninh-binh/1.jpg', 
         alt_hi: 'Mua Cave peak से लुभावना summit view' 
       },
       { 
-        src_en: '/amev/images/mua-cave-ninh-binh/2.jpg', 
+        src_en: '/images/mua-cave-ninh-binh/2.jpg', 
         alt_en: 'Stone steps leading to the summit', 
-        src_hi: '/amev/images/mua-cave-ninh-binh/2.jpg', 
+        src_hi: '/images/mua-cave-ninh-binh/2.jpg', 
         alt_hi: 'Summit तक जाने वाली पत्थर की सीढ़ियां' 
       },
       { 
-        src_en: '/amev/images/mua-cave-ninh-binh/3.jpg', 
+        src_en: '/images/mua-cave-ninh-binh/3.jpg', 
         alt_en: 'Dragon statue at Mua Cave entrance', 
-        src_hi: '/amev/images/mua-cave-ninh-binh/3.jpg', 
+        src_hi: '/images/mua-cave-ninh-binh/3.jpg', 
         alt_hi: 'Mua Cave के प्रवेश द्वार पर dragon statue' 
       },
       { 
-        src_en: '/amev/images/mua-cave-ninh-binh/4.jpg', 
+        src_en: '/images/mua-cave-ninh-binh/4.jpg', 
         alt_en: 'Spectacular valley view with winding river', 
-        src_hi: '/amev/images/mua-cave-ninh-binh/4.jpg', 
+        src_hi: '/images/mua-cave-ninh-binh/4.jpg', 
         alt_hi: 'बहती नदी के साथ शानदार valley view' 
       }
     ]
@@ -948,21 +948,21 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/da-nang-international-airport-dad/1.jpg', 
+        src_en: '/images/da-nang-international-airport-dad/1.jpg', 
         alt_en: 'Da Nang Airport modern terminal building', 
-        src_hi: '/amev/images/da-nang-international-airport-dad/1.jpg', 
+        src_hi: '/images/da-nang-international-airport-dad/1.jpg', 
         alt_hi: 'Da Nang Airport की आधुनिक terminal building' 
       },
       { 
-        src_en: '/amev/images/da-nang-international-airport-dad/2.jpg', 
+        src_en: '/images/da-nang-international-airport-dad/2.jpg', 
         alt_en: 'International departure hall with check-in counters', 
-        src_hi: '/amev/images/da-nang-international-airport-dad/2.jpg', 
+        src_hi: '/images/da-nang-international-airport-dad/2.jpg', 
         alt_hi: 'Check-in counters के साथ अंतर्राष्ट्रीय departure hall' 
       },
       { 
-        src_en: '/amev/images/da-nang-international-airport-dad/3.jpg', 
+        src_en: '/images/da-nang-international-airport-dad/3.jpg', 
         alt_en: 'Airport gate area with seating and shops', 
-        src_hi: '/amev/images/da-nang-international-airport-dad/3.jpg', 
+        src_hi: '/images/da-nang-international-airport-dad/3.jpg', 
         alt_hi: 'Seating और shops के साथ airport gate area' 
       }
     ]
@@ -988,21 +988,21 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/una-railway-station/1.jpg', 
+        src_en: '/images/una-railway-station/1.jpg', 
         alt_en: 'Una Railway Station exterior view', 
-        src_hi: '/amev/images/una-railway-station/1.jpg', 
+        src_hi: '/images/una-railway-station/1.jpg', 
         alt_hi: 'Una Railway Station का exterior view' 
       },
       { 
-        src_en: '/amev/images/una-railway-station/2.jpg', 
+        src_en: '/images/una-railway-station/2.jpg', 
         alt_en: 'Railway platform at Una station', 
-        src_hi: '/amev/images/una-railway-station/2.jpg', 
+        src_hi: '/images/una-railway-station/2.jpg', 
         alt_hi: 'Una station पर railway platform' 
       },
       { 
-        src_en: '/amev/images/una-railway-station/3.jpg', 
+        src_en: '/images/una-railway-station/3.jpg', 
         alt_en: 'Welcome home sign at Una', 
-        src_hi: '/amev/images/una-railway-station/3.jpg', 
+        src_hi: '/images/una-railway-station/3.jpg', 
         alt_hi: 'Una में welcome home sign' 
       }
     ]
@@ -1030,27 +1030,27 @@ export const locationData = {
     ],
     images: [
       { 
-        src_en: '/amev/images/the-nalod-da-nang/1.jpg', 
+        src_en: '/images/the-nalod-da-nang/1.jpg', 
         alt_en: 'The Nalod Da Nang hotel exterior', 
-        src_hi: '/amev/images/the-nalod-da-nang/1.jpg', 
+        src_hi: '/images/the-nalod-da-nang/1.jpg', 
         alt_hi: 'The Nalod Da Nang hotel का exterior' 
       },
       { 
-        src_en: '/amev/images/the-nalod-da-nang/2.jpg', 
+        src_en: '/images/the-nalod-da-nang/2.jpg', 
         alt_en: 'Modern hotel room with city views', 
-        src_hi: '/amev/images/the-nalod-da-nang/2.jpg', 
+        src_hi: '/images/the-nalod-da-nang/2.jpg', 
         alt_hi: 'City views के साथ आधुनिक hotel room' 
       },
       { 
-        src_en: '/amev/images/the-nalod-da-nang/3.jpg', 
+        src_en: '/images/the-nalod-da-nang/3.jpg', 
         alt_en: 'Contemporary hotel lobby and reception', 
-        src_hi: '/amev/images/the-nalod-da-nang/3.jpg', 
+        src_hi: '/images/the-nalod-da-nang/3.jpg', 
         alt_hi: 'समकालीन hotel lobby और reception' 
       },
       { 
-        src_en: '/amev/images/the-nalod-da-nang/4.jpg', 
+        src_en: '/images/the-nalod-da-nang/4.jpg', 
         alt_en: 'Hotel location in Da Nang city center', 
-        src_hi: '/amev/images/the-nalod-da-nang/4.jpg', 
+        src_hi: '/images/the-nalod-da-nang/4.jpg', 
         alt_hi: 'Da Nang city center में hotel की location' 
       }
     ]
