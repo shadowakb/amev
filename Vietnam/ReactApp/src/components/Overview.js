@@ -102,7 +102,7 @@ const Overview = () => {
             </div>
             
             <div className="day-card-footer">
-              <span className="view-details">{t('viewDayPlans')} →</span>
+              <span className="view-details">{t('viewDayPlans')}</span>
             </div>
           </Link>
         ))}
