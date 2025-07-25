@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
 import { locationData } from '../data/locations';
@@ -207,11 +207,6 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
 
       {images.length > 0 && (
         <div className="image-carousel">
-          {allDayImages.length > 0 && (
-            <p className="carousel-subtitle">
-              {t('allLocationsPhotos') || `All photos from today's locations (${images.length} images)`}
-            </p>
-          )}
           <div 
             className="carousel-container"
             onTouchStart={handleTouchStart}
@@ -234,13 +229,7 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
                     alt={isHindi ? image.alt_hi : image.alt_en}
                     className="carousel-image"
                   />
-                  {allDayImages.length > 0 && image.locationName && (
-                    <div className="image-location-overlay">
-                      <span className="location-badge">
-                        {t(`${image.locationType}Label`)} • {image.locationName}
-                      </span>
-                    </div>
-                  )}
+
                 </div>
               ))}
             </div>
@@ -265,20 +254,51 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
                 </button>
 
                 <div className="carousel-indicators">
-                  {images.map((_, index) => (
-                    <button
-                      key={index}
-                      className={`carousel-indicator ${index === currentImageIndex ? 'carousel-indicator--active' : ''}`}
-                      onClick={() => goToImage(index)}
-                      aria-label={`Go to image ${index + 1}`}
-                    />
-                  ))}
+                  {images.length <= 8 && (
+                    // Show dots for 8 or fewer images
+                    images.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`carousel-indicator ${index === currentImageIndex ? 'carousel-indicator--active' : ''}`}
+                        onClick={() => goToImage(index)}
+                        aria-label={`Go to image ${index + 1}`}
+                      />
+                    ))
+                  )}
                 </div>
-
-                <div className="swipe-hint">Swipe for more photos</div>
               </>
             )}
           </div>
+
+          {/* Image context and counter below carousel */}
+          {images.length > 0 && (
+            <div className="carousel-info">
+              <div className="image-context">
+                {(() => {
+                  const currentImage = images[currentImageIndex];
+                  if (!currentImage) return null;
+
+                  const imageTitle = isHindi ? currentImage.alt_hi : currentImage.alt_en;
+                  const locationName = currentImage.locationName;
+
+                  return (
+                    <div className="image-details">
+                      <h4 className="image-title">{imageTitle}</h4>
+                      {locationName && allDayImages.length > 0 && (
+                        <p className="image-location">{locationName}</p>
+                      )}
+                    </div>
+                  );
+                })()}
+              </div>
+
+              {images.length > 1 && (
+                <div className="carousel-counter-bottom">
+                  {currentImageIndex + 1} / {images.length}
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
 
