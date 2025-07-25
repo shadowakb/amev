@@ -4,14 +4,14 @@ export const locationData = {
     name: 'Hoan Kiem Lake, Hanoi',
     query: 'Hoan Kiem Lake, Hanoi, Vietnam',
     type: 'landmark',
-    description: 'The beautiful heart of Hanoi! This legendary lake is perfect for peaceful walks and wonderful photos 📸',
+    description: 'Central lake in Hanoi, suitable for walking and photography 📸',
     description_hi: 'हनोई का सुंदर दिल! यह किंवदंती की झील शांत सैर और बेहतरीन तस्वीरों के लिए perfect है 📸',
     highlights_en: [
       'August weather is warm and humid (26-32°C) - bring sunscreen and stay hydrated ☀️',
       'Early morning or evening walks are the most pleasant - cooler and peaceful 🌅',
       'Don\'t miss the beautiful Ngoc Son Temple via the charming red Huc Bridge 🌉',
-      'The lake is beautifully illuminated at night - absolutely magical ✨',
-      'Wonderful street food vendors nearby - perfect for trying local flavors! 🍜'
+      'The lake is illuminated in the evening hours ✨',
+      'Local street food vendors nearby for trying regional cuisine 🍜'
     ],
     highlights_hi: [
       'अगस्त में गर्म और नम मौसम (26-32°C) - सनस्क्रीन लाएं और पानी पिएं ☀️',
@@ -148,13 +148,13 @@ export const locationData = {
     name: 'Sung Sot Cave, Ha Long Bay',
     query: 'Sung Sot Cave, Ha Long Bay, Vietnam',
     type: 'landmark',
-    description: 'One of the most spectacular caves in Ha Long Bay! Marvel at incredible stalactites and stalagmites in this natural wonder 🏞️',
+    description: 'Large cave system in Ha Long Bay featuring stalactites and stalagmites formations 🏞️',
     description_hi: 'Ha Long Bay की सबसे शानदार गुफाओं में से एक! इस प्राकृतिक आश्चर्य में अविश्वसनीय stalactites और stalagmites को देखें 🏞️',
     highlights_en: [
       'August is perfect for visiting - relatively dry weather and comfortable temperatures',
       'Guided tours reveal the fascinating geological formations and local legends',
       'The cave has two main chambers, each more spectacular than the last!',
-      'Perfect for photography - the natural lighting is magical ✨',
+      'Good conditions for photography with natural lighting ✨',
       'Accessible by boat from your Ha Long Bay cruise'
     ],
     highlights_hi: [
@@ -220,11 +220,11 @@ export const locationData = {
     name: 'Ti Top Island, Ha Long Bay',
     query: 'Ti Top Island, Ha Long Bay, Vietnam',
     type: 'landmark',
-    description: 'A stunning island paradise with a beautiful beach and the best panoramic views of Ha Long Bay! Perfect for photos 📸',
+    description: 'Island location with beach access and panoramic views of Ha Long Bay, suitable for photography 📸',
     description_hi: 'सुंदर beach और Ha Long Bay के बेहतरीन panoramic views के साथ एक शानदार island paradise! Photos के लिए perfect 📸',
     highlights_en: [
       'Gorgeous white sandy beach perfect for swimming and relaxation 🏖️',
-      'Climb to the viewpoint for breathtaking 360° views of Ha Long Bay',
+      'Climb to the viewpoint for 360° views of Ha Long Bay',
       'August is great weather for beach activities and hiking',
       'Less crowded in early morning or late afternoon - perfect timing!',
       'Bring your camera - this is the most Instagrammable spot in Ha Long Bay!'
@@ -390,12 +390,12 @@ export const locationData = {
     name: 'Hoi An Ancient Town',
     query: 'Hoi An Ancient Town, Hoi An, Vietnam',
     type: 'landmark',
-    description: 'A magical UNESCO World Heritage Site with enchanting lanterns, ancient architecture, and riverside charm! The perfect place for evening strolls ✨',
+    description: 'UNESCO World Heritage Site featuring traditional lanterns, historic architecture, and riverside location. Well-suited for evening walks ✨',
     description_hi: 'मनमोहक लालटेन, प्राचीन architecture, और नदी किनारे के आकर्षण के साथ एक जादुई UNESCO World Heritage Site! शाम की सैर के लिए perfect जगह ✨',
     highlights_en: [
-      'August evenings are magical - perfect weather for lantern-lit walks along Thu Bon River 🏮',
+      'August evenings offer suitable weather for lantern-lit walks along Thu Bon River 🏮',
       'Famous Japanese Covered Bridge - over 400 years old and absolutely gorgeous!',
-      'Amazing traditional architecture with Chinese, Japanese, and Vietnamese influences',
+      'Traditional architecture with Chinese, Japanese, and Vietnamese influences',
       'Best time to visit is evening when thousands of colorful lanterns light up the town',
       'Perfect for photos - every corner is Instagram-worthy! 📸',
       'Try the famous Cao Lau noodles and White Rose dumplings - only made here!',

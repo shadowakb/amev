@@ -40,6 +40,10 @@ const Overview = () => {
     return descriptions[day.day] || t('wonderfulDay');
   };
 
+  const pluralize = (count) => {
+    return count === 1 ? t('thing') : t('things');
+  };
+
   return (
     <div className="overview">
       <div className="overview-header">
@@ -83,19 +87,19 @@ const Overview = () => {
                 {day.morning && day.morning.length > 0 && (
                   <div className="activity-time morning">
                     <span className="time-label">☀️ {t('morning')}</span>
-                    <span className="activity-count">{day.morning.length} {t('things')}</span>
+                    <span className="activity-count">{day.morning.length} {pluralize(day.morning.length)}</span>
                   </div>
                 )}
                 {day.afternoon && day.afternoon.length > 0 && (
                   <div className="activity-time afternoon">
                     <span className="time-label">🌅 {t('afternoon')}</span>
-                    <span className="activity-count">{day.afternoon.length} {t('things')}</span>
+                    <span className="activity-count">{day.afternoon.length} {pluralize(day.afternoon.length)}</span>
                   </div>
                 )}
                 {day.evening && day.evening.length > 0 && (
                   <div className="activity-time evening">
                     <span className="time-label">🌙 {t('evening')}</span>
-                    <span className="activity-count">{day.evening.length} {t('things')}</span>
+                    <span className="activity-count">{day.evening.length} {pluralize(day.evening.length)}</span>
                   </div>
                 )}
               </div>

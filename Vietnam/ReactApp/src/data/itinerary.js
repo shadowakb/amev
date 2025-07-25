@@ -3,7 +3,7 @@ export const itineraryData = [
   {
     day: 1,
     date: 'Aug 7 (Thu)',
-    location: 'Una to New Delhi / In Flight',
+    location: 'Una to New Delhi (by Train) / In Flight',
     accommodation: 'In-flight',
     morning: [
       { 
@@ -132,8 +132,8 @@ export const itineraryData = [
         name: 'Hanoi Old Quarter', 
         query: 'Hanoi Old Quarter, Hanoi, Vietnam', 
         type: 'landmark', 
-        description: 'The soul of Hanoi! Historic streets, amazing street food, traditional architecture - everything Vietnam in one area.',
-        description_hi: 'हनोई की आत्मा! Historic streets, amazing street food, traditional architecture - एक जगह में पूरा Vietnam।'
+        description: 'Historic center of Hanoi with traditional streets, local food vendors, and traditional architecture representing Vietnamese culture.',
+        description_hi: 'हनोई का ऐतिहासिक केंद्र जहां traditional streets, local food vendors, और traditional architecture हैं जो Vietnamese संस्कृति का प्रतिनिधित्व करती है।'
       },
       { 
         name: 'Thang Long Water Puppet Theatre, Hanoi', 
@@ -214,8 +214,8 @@ export const itineraryData = [
     ],
     evening: [
       {
-        text: 'Back to Hanoi - Two Amazing Days Done! 🎉',
-        description: 'What a couple of days we\'ve had! Ha Long Bay and Ninh Binh - Vietnam is seriously stunning. Time to head back, rest up, and get ready for our flight to Central Vietnam tomorrow.',
+        text: 'Return to Hanoi - Ha Long Bay and Ninh Binh Complete 🎉',
+description: 'Ha Long Bay and Ninh Binh visits completed. Time to return to Hanoi, rest, and prepare for tomorrow\'s flight to Central Vietnam.',
         text_hi: 'हनोई वापस - दो अद्भुत दिन पूरे! 🎉',
         description_hi: 'हमारे पास कैसे couple of days थे! Ha Long Bay और Ninh Binh - Vietnam seriously stunning है।'
       }
@@ -260,7 +260,7 @@ export const itineraryData = [
     morning: [
       {
         text: 'Flight to Central Vietnam! ✈️ HAN → Da Nang (07:20-08:40)',
-        description: 'Moving on to the next adventure! Short domestic flight from Hanoi to Da Nang, then straight to the magical town of Hoi An. Can\'t wait to see those famous lanterns!',
+        description: 'Domestic flight from Hanoi to Da Nang, followed by transfer to Hoi An to see the traditional lantern displays.',
         text_hi: 'मध्य वियतनाम के लिए उड़ान! ✈️ HAN → दा नांग (07:20-08:40)',
         description_hi: 'अगले adventure की ओर बढ़ते हुए! हनोई से दा नांग तक छोटी domestic flight, फिर सीधे magical town Hoi An।'
       }
@@ -348,8 +348,8 @@ export const itineraryData = [
     ],
     evening: [
       {
-        text: 'Final Magical Hoi An Evening 🏮✨',
-        description: 'Our last night in this incredible place! Special dinner with Vietnamese specialties, followed by one more enchanting walk through the lantern-lit streets. Maybe a lantern boat ride on the Thu Bon River for the ultimate romantic family moment!',
+        text: 'Final Hoi An Evening 🏮',
+        description: 'Last evening in Hoi An. Dinner featuring Vietnamese specialties, followed by a walk through the lantern-lit streets. Optional lantern boat ride on the Thu Bon River.',
         text_hi: 'अंतिम जादुई होई एन शाम 🏮✨',
         description_hi: 'इस incredible place में हमारी आखिरी रात! Vietnamese specialties के साथ special dinner, फिर lantern-lit streets से एक और enchanting walk।'
       }
@@ -387,7 +387,7 @@ export const itineraryData = [
     morning: [
       {
         text: 'Farewell Hoi An, Hello Da Nang! 👋 Last Riverside Breakfast',
-        description: 'Bittersweet morning as we say goodbye to magical Hoi An! Last breakfast by the river, then it\'s time to move to our final Vietnamese destination - Da Nang.',
+        description: 'Final morning in Hoi An. Breakfast by the river, then transfer to Da Nang for the remainder of the Vietnam itinerary.',
         text_hi: 'अलविदा होई एन, नमस्ते दा नांग! 👋 अंतिम नदी के किनारे नाश्ता',
         description_hi: 'Bittersweet सुबह जब हम magical Hoi An को अलविदा कहते हैं! नदी के किनारे अंतिम नाश्ता।'
       },
@@ -525,7 +525,7 @@ export const itineraryData = [
       },
       {
         text: 'Airport Transfer - The Journey Home Begins ✈️',
-        description: 'Short 15-20 minute drive to Da Nang airport. Time to reflect on all the amazing experiences - Ha Long Bay, Hoi An lanterns, Ba Na Hills, and so much more!',
+        description: '15-20 minute drive to Da Nang airport. Time to review the Vietnam travel experiences including Ha Long Bay, Hoi An, Ba Na Hills, and other visited locations.',
         text_hi: 'एयरपोर्ट ट्रांसफर - घर की यात्रा शुरू ✈️',
         description_hi: 'Da Nang airport तक छोटी 15-20 मिनट की drive। सभी amazing experiences पर विचार करने का समय।'
       }
