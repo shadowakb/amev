@@ -29,7 +29,7 @@ if [ $? -eq 0 ]; then
     
     if [ $? -eq 0 ]; then
         echo "🎉 Deployment completed successfully!"
-        echo "📱 Your app should be available at: https://shadowakb.github.io/vietnam-travel-itinerary"
+        echo "📱 Your app should be available at: https://shadowakb.github.io/amev"
         echo ""
         echo "📝 Don't forget to:"
         echo "   1. Update the 'homepage' field in package.json with your actual GitHub Pages URL"

@@ -2,7 +2,7 @@
   "name": "vietnam-travel-itinerary",
   "version": "1.0.0",
   "description": "Interactive Vietnam Travel Itinerary - React Application",
-  "homepage": "https://shadowakb.github.io/vietnam-travel-itinerary",
+  "homepage": "https://shadowakb.github.io/amev",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
