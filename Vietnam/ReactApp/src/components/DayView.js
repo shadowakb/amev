@@ -6,6 +6,7 @@ import Timeline from './Timeline';
 import LocationMap from './LocationMap';
 import LocationHighlights from './LocationHighlights';
 import RestaurantSuggestions from './RestaurantSuggestions';
+import WeatherWidget from './WeatherWidget';
 
 const DayView = () => {
   const { dayNumber } = useParams();
@@ -123,6 +124,11 @@ const DayView = () => {
         </div>
         
         <div className="day-sidebar">
+          <WeatherWidget
+            location={dayData?.location}
+            dayData={dayData}
+          />
+
           {selectedLocation && (
             <>
               <LocationMap location={selectedLocation} />

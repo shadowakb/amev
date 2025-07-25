@@ -8,6 +8,7 @@ const RestaurantSuggestions = ({ location, dayData }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('specialties');
 
+
   // Extract city name from location
   const getCityName = (locationString) => {
     if (!locationString || typeof locationString !== 'string') return null;
