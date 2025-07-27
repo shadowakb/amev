@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { HiPhoto, HiEyeSlash } from 'react-icons/hi2';
 import { useLanguage } from '../hooks/useLanguage';
 import { useBackgroundContext } from '../contexts/BackgroundContext';
 
@@ -23,6 +24,7 @@ const BackgroundControls = ({ className = '' }) => {
         title={backgroundEnabled ? t('disablePhotos') || 'Turn off Photos' : t('enablePhotos') || 'Turn on Photos'}
         aria-label={backgroundEnabled ? 'Turn off photo backgrounds' : 'Turn on photo backgrounds'}
       >
+        {backgroundEnabled ? <HiPhoto className="toggle-icon" /> : <HiEyeSlash className="toggle-icon" />}
         <div className="toggle-track">
           <div className="toggle-thumb"></div>
         </div>

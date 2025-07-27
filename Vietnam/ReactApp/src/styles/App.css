@@ -53,19 +53,52 @@
   gap: var(--space-3);
 }
 
+/* Material Design 3 - Menu Button */
 .menu-button {
-  padding: var(--space-2);
-  border-radius: var(--radius-lg);
-  color: var(--color-text-secondary);
-  transition: all var(--transition-base);
-  background: var(--color-surface-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  color: rgba(29, 27, 32, 0.6);
+  font-size: 16px;
+  transition: all 200ms cubic-bezier(0.2, 0, 0, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 3px 1px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menu-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(29, 27, 32);
+  opacity: 0;
+  transition: opacity 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.menu-button:hover::before {
+  opacity: 0.08;
+}
+
+.menu-button:focus::before {
+  opacity: 0.12;
+}
+
+.menu-button:active::before {
+  opacity: 0.12;
 }
 
 .menu-button:hover {
-  background: var(--color-primary);
-  color: white;
-  transform: scale(1.05);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
 }
 
 .header-title h1 {
@@ -91,56 +124,136 @@
   flex-wrap: wrap;
 }
 
-/* Home Button */
+/* Material Design 3 - Home Button */
 .home-button {
   display: flex;
   align-items: center;
-  gap: var(--space-1);
-  padding: var(--space-2) var(--space-3);
-  background: var(--color-background-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 40px;
+  min-height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 8px;
   text-decoration: none;
-  color: var(--color-text-primary);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  transition: all var(--transition-base);
+  color: rgba(29, 27, 32, 0.7);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  transition: all 200ms cubic-bezier(0.2, 0, 0, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 3px 1px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(29, 27, 32);
+  opacity: 0;
+  transition: opacity 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.home-button:hover::before {
+  opacity: 0.08;
+}
+
+.home-button:focus::before {
+  opacity: 0.12;
+}
+
+.home-button:active::before {
+  opacity: 0.12;
 }
 
 .home-button:hover {
-  background: var(--color-primary);
-  color: white;
-  transform: translateY(-1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
 }
 
 .home-icon {
-  font-size: var(--font-size-base);
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.7;
 }
 
-/* Background Controls */
+/* Material Design 3 - Home Label */
+.home-label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgba(29, 27, 32, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+/* Material Design 3 - Background Controls */
 .background-controls {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: 12px;
 }
 
-/* Toggle Button Styles */
+/* Material Design 3 - Toggle Button */
 .toggle-button {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2);
-  background: transparent;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 40px;
+  min-height: 40px;
+  background: rgba(255, 255, 255, 0.7);
   border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: all var(--transition-base);
+  transition: all 200ms cubic-bezier(0.2, 0, 0, 1);
   white-space: nowrap;
-  font-size: var(--font-size-sm);
-  color: var(--color-text-primary);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgba(29, 27, 32, 0.7);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 3px 1px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.toggle-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(29, 27, 32);
+  opacity: 0;
+  transition: opacity 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.toggle-button:hover::before {
+  opacity: 0.08;
+}
+
+.toggle-button:focus::before {
+  opacity: 0.12;
+}
+
+.toggle-button:active::before {
+  opacity: 0.12;
 }
 
 .toggle-button:hover {
-  transform: translateY(-1px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
 }
 
 /* Toggle Track (the sliding background) */
@@ -176,31 +289,93 @@
   transform: translateX(20px);
 }
 
-/* Toggle Label */
-.toggle-label {
-  font-weight: var(--font-weight-medium);
-  user-select: none;
+/* Material Design 3 - Toggle Icon */
+.toggle-icon {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  color: rgba(29, 27, 32, 0.6);
+  transition: color 200ms cubic-bezier(0.2, 0, 0, 1);
+  position: relative;
+  z-index: 1;
 }
 
-.toggle-button:hover .toggle-label {
+.toggle-button.active .toggle-icon {
   color: var(--color-primary);
 }
 
+/* Material Design 3 - Toggle Label */
+.toggle-label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgba(29, 27, 32, 0.7);
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
+
+.toggle-button:hover .toggle-label {
+  color: rgb(29, 27, 32);
+}
+
+/* Material Design 3 - Language Toggle */
 .language-toggle {
-  padding: var(--space-1);
-  background: var(--color-background-secondary);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-full);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-  transition: all var(--transition-base);
-  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 40px;
+  min-height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: rgba(29, 27, 32, 0.7);
+  transition: all 200ms cubic-bezier(0.2, 0, 0, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 3px 1px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.language-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(29, 27, 32);
+  opacity: 0;
+  transition: opacity 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.language-toggle:hover::before {
+  opacity: 0.08;
+}
+
+.language-toggle:focus::before {
+  opacity: 0.12;
+}
+
+.language-toggle:active::before {
+  opacity: 0.12;
 }
 
 .language-toggle:hover {
-  border-color: var(--color-primary);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+.language-icon {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-right: var(--space-1);
 }
 
 .language-toggle-container {
@@ -211,20 +386,27 @@
 }
 
 .language-option {
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
-  transition: all var(--transition-base);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  height: 32px;
+  border-radius: 6px;
+  transition: all 200ms cubic-bezier(0.2, 0, 0, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: rgba(29, 27, 32, 0.7);
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 
 .language-option.active {
   background: var(--color-primary);
   color: white;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
 .header-description {
@@ -339,7 +521,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--gradient-glass);
+  /* background: var(--gradient-glass); */
   backdrop-filter: blur(10px);
   z-index: 1;
 }
@@ -1047,6 +1229,42 @@
   box-shadow: var(--shadow-lg);
 }
 
+/* Day Number with Date for Overview Cards */
+.day-number-with-date {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: white;
+  background: var(--gradient-primary);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.025em;
+}
+
+.day-number-with-date::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left var(--transition-slow);
+}
+
+.day-card:hover .day-number-with-date::before {
+  left: 100%;
+}
+
+.day-card:hover .day-number-with-date {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
 /* Enhanced Activity Time Badges */
 .activity-time {
   display: flex;
@@ -1210,10 +1428,19 @@
   margin-bottom: var(--space-4);
   line-height: 1.3;
   transition: color var(--transition-base);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
 }
 
 .day-card:hover .day-location {
   color: var(--color-primary);
+}
+
+.location-icon {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  flex-shrink: 0;
 }
 
 .day-description {
@@ -1410,17 +1637,21 @@
 
 
 
-  /* Mobile controls adjustments */
+  /* Mobile controls adjustments - Consistent sizing and spacing */
   .header-right {
-    gap: var(--space-2);
+    gap: var(--space-3);
   }
 
   .background-controls {
-    gap: var(--space-2);
+    gap: var(--space-3);
   }
 
+  /* Material Design 3 - Mobile Controls */
   .toggle-button {
-    gap: var(--space-1);
+    height: 40px;
+    min-height: 40px;
+    padding: 0 12px;
+    gap: 6px;
   }
 
   .toggle-track {
@@ -1438,24 +1669,62 @@
   }
 
   .toggle-label {
-    font-size: var(--font-size-sm);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.1px;
   }
 
   .language-toggle {
-    padding: var(--space-1);
+    height: 40px;
+    min-height: 40px;
+    padding: 0 12px;
   }
 
   .language-option {
-    padding: var(--space-1) var(--space-2);
-    font-size: var(--font-size-sm);
+    height: 28px;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.1px;
   }
 
   .home-button {
-    padding: var(--space-1) var(--space-2);
+    height: 40px;
+    min-height: 40px;
+    padding: 0 12px;
+    gap: 6px;
+  }
+
+  .menu-button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
 
   .home-label {
     display: none; /* Hide label on mobile */
+  }
+
+  /* Material Design 3 - Icon sizing */
+  .home-icon,
+  .toggle-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Language toggle container adjustments */
+  .language-toggle-container {
+    gap: var(--space-1);
+  }
+
+  /* Ensure all header controls have consistent border radius */
+  .toggle-button,
+  .language-toggle,
+  .home-button {
+    border-radius: var(--radius-full);
   }
 
   /* Mobile original header styling when backgrounds are off */

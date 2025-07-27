@@ -11,6 +11,11 @@ const Sidebar = ({ isOpen, onClose }) => {
     return location.pathname === path;
   };
 
+  const formatDate = (dateStr) => {
+    // Simple date formatting for the sidebar
+    return dateStr;
+  };
+
   return (
     <>
       <div className={`sidebar ${isOpen ? 'sidebar--open' : ''}`}>
@@ -50,7 +55,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                 >
                   <div className="sidebar-link-icon">{day.day}</div>
                   <div className="sidebar-link-content">
-                    <div className="sidebar-link-title">{t('dayLabel')} {day.day}</div>
+                    <div className="sidebar-link-title">{t('dayLabel')} {day.day} | {formatDate(day.date)}</div>
                     <div className="sidebar-link-subtitle">{day.location}</div>
                   </div>
                 </Link>

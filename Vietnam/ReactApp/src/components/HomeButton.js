@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { HiHome } from 'react-icons/hi2';
 import { useLanguage } from '../hooks/useLanguage';
 
 const HomeButton = ({ className = '' }) => {
@@ -25,7 +26,7 @@ const HomeButton = ({ className = '' }) => {
       title={t('backToOverview') || 'Back to Overview'}
       aria-label="Navigate back to overview page"
     >
-      <span className="home-icon">🏠</span>
+      <HiHome className="home-icon" />
       <span className="home-label">{t('home') || 'Home'}</span>
     </Link>
   );

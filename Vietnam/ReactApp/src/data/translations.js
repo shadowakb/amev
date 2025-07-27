@@ -3,7 +3,7 @@ export const translations = {
   en: {
     // Header and navigation
     headerTitle: 'Vietnam Travel Itinerary 🇻🇳',
-    headerSubtitle: 'August 7-16, 2025 • 10-Day Travel Plan ✈️',
+    headerSubtitle: 'August 7-16, 2025 • 10-Day Travel Plan',
     headerDescription: 'Complete travel guide with destinations, accommodations, and detailed maps of our planned locations. Designed for easy sharing and reference. 🗺️',
     
     // Navigation
@@ -108,7 +108,7 @@ export const translations = {
   hi: {
     // Header and navigation
     headerTitle: 'Vietnam यात्रा कार्यक्रम 🇻🇳',
-    headerSubtitle: '7-16 अगस्त, 2025 • 10-दिन यात्रा योजना ✈️',
+    headerSubtitle: '7-16 अगस्त, 2025 • 10-दिन यात्रा योजना',
     headerDescription: 'पूर्ण यात्रा गाइड जिसमें गंतव्य स्थान, आवास, और विस्तृत मानचित्र शामिल हैं। साझाकरण और संदर्भ के लिए डिज़ाइन किया गया। 🗺️',
     
     // Navigation
