@@ -6,6 +6,7 @@ import Overview from './components/Overview';
 import DayView from './components/DayView';
 import Footer from './components/Footer';
 import { LanguageProvider } from './hooks/useLanguage';
+import { BackgroundProvider } from './contexts/BackgroundContext';
 import useScrollToTop from './hooks/useScrollToTop';
 import './styles/App.css';
 
@@ -58,22 +59,24 @@ function App() {
 
   return (
     <LanguageProvider>
-      <div className="app">
-        <Header onMenuClick={toggleSidebar} />
-        <Sidebar 
-          isOpen={sidebarOpen} 
-          onClose={closeSidebar}
-        />
-        
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Overview />} />
-            <Route path="/day/:dayNumber" element={<DayView />} />
-          </Routes>
-        </main>
-        
-        <Footer />
-      </div>
+      <BackgroundProvider>
+        <div className="app">
+          <Header onMenuClick={toggleSidebar} />
+          <Sidebar
+            isOpen={sidebarOpen}
+            onClose={closeSidebar}
+          />
+
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Overview />} />
+              <Route path="/day/:dayNumber" element={<DayView />} />
+            </Routes>
+          </main>
+
+          <Footer />
+        </div>
+      </BackgroundProvider>
     </LanguageProvider>
   );
 }

@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
+import { useBackgroundContext } from '../contexts/BackgroundContext';
+import { BACKGROUND_CONFIG } from '../config/backgroundConfig';
 import { itineraryData } from '../data/itinerary';
 import { locationData } from '../data/locations';
 import Timeline from './Timeline';
@@ -13,8 +15,15 @@ const DayView = () => {
   const { dayNumber } = useParams();
   const { t } = useLanguage();
   const [selectedLocation, setSelectedLocation] = useState(null);
-  const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+
+  const {
+    shouldShowBackgrounds,
+    currentBackgroundIndex,
+    setBackgroundIndex,
+    pauseSlideshow,
+    resumeSlideshow,
+    forceUpdate
+  } = useBackgroundContext();
 
   const dayData = itineraryData.find(day => day.day === parseInt(dayNumber));
 
@@ -39,16 +48,16 @@ const DayView = () => {
     return allImages;
   }, [dayData]);
 
-  // Rotate background images every 10 seconds (slower for day view)
+  // Rotate background images using centralized timing (only if backgrounds enabled)
   useEffect(() => {
-    if (isPaused || dayBackgroundImages.length <= 1) return;
+    if (!shouldShowBackgrounds || dayBackgroundImages.length <= 1) return;
 
     const interval = setInterval(() => {
-      setCurrentBackgroundIndex((prev) => (prev + 1) % dayBackgroundImages.length);
-    }, 5000);
+      setBackgroundIndex((prev) => (prev + 1) % dayBackgroundImages.length);
+    }, BACKGROUND_CONFIG.TIMING.DAY_VIEW_SLIDESHOW_INTERVAL);
 
     return () => clearInterval(interval);
-  }, [dayBackgroundImages.length, isPaused]);
+  }, [dayBackgroundImages.length, shouldShowBackgrounds, setBackgroundIndex]);
   
   useEffect(() => {
     // Set initial location for map with smart prioritization
@@ -109,12 +118,13 @@ const DayView = () => {
 
   return (
     <div
-      className="day-view"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      key={`day-view-${shouldShowBackgrounds ? 'with-bg' : 'no-bg'}-${forceUpdate}`}
+      className={`day-view ${shouldShowBackgrounds ? 'with-backgrounds' : ''}`}
+      onMouseEnter={shouldShowBackgrounds ? pauseSlideshow : undefined}
+      onMouseLeave={shouldShowBackgrounds ? resumeSlideshow : undefined}
     >
-      {/* Day-specific background slideshow */}
-      {dayBackgroundImages.length > 0 && (
+      {/* Day-specific background slideshow - only render when backgrounds are enabled */}
+      {shouldShowBackgrounds && dayBackgroundImages.length > 0 && (
         <div className="day-background">
           {dayBackgroundImages.map((image, index) => (
             <div

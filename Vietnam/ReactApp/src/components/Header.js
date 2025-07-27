@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../hooks/useLanguage';
+import HomeButton from './HomeButton';
+import BackgroundControls from './BackgroundControls';
 
 const Header = ({ onMenuClick }) => {
   const { t, toggleLanguage, language } = useLanguage();
@@ -27,12 +29,18 @@ const Header = ({ onMenuClick }) => {
         </div>
         
         <div className="header-right">
-          <button 
-            className="language-toggle"
+          <HomeButton className="header-home-button" />
+          <BackgroundControls className="header-background-controls" />
+          <button
+            className={`toggle-button language-toggle ${language === 'hi' ? 'active' : ''}`}
             onClick={toggleLanguage}
             aria-label={`Switch to ${language === 'en' ? 'Hindi' : 'English'}`}
+            title={`Switch to ${language === 'en' ? 'Hindi' : 'English'}`}
           >
-            {t('languageToggle')}
+            <div className="language-toggle-container">
+              <span className={`language-option ${language === 'en' ? 'active' : ''}`}>EN</span>
+              <span className={`language-option ${language === 'hi' ? 'active' : ''}`}>हिं</span>
+            </div>
           </button>
         </div>
       </div>

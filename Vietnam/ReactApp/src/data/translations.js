@@ -53,6 +53,15 @@ export const translations = {
     
     // Language toggle
     languageToggle: 'English',
+
+    // Photo controls
+    photos: 'Photos',
+    enablePhotos: 'Turn on Photos',
+    disablePhotos: 'Turn off Photos',
+
+    // Navigation
+    home: 'Home',
+    backToOverview: 'Back to Overview',
     
     // Time periods
     morning: 'Morning',
@@ -149,7 +158,16 @@ export const translations = {
     
     // Language toggle
     languageToggle: 'हिंदी',
-    
+
+    // Photo controls
+    photos: 'तस्वीरें',
+    enablePhotos: 'तस्वीरें चालू करें',
+    disablePhotos: 'तस्वीरें बंद करें',
+
+    // Navigation
+    home: 'होम',
+    backToOverview: 'अवलोकन पर वापस',
+
     // Time periods
     morning: 'सुबह',
     afternoon: 'दोपहर',

@@ -1,12 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
+import { useBackgroundContext } from '../contexts/BackgroundContext';
+import { BACKGROUND_CONFIG, getOpacityValue, generateOverlayGradient } from '../config/backgroundConfig';
 import { itineraryData } from '../data/itinerary';
 
 const Overview = () => {
   const { t } = useLanguage();
-  const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+  const {
+    shouldShowBackgrounds,
+    currentBackgroundIndex,
+    setBackgroundIndex,
+    pauseSlideshow,
+    resumeSlideshow,
+    isDarkMode,
+    isMobile,
+    forceUpdate
+  } = useBackgroundContext();
 
   // Background images array (1-7.jpg)
   const backgroundImages = [
@@ -19,16 +29,33 @@ const Overview = () => {
     '/amev/images/backgrounds/7.jpg'
   ];
 
-  // Rotate background images every 8 seconds
+  // Rotate background images using centralized timing
   useEffect(() => {
-    if (isPaused) return;
+    if (!shouldShowBackgrounds) return;
 
     const interval = setInterval(() => {
-      setCurrentBackgroundIndex((prev) => (prev + 1) % backgroundImages.length);
-    }, 3000);
+      setBackgroundIndex((prev) => (prev + 1) % backgroundImages.length);
+    }, BACKGROUND_CONFIG.TIMING.OVERVIEW_SLIDESHOW_INTERVAL);
 
     return () => clearInterval(interval);
-  }, [backgroundImages.length, isPaused]);
+  }, [backgroundImages.length, shouldShowBackgrounds, setBackgroundIndex]);
+
+  // Force re-render when background state changes
+  useEffect(() => {
+    console.log('Overview: Background state changed:', shouldShowBackgrounds);
+  }, [shouldShowBackgrounds]);
+
+  // Generate dynamic overlay styles using the same system as day cards
+  const headerOverlayStyle = shouldShowBackgrounds ? {
+    background: generateOverlayGradient(
+      getOpacityValue(BACKGROUND_CONFIG.OPACITY.DAY_CARDS_LIGHT, isDarkMode, isMobile),
+      isDarkMode
+    )
+  } : {};
+
+
+
+
 
   const formatDate = (dateStr) => {
     // Simple date formatting for the overview cards
@@ -70,50 +97,71 @@ const Overview = () => {
 
   return (
     <div
-      className="overview"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      key={`overview-${shouldShowBackgrounds ? 'with-bg' : 'no-bg'}-${forceUpdate}`}
+      className={`overview ${shouldShowBackgrounds ? 'with-backgrounds' : ''}`}
+      onMouseEnter={shouldShowBackgrounds ? pauseSlideshow : undefined}
+      onMouseLeave={shouldShowBackgrounds ? resumeSlideshow : undefined}
     >
-      {/* Background slideshow */}
-      <div className="overview-background">
-        {backgroundImages.map((image, index) => (
-          <div
-            key={index}
-            className={`background-slide ${index === currentBackgroundIndex ? 'active' : ''}`}
-            style={{
-              backgroundImage: `url(${image})`,
-            }}
-          />
-        ))}
-        <div className="background-overlay" />
-      </div>
+      {/* Background slideshow - only render when backgrounds are enabled */}
+      {shouldShowBackgrounds && (
+        <div className="overview-background">
+          {backgroundImages.map((image, index) => (
+            <div
+              key={index}
+              className={`background-slide ${index === currentBackgroundIndex ? 'active' : ''}`}
+              style={{
+                backgroundImage: `url(${image})`,
+              }}
+            />
+          ))}
+          <div className="background-overlay" />
+        </div>
+      )}
 
       <div className="overview-content">
-        <div className="overview-header">
-          <h1 className="overview-title">{t('ourJourney')} {t('overview')} 🇻🇳</h1>
-          <p className="overview-description">
-            {t('beautifulJourney')} 🌟✨
-          </p>
+        <div
+          className="overview-header"
+          style={shouldShowBackgrounds ? {
+            backgroundImage: `url(${backgroundImages[currentBackgroundIndex]})`,
+          } : {}}
+        >
+          {shouldShowBackgrounds && <div className="header-overlay" style={headerOverlayStyle}></div>}
+          <div className="header-content">
+            <h1 className="overview-title">{t('ourJourney')} {t('overview')} 🇻🇳</h1>
+            <p className="overview-description">
+              {t('beautifulJourney')} 🌟✨
+            </p>
 
-          {/* Background slideshow indicators */}
-          <div className="slideshow-indicators">
-            {backgroundImages.map((_, index) => (
-              <div
-                key={index}
-                className={`slideshow-dot ${index === currentBackgroundIndex ? 'active' : ''}`}
-                onClick={() => setCurrentBackgroundIndex(index)}
-              />
-            ))}
+            {/* Background slideshow indicators - only show when backgrounds are enabled */}
+            {shouldShowBackgrounds && (
+              <div className="slideshow-indicators">
+                {backgroundImages.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`slideshow-dot ${index === currentBackgroundIndex ? 'active' : ''}`}
+                    onClick={() => setBackgroundIndex(index)}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       
       <div className="overview-grid">
-        {itineraryData.map((day) => (
-          <Link 
-            key={day.day}
-            to={`/day/${day.day}`}
-            className="day-card"
-          >
+        {itineraryData.map((day, index) => {
+          // Calculate which background image this card should use (only if backgrounds enabled)
+          const cardBackgroundIndex = (currentBackgroundIndex + index) % backgroundImages.length;
+          const cardBackgroundImage = backgroundImages[cardBackgroundIndex];
+
+          return (
+            <Link
+              key={day.day}
+              to={`/day/${day.day}`}
+              className="day-card"
+              style={shouldShowBackgrounds ? {
+                backgroundImage: `url(${cardBackgroundImage})`,
+              } : {}}
+            >
             <div className="day-card-header">
               <span className="day-number">{t('dayLabel')} {day.day}</span>
               <span className="day-date">{formatDate(day.date)}</span>
@@ -163,7 +211,8 @@ const Overview = () => {
               <span className="view-details">{t('viewDayPlans')}</span>
             </div>
           </Link>
-        ))}
+          );
+        })}
         </div>
       </div>
     </div>
