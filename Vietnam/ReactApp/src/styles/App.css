@@ -408,9 +408,90 @@
 
 /* Modern Overview Styles - Contemporary Travel Platform Design */
 .overview {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Background slideshow */
+.overview-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.background-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.background-slide.active {
+  opacity: 1;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.75) 0%,
+    rgba(255, 255, 255, 0.65) 50%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  z-index: 1;
+}
+
+/* Content container */
+.overview-content {
+  position: relative;
+  z-index: 2;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 var(--space-4);
+  min-height: 100vh;
+}
+
+/* Dark mode overlay adjustment */
+@media (prefers-color-scheme: dark) {
+  .background-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(18, 18, 18, 0.8) 0%,
+      rgba(18, 18, 18, 0.7) 50%,
+      rgba(18, 18, 18, 0.75) 100%
+    );
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .background-slide {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .background-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.75) 50%,
+      rgba(255, 255, 255, 0.78) 100%
+    );
+  }
 }
 
 .overview-header {
@@ -434,6 +515,37 @@
   bottom: 0;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
   pointer-events: none;
+}
+
+/* Slideshow indicators */
+.slideshow-indicators {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  position: relative;
+  z-index: 3;
+}
+
+.slideshow-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.slideshow-dot.active {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.slideshow-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -867,9 +979,84 @@
 
 /* Modern Day View Layout */
 .day-view {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Day-specific background slideshow */
+.day-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.day-background .background-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out;
+}
+
+.day-background .background-slide.active {
+  opacity: 1;
+}
+
+.day-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0.75) 100%
+  ) !important;
+}
+
+/* Day content container */
+.day-content {
+  position: relative;
+  z-index: 2;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 var(--space-4);
+  min-height: 100vh;
+}
+
+/* Dark mode adjustments for day view */
+@media (prefers-color-scheme: dark) {
+  .day-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(18, 18, 18, 0.85) 0%,
+      rgba(18, 18, 18, 0.75) 50%,
+      rgba(18, 18, 18, 0.8) 100%
+    ) !important;
+  }
+}
+
+/* Mobile optimizations for day backgrounds */
+@media (max-width: 768px) {
+  .day-background .background-slide {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .day-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0.82) 100%
+    ) !important;
+  }
 }
 
 .day-header {
@@ -3215,4 +3402,158 @@ html {
 .carousel-image.fallback {
   border: 2px dashed #dee2e6;
   opacity: 0.8;
+}
+
+/* Image overlay styles */
+.image-with-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-location-overlay {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  z-index: 2;
+}
+
+.location-name-badge {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  max-width: calc(100% - var(--space-6));
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Location name display */
+.location-name-display {
+  margin: var(--space-4) 0 var(--space-3) 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  text-align: center;
+  padding: var(--space-3);
+  background: linear-gradient(135deg, var(--color-background-secondary), var(--color-background));
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Collapsible facts section */
+.highlights-section {
+  margin-top: var(--space-4);
+}
+
+.facts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.facts-title {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.facts-toggle-button {
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.facts-toggle-button:hover {
+  background: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.facts-preview {
+  padding: var(--space-3);
+  background: var(--color-background-secondary);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-2);
+}
+
+.preview-text {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.more-count {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xs);
+}
+
+.highlights-content {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.highlights-content.collapsed {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.highlights-content.expanded {
+  max-height: 1000px;
+  opacity: 1;
+  margin-top: var(--space-2);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .image-location-overlay {
+    top: var(--space-2);
+    left: var(--space-2);
+  }
+
+  .location-name-badge {
+    font-size: var(--font-size-xs);
+    padding: var(--space-1) var(--space-2);
+    max-width: calc(100% - var(--space-4));
+  }
+
+  .facts-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .facts-toggle-button {
+    align-self: flex-end;
+    font-size: var(--font-size-xs);
+  }
+
+  .facts-title {
+    font-size: var(--font-size-base);
+  }
+
+  .location-name-display {
+    font-size: var(--font-size-lg);
+    margin: var(--space-3) 0 var(--space-2) 0;
+    padding: var(--space-2);
+  }
 }

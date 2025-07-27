@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
 import { locationData } from '../data/locations';
 import { itineraryData } from '../data/itinerary';
-import { useLocalImages } from '../hooks/useLocalImages';
 import { getFallbackImagePath } from '../utils/imageUtils';
 
 // Component for handling individual images with fallback
@@ -61,6 +60,7 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
   const [showAllHighlights, setShowAllHighlights] = useState(false);
+  const [isFactsExpanded, setIsFactsExpanded] = useState(false);
 
   // Use refs to track state without causing re-renders
   const lastSelectedLocationRef = useRef(null);
@@ -111,9 +111,21 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
   };
 
   const currentLocationData = getCurrentLocationData();
-  const highlights = isHindi ? currentLocationData?.highlights_hi : currentLocationData?.highlights_en;
+  const originalHighlights = isHindi ? currentLocationData?.highlights_hi : currentLocationData?.highlights_en;
   const description = isHindi ? currentLocationData?.description_hi : currentLocationData?.description;
   const locationName = isHindi ? currentLocationData?.name_hi : currentLocationData?.name_en;
+
+  // Combine description with highlights, putting description first
+  const highlights = useMemo(() => {
+    const combined = [];
+    if (description) {
+      combined.push(description);
+    }
+    if (originalHighlights && Array.isArray(originalHighlights)) {
+      combined.push(...originalHighlights);
+    }
+    return combined;
+  }, [description, originalHighlights]);
 
   // Reset currentImageIndex when images array changes
   useEffect(() => {
@@ -250,8 +262,8 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
         </div>
       )}
 
-      {description && (
-        <p className="location-description">{description}</p>
+      {locationName && (
+        <h3 className="location-name-display">{locationName}</h3>
       )}
 
       {images.length > 0 && (
@@ -273,15 +285,23 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
             <div className="carousel-images-wrapper">
               {images.map((image, index) => (
                 <div key={index} className={`carousel-slide ${index === currentImageIndex ? 'active' : ''}`}>
-                  <ImageWithFallback
-                    src={isHindi ? image.src_hi : image.src_en}
-                    alt={isHindi ? image.alt_hi : image.alt_en}
-                    locationName={image.locationName || location?.name}
-                    imageIndex={index}
-                    onError={(imageIndex, fallbackSrc) => {
-                      console.log(`Image ${imageIndex} failed to load, using fallback: ${fallbackSrc}`);
-                    }}
-                  />
+                  <div className="image-with-overlay">
+                    <ImageWithFallback
+                      src={isHindi ? image.src_hi : image.src_en}
+                      alt={isHindi ? image.alt_hi : image.alt_en}
+                      locationName={image.locationName || location?.name}
+                      imageIndex={index}
+                      onError={(imageIndex, fallbackSrc) => {
+                        console.log(`Image ${imageIndex} failed to load, using fallback: ${fallbackSrc}`);
+                      }}
+                    />
+                    {/* Location name overlay */}
+                    <div className="image-location-overlay">
+                      <span className="location-name-badge">
+                        📍 {image.locationName || location?.name}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -355,30 +375,63 @@ const LocationHighlights = ({ location, onCurrentLocationChange }) => {
       )}
 
       {visibleHighlights && visibleHighlights.length > 0 && (
-        <div className="highlights-content">
-          <ul className="highlights-list">
-            {visibleHighlights.map((highlight, index) => (
-              <li 
-                key={index} 
-                className="highlight-item"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {highlight}
-              </li>
-            ))}
-          </ul>
-          
-          {hasMoreHighlights && (
-            <button 
-              className="show-more-button"
-              onClick={() => setShowAllHighlights(!showAllHighlights)}
+        <div className="highlights-section">
+          {/* Collapsible Facts Header */}
+          <div className="facts-header">
+            <h4 className="facts-title">
+              {t('highlightsLabel')}
+            </h4>
+            <button
+              className="facts-toggle-button"
+              onClick={() => setIsFactsExpanded(!isFactsExpanded)}
+              aria-expanded={isFactsExpanded}
             >
-              {showAllHighlights 
-                ? `▲ ${t('showLess') || 'Show less'}` 
-                : `▼ ${t('showMore') || `Show ${highlights.length - 3} more tips`}`
+              {isFactsExpanded
+                ? `▲ ${t('hideDetails')}`
+                : `▼ ${t('showDetails')}`
               }
             </button>
+          </div>
+
+          {/* Preview when collapsed */}
+          {!isFactsExpanded && (
+            <div className="facts-preview">
+              <p className="preview-text">
+                {visibleHighlights[0]} {visibleHighlights.length > 1 && (
+                  <span className="more-count">
+                    {` +${visibleHighlights.length - 1} ${t('moreHighlights') || 'more highlights'}`}
+                  </span>
+                )}
+              </p>
+            </div>
           )}
+
+          {/* Full content when expanded */}
+          <div className={`highlights-content ${isFactsExpanded ? 'expanded' : 'collapsed'}`}>
+            <ul className="highlights-list">
+              {visibleHighlights.map((highlight, index) => (
+                <li
+                  key={index}
+                  className="highlight-item"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+
+            {hasMoreHighlights && (
+              <button
+                className="show-more-button"
+                onClick={() => setShowAllHighlights(!showAllHighlights)}
+              >
+                {showAllHighlights
+                  ? `▲ ${t('showLess') || 'Show less'}`
+                  : `▼ ${t('showMore') || `Show ${highlights.length - 3} more tips`}`
+                }
+              </button>
+            )}
+          </div>
         </div>
       )}
     </div>

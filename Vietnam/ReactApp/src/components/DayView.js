@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
 import { itineraryData } from '../data/itinerary';
+import { locationData } from '../data/locations';
 import Timeline from './Timeline';
 import LocationMap from './LocationMap';
 import LocationHighlights from './LocationHighlights';
@@ -12,8 +13,42 @@ const DayView = () => {
   const { dayNumber } = useParams();
   const { t } = useLanguage();
   const [selectedLocation, setSelectedLocation] = useState(null);
-  
+  const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
   const dayData = itineraryData.find(day => day.day === parseInt(dayNumber));
+
+  // Get all images from all locations for this day for background slideshow
+  const dayBackgroundImages = useMemo(() => {
+    if (!dayData || !dayData.keyLocations) return [];
+
+    const allImages = [];
+    dayData.keyLocations.forEach(loc => {
+      const locData = locationData[loc.name];
+      if (locData && locData.images) {
+        // Add up to 3 images per location to keep slideshow manageable
+        locData.images.slice(0, 3).forEach(img => {
+          allImages.push({
+            src: img.src_en, // Use English version for backgrounds
+            locationName: loc.name,
+            alt: img.alt_en
+          });
+        });
+      }
+    });
+    return allImages;
+  }, [dayData]);
+
+  // Rotate background images every 10 seconds (slower for day view)
+  useEffect(() => {
+    if (isPaused || dayBackgroundImages.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentBackgroundIndex((prev) => (prev + 1) % dayBackgroundImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [dayBackgroundImages.length, isPaused]);
   
   useEffect(() => {
     // Set initial location for map with smart prioritization
@@ -73,8 +108,29 @@ const DayView = () => {
   const prevDay = itineraryData.find(day => day.day === dayData.day - 1);
 
   return (
-    <div className="day-view">
-      <div className="day-header">
+    <div
+      className="day-view"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {/* Day-specific background slideshow */}
+      {dayBackgroundImages.length > 0 && (
+        <div className="day-background">
+          {dayBackgroundImages.map((image, index) => (
+            <div
+              key={index}
+              className={`background-slide ${index === currentBackgroundIndex ? 'active' : ''}`}
+              style={{
+                backgroundImage: `url(${image.src})`,
+              }}
+            />
+          ))}
+          <div className="background-overlay day-overlay" />
+        </div>
+      )}
+
+      <div className="day-content">
+        <div className="day-header">
         <div className="day-navigation">
           <Link to="/" className="back-link">
             ← {t('overview')}
@@ -162,6 +218,7 @@ const DayView = () => {
             </div>
           )}
         </div>
+      </div>
       </div>
     </div>
   );
