@@ -45,10 +45,10 @@ const Overview = () => {
     console.log('Overview: Background state changed:', shouldShowBackgrounds);
   }, [shouldShowBackgrounds]);
 
-  // Generate dynamic overlay styles using the same system as day cards
+  // Generate dynamic overlay styles for header using correct config
   const headerOverlayStyle = shouldShowBackgrounds ? {
     background: generateOverlayGradient(
-      getOpacityValue(BACKGROUND_CONFIG.OPACITY.DAY_CARDS_LIGHT, isDarkMode, isMobile),
+      getOpacityValue(BACKGROUND_CONFIG.OPACITY.HEADER_LIGHT, isDarkMode, isMobile),
       isDarkMode
     )
   } : {};
@@ -132,18 +132,16 @@ const Overview = () => {
               {t('beautifulJourney')} 🌟✨
             </p>
 
-            {/* Background slideshow indicators - only show when backgrounds are enabled */}
-            {shouldShowBackgrounds && (
-              <div className="slideshow-indicators">
-                {backgroundImages.map((_, index) => (
-                  <div
-                    key={index}
-                    className={`slideshow-dot ${index === currentBackgroundIndex ? 'active' : ''}`}
-                    onClick={() => setBackgroundIndex(index)}
-                  />
-                ))}
-              </div>
-            )}
+            {/* Background slideshow indicators - always present to maintain layout */}
+            <div className={`slideshow-indicators ${!shouldShowBackgrounds ? 'hidden' : ''}`}>
+              {backgroundImages.map((_, index) => (
+                <div
+                  key={index}
+                  className={`slideshow-dot ${index === currentBackgroundIndex ? 'active' : ''}`}
+                  onClick={() => shouldShowBackgrounds && setBackgroundIndex(index)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       
@@ -152,6 +150,22 @@ const Overview = () => {
           // Calculate which background image this card should use (only if backgrounds enabled)
           const cardBackgroundIndex = (currentBackgroundIndex + index) % backgroundImages.length;
           const cardBackgroundImage = backgroundImages[cardBackgroundIndex];
+
+          // Generate overlay style for day cards using config
+          const cardOverlayStyle = shouldShowBackgrounds ? {
+            background: generateOverlayGradient(
+              getOpacityValue(BACKGROUND_CONFIG.OPACITY.DAY_CARDS_LIGHT, isDarkMode, isMobile),
+              isDarkMode
+            )
+          } : {};
+
+          // Generate hover overlay style using config
+          const cardHoverOverlayStyle = shouldShowBackgrounds ? {
+            background: generateOverlayGradient(
+              getOpacityValue(BACKGROUND_CONFIG.OPACITY.DAY_CARDS_HOVER_LIGHT, isDarkMode, isMobile),
+              isDarkMode
+            )
+          } : {};
 
           return (
             <Link
@@ -162,6 +176,10 @@ const Overview = () => {
                 backgroundImage: `url(${cardBackgroundImage})`,
               } : {}}
             >
+            {/* Add overlay for background readability */}
+            {shouldShowBackgrounds && <div className="day-card-overlay" style={cardOverlayStyle}></div>}
+            {/* Add hover overlay using config */}
+            {shouldShowBackgrounds && <div className="day-card-hover-overlay" style={cardHoverOverlayStyle}></div>}
             <div className="day-card-header">
               <span className="day-number">{t('dayLabel')} {day.day}</span>
               <span className="day-date">{formatDate(day.date)}</span>

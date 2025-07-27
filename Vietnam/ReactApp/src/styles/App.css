@@ -104,11 +104,25 @@
 .header-title h1 {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-1);
+}
+
+/* Header title with gradient only when backgrounds are enabled */
+.with-backgrounds .header-title h1 {
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: var(--space-1);
+}
+
+/* Header title normal color when backgrounds are OFF - match original */
+.overview:not(.with-backgrounds) .header-title h1,
+.day-view:not(.with-backgrounds) .header-title h1 {
+  color: var(--color-text);
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
 }
 
 .header-subtitle {
@@ -708,20 +722,22 @@
   color: var(--color-primary);
 }
 
-/* Modern Overview Styles - Contemporary Travel Platform Design */
+/* Modern Overview Styles - Consistent Layout Base */
 .overview {
+  /* CONSISTENT BASE LAYOUT - Never changes */
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+
+  /* Default background when photos are OFF */
+  background: var(--color-background);
+  transition: all var(--transition-base);
 }
 
-/* Background System OFF Styles */
+/* Background System OFF - Only visual changes, no layout changes */
 .overview:not(.with-backgrounds) {
-  position: static;
-  min-height: auto;
-  overflow: visible;
+  /* Keep same layout properties - only change background */
   background: var(--color-background) !important;
-  transition: all var(--transition-base);
 }
 
 .overview:not(.with-backgrounds) .overview-background {
@@ -738,39 +754,9 @@
 }
 
 .overview:not(.with-backgrounds) .overview-header {
-  /* Restore original card-based header design with vibrant gradient */
+  /* Keep same layout - only change background to gradient */
   background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%) !important;
   background-image: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%) !important;
-  background-size: initial !important;
-  background-position: initial !important;
-  background-repeat: initial !important;
-
-  /* Original card styling */
-  text-align: center !important;
-  margin-bottom: var(--space-12) !important;
-  padding: var(--space-12) var(--space-8) !important;
-  border-radius: var(--radius-2xl) !important;
-  color: white !important;
-  box-shadow: var(--shadow-2xl) !important;
-  position: relative !important;
-  overflow: hidden !important;
-
-  /* Remove background slideshow properties */
-  min-height: auto !important;
-  display: block !important;
-  align-items: initial !important;
-  justify-content: initial !important;
-
-  /* Remove any transforms or animations */
-  transform: none !important;
-  animation: none !important;
-
-  /* Ensure no conflicting background properties */
-  background-attachment: initial !important;
-  background-clip: initial !important;
-  background-origin: initial !important;
-
-  transition: all var(--transition-base);
 }
 
 .overview:not(.with-backgrounds) .day-card {
@@ -785,43 +771,79 @@
 
 
 
-.overview:not(.with-backgrounds) .slideshow-indicators {
-  display: none !important;
+
+
+
+
+/* Header content - consistent positioning */
+.header-content {
+  /* CONSISTENT BASE LAYOUT - Never changes */
+  position: relative;
+  z-index: 2;
+  /* Only disable animation when backgrounds are OFF, keep positioning */
 }
 
-
-
 .overview:not(.with-backgrounds) .header-content {
-  /* Remove any special positioning or animations */
-  position: static !important;
-  z-index: auto !important;
+  /* Keep same positioning - only disable animations */
   animation: none !important;
-  transform: none !important;
+}
+
+/* Overview title - consistent positioning and spacing */
+.overview-title {
+  /* CONSISTENT BASE LAYOUT - Never changes */
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.025em;
+  position: relative;
+  z-index: 2;
+  line-height: 1.1;
 }
 
 .overview:not(.with-backgrounds) .overview-title {
-  /* Original title styling */
-  font-family: var(--font-family-serif) !important;
-  font-size: var(--font-size-5xl) !important;
-  font-weight: var(--font-weight-bold) !important;
-  margin-bottom: var(--space-4) !important;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-  letter-spacing: -0.025em !important;
+  /* Keep same layout - only change color */
   color: white !important;
-  position: static !important;
-  z-index: auto !important;
+}
+
+.overview.with-backgrounds .overview-title {
+  /* Black gradient background for text readability */
+  /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.1) 100%); */
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  color: white;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  display: inline-block;
+}
+
+/* Overview description - consistent positioning and spacing */
+.overview-description {
+  /* CONSISTENT BASE LAYOUT - Never changes */
+  font-size: var(--font-size-xl);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  opacity: 0.95;
+  font-weight: var(--font-weight-medium);
 }
 
 .overview:not(.with-backgrounds) .overview-description {
-  /* Original description styling */
-  font-size: var(--font-size-xl) !important;
+  /* Keep same layout - only change color */
   color: rgba(255, 255, 255, 0.95) !important;
-  line-height: 1.6 !important;
-  max-width: 600px !important;
-  margin: 0 auto !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  position: static !important;
-  z-index: auto !important;
+}
+
+.overview.with-backgrounds .overview-description {
+  /* Black gradient background for text readability */
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  display: inline-block;
 }
 
 /* Background slideshow */
@@ -866,13 +888,14 @@
   z-index: 1;
 }
 
-/* Content container */
+/* Content container - consistent layout */
 .overview-content {
+  /* CONSISTENT BASE LAYOUT - Never changes */
   position: relative;
   z-index: 2;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-4);
+  padding: var(--space-4) var(--space-4);
   min-height: 100vh;
 }
 
@@ -908,10 +931,10 @@
 }
 
 .overview-header {
+  /* CONSISTENT BASE LAYOUT - Never changes */
   text-align: center;
   margin-bottom: var(--space-12);
   padding: var(--space-12) var(--space-8);
-  background: var(--gradient-hero);
   border-radius: var(--radius-2xl);
   color: white;
   box-shadow: var(--shadow-2xl);
@@ -921,6 +944,9 @@
   background-position: center;
   background-repeat: no-repeat;
   transition: background-image 2s ease-in-out;
+
+  /* Default background when photos are OFF */
+  background: var(--gradient-hero);
 }
 
 .header-overlay {
@@ -969,6 +995,18 @@
   z-index: 3;
 }
 
+.slideshow-indicators.hidden {
+  visibility: hidden;
+}
+
+/* Desktop carousel positioning adjustment */
+@media (min-width: 769px) {
+  .slideshow-indicators {
+    margin-top: var(--space-6);
+    margin-left: var(--space-8);
+  }
+}
+
 .slideshow-dot {
   width: 12px;
   height: 12px;
@@ -990,8 +1028,10 @@
   transform: scale(1.1);
 }
 
+/* Mobile overview header - consistent layout */
 @media (max-width: 768px) {
   .overview-header {
+    /* CONSISTENT MOBILE LAYOUT - Never changes */
     padding: var(--space-4);
     margin: 0 var(--space-3) var(--space-6);
     border-radius: var(--radius-lg);
@@ -1035,8 +1075,9 @@
   }
 }
 
-/* Enhanced Day Cards for Mobile */
+/* Overview grid - consistent layout */
 .overview-grid {
+  /* CONSISTENT BASE LAYOUT - Never changes */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: var(--space-6);
@@ -1045,6 +1086,7 @@
 
 @media (max-width: 768px) {
   .overview-grid {
+    /* CONSISTENT MOBILE LAYOUT - Never changes */
     grid-template-columns: 1fr;
     gap: var(--space-5);
     padding: var(--space-3);
@@ -1096,6 +1138,35 @@
   z-index: 2;
 }
 
+/* Day card overlay using config system */
+.day-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: var(--radius-2xl);
+  transition: all var(--transition-smooth);
+}
+
+/* Day card hover overlay using config system */
+.day-card-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: var(--radius-2xl);
+  opacity: 0;
+  transition: opacity var(--transition-smooth);
+}
+
+.day-card:hover .day-card-hover-overlay {
+  opacity: 1;
+}
+
 .day-card::before {
   content: '';
   position: absolute;
@@ -1129,15 +1200,7 @@
   border-color: var(--color-primary);
 }
 
-/* Background overlay hover effect for day cards */
-.day-card:hover::before {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.85) 0%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0.82) 100%
-  ) !important;
-}
+/* Background overlay hover effect for day cards - will be handled by JS config */
 
 /* Dark mode adjustments for day card backgrounds */
 @media (prefers-color-scheme: dark) {
@@ -1523,20 +1586,22 @@
   margin-top: auto;
 }
 
-/* Modern Day View Layout */
+/* Modern Day View Layout - Consistent Layout Base */
 .day-view {
+  /* CONSISTENT BASE LAYOUT - Never changes */
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+
+  /* Default background when photos are OFF */
+  background: var(--color-background);
+  transition: all var(--transition-base);
 }
 
-/* Day View Background System OFF */
+/* Day View Background System OFF - Only visual changes, no layout changes */
 .day-view:not(.with-backgrounds) {
-  position: static;
-  min-height: auto;
-  overflow: visible;
+  /* Keep same layout properties - only change background */
   background: var(--color-background) !important;
-  transition: all var(--transition-base);
 }
 
 .day-view:not(.with-backgrounds) .day-background {
@@ -1570,13 +1635,14 @@
   opacity: 1;
 }
 
+/* Day overlay styling handled by config system */
 .day-overlay {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.7) 50%,
-    rgba(255, 255, 255, 0.75) 100%
-  ) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 /* Day content container */
@@ -1587,6 +1653,41 @@
   margin: 0 auto;
   padding: 0 var(--space-4);
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--space-8);
+}
+
+/* Day content - consistent layout base */
+.day-content {
+  /* CONSISTENT BASE LAYOUT - Never changes */
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-4);
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--space-8);
+}
+
+/* Mobile layout adjustments - consistent for all states */
+@media (max-width: 767px) {
+  .day-content {
+    /* CONSISTENT MOBILE LAYOUT - Never changes */
+    padding: var(--space-6) var(--space-2);
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .day-header {
+    margin-bottom: var(--space-3);
+  }
+
+  .day-navigation {
+    margin-bottom: var(--space-3);
+  }
 }
 
 /* Dark mode adjustments for day view */
@@ -1629,11 +1730,7 @@
 
 
 
-  /* Mobile header adjustments */
-  .overview-header {
-    padding: var(--space-8) var(--space-4);
-    margin-bottom: var(--space-8);
-  }
+  /* Mobile header adjustments - consistent with base layout */
 
 
 
@@ -1727,12 +1824,7 @@
     border-radius: var(--radius-full);
   }
 
-  /* Mobile original header styling when backgrounds are off */
-  .overview:not(.with-backgrounds) .overview-header {
-    padding: var(--space-4) !important;
-    margin: 0 var(--space-3) var(--space-6) !important;
-    border-radius: var(--radius-lg) !important;
-  }
+  /* Mobile header - no layout changes needed when backgrounds are off */
 
   .overview:not(.with-backgrounds) .overview-title {
     font-size: var(--font-size-2xl) !important;
@@ -1746,6 +1838,7 @@
 
 .day-header {
   margin-bottom: var(--space-8);
+  grid-column: 1 / -1; /* Span full width across grid columns */
 }
 
 .day-navigation {
@@ -1776,6 +1869,7 @@
 .day-nav-buttons {
   display: flex;
   gap: var(--space-3);
+  justify-content: center;
 }
 
 .nav-button {
@@ -1806,24 +1900,53 @@
 }
 
 .day-title h1 {
-  font-size: var(--font-size-3xl);
+  /* CONSISTENT BASE LAYOUT - Never changes */
+  font-size: clamp(1.5rem, 4vw, var(--font-size-3xl));
   font-weight: var(--font-weight-bold);
-  color: var(--color-text);
   margin-bottom: var(--space-2);
+  position: relative;
+  padding: 0px 4px;
+  border-radius: 8px;
+
+  /* Default color when photos are OFF */
+  color: var(--color-text);
 }
+
+/* Day title styling when backgrounds are enabled */
+.with-backgrounds .day-title h1 {
+  color: white !important;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  width: fit-content;
+}
+
 
 .day-date {
   font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-medium);
+  display: inline-block;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-.day-content {
-  display: grid;
-  grid-template-columns: 1fr 400px;
-  gap: var(--space-8);
+/* Day date background when photos are OFF - match original shadowakb.github.io styling */
+.day-view:not(.with-backgrounds) .day-date {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: var(--color-text-secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive grid layout for day content */
 @media (max-width: 1023px) {
   .day-content {
     grid-template-columns: 1fr;
@@ -2499,6 +2622,7 @@
   }
 
   .day-title h1 {
+    /* CONSISTENT MOBILE LAYOUT - Never changes */
     font-size: var(--font-size-2xl);
   }
 
@@ -3603,11 +3727,7 @@
     font-size: var(--font-size-2xl);
   }
   
-  .overview-header {
-    padding: var(--space-4);
-    margin: 0 var(--space-2) var(--space-6);
-    border-radius: var(--radius-lg);
-  }
+  /* Overview header mobile - already defined above */
   
   .overview-description {
     font-size: var(--font-size-base);
@@ -3818,6 +3938,7 @@ html {
   }
 
   .day-title h1 {
+    /* CONSISTENT MOBILE LAYOUT - Never changes */
     font-size: var(--font-size-2xl);
     margin-bottom: var(--space-2);
   }
@@ -3974,7 +4095,8 @@ html {
 /* Desktop: Better space management */
 @media (min-width: 768px) {
   .day-sidebar {
-    max-height: calc(100vh - 180px);
+    max-height: calc(100vh - 120px);
+    min-height: calc(100vh - 200px);
     overflow-y: auto;
     padding-right: var(--space-2);
   }

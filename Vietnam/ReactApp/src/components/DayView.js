@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../hooks/useLanguage';
 import { useBackgroundContext } from '../contexts/BackgroundContext';
-import { BACKGROUND_CONFIG } from '../config/backgroundConfig';
+import { BACKGROUND_CONFIG, getOpacityValue, generateOverlayGradient } from '../config/backgroundConfig';
 import { itineraryData } from '../data/itinerary';
 import { locationData } from '../data/locations';
 import Timeline from './Timeline';
@@ -22,6 +22,8 @@ const DayView = () => {
     setBackgroundIndex,
     pauseSlideshow,
     resumeSlideshow,
+    isDarkMode,
+    isMobile,
     forceUpdate
   } = useBackgroundContext();
 
@@ -58,6 +60,14 @@ const DayView = () => {
 
     return () => clearInterval(interval);
   }, [dayBackgroundImages.length, shouldShowBackgrounds, setBackgroundIndex]);
+
+  // Generate dynamic overlay styles for day view using config
+  const dayOverlayStyle = shouldShowBackgrounds ? {
+    background: generateOverlayGradient(
+      getOpacityValue(BACKGROUND_CONFIG.OPACITY.DAY_VIEW_LIGHT, isDarkMode, isMobile),
+      isDarkMode
+    )
+  } : {};
   
   useEffect(() => {
     // Set initial location for map with smart prioritization
@@ -135,7 +145,7 @@ const DayView = () => {
               }}
             />
           ))}
-          <div className="background-overlay day-overlay" />
+          <div className="background-overlay day-overlay" style={dayOverlayStyle} />
         </div>
       )}
 
